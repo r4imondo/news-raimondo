@@ -21,8 +21,9 @@ Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 Le sezioni private NON vanno mai in questo repository (che è pubblico). Vivono solo nella pagina
 privata su claude.ai (vedi in fondo). Sezioni private e ordine obbligatorio:
 `pol` Politica, `eco` Economia, `geo` Geopolitica (queste tre compaiono in cima, prima delle sezioni
-pubbliche), poi `cielo` Astronomia e spazio, `filo` Filosofia e AI (etica dell'AI, coscienza e
-mente, lavoro e senso, dibattiti tra filosofi, scienziati e laboratori; ottima per i 1vs1),
+pubbliche), poi `cielo` Astronomia e spazio, `filo` Scienza e filosofia (grandi scoperte scientifiche, filosofia
+e AI: etica, coscienza e mente, lavoro e senso, dibattiti tra filosofi, scienziati e laboratori;
+ottima per i 1vs1),
 `rimini` Rimini e Romagna (sempre ultima).
 UAP e Formula 1 sono state eliminate il 26/11/2026. Massimo 1 notizia per sezione privata; anche qui vale la regola 6: 1vs1 ogni volta che ci sono due
 posizioni contrapposte reali (sempre per politica, economia e geopolitica).
