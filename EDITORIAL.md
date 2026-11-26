@@ -10,12 +10,12 @@ interessati a pubblicità digitale, intelligenza artificiale e industria.
 Curatore: Federico Raimondo (raimondo.it), consulente di marketing e AI per PMI industriali.
 Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 
-## Sezioni pubbliche (id → nome)
+## Sezioni pubbliche (id → nome), in questo ordine
 
+- `ind` → Economia e industria (congiuntura, manifattura, robotica, automazione) — sempre per prima
 - `ads` → Pubblicità e AI (Google Ads, Meta, ChatGPT Ads, AI Mode, misurazione)
 - `ia` → Intelligenza artificiale (modelli, aziende, sicurezza, adozione nelle imprese)
 - `regole` → Regole sull'AI (AI Act, norme italiane, autorità, sanzioni)
-- `ind` → Industria e robotica (congiuntura manifatturiera, robotica, automazione)
 - `lavoro` → Lavoro e formazione (competenze, lavoratori senior e AI, fondi interprofessionali, bandi)
 - `succ` → Passaggio generazionale (successione d'impresa, PMI senza successore)
 
@@ -56,8 +56,8 @@ economia e geopolitica escono in formato 1vs1.
    esce in formato 1vs1: fatti neutri + le due tesi più nette, ciascuna ATTRIBUITA a chi la sostiene,
    con 2-4 punti per lato, senza inventare posizioni né citazioni. Il giornale non prende posizione.
    Vanno nella fascia "Il confronto del giorno" in cima.
-7. **Immagini.** Nessuna foto. Copertina tipografica (numero o parola chiave + riga di spiegazione),
-   oppure uno schema semplice se la notizia ha 2-3 numeri confrontabili o una sequenza chiara.
+7. **Immagini.** Nessuna foto e nessun grafico: la copertina mostra solo il nome della categoria su un badge
+   colorato, generato dalla pagina. Non serve il campo `cover`.
 8. **Video.** Facoltativi, solo da canali di testate o aziende ufficiali.
 9. **Perché conta.** 1-2 frasi per il lettore imprenditore: cosa cambia per lui. Mai riferimenti
    personali al curatore o ai suoi clienti.
@@ -77,8 +77,8 @@ economia e geopolitica escono in formato 1vs1.
   "date": "2026-11-27",
   "label": "Venerdì 27 novembre 2026",
   "lead": "id-della-notizia-di-apertura",
-  "secs": [["ads","Pubblicità e AI"],["ia","Intelligenza artificiale"],["regole","Regole sull'AI"],
-           ["ind","Industria e robotica"],["lavoro","Lavoro e formazione"],["succ","Passaggio generazionale"]],
+  "secs": [["ind","Economia e industria"],["ads","Pubblicità e AI"],["ia","Intelligenza artificiale"],
+           ["regole","Regole sull'AI"],["lavoro","Lavoro e formazione"],["succ","Passaggio generazionale"]],
   "stories": [
     {
       "id": "slug-minuscolo-con-trattini",
@@ -89,19 +89,11 @@ economia e geopolitica escono in formato 1vs1.
       "sum": "Riassunto di 2-4 frasi con i fatti verificati.",
       "why": "Perché conta per un imprenditore, 1-2 frasi.",
       "src": [["Nome testata", "https://...", "EN"]],
-      "yt": [["Titolo video", "https://www.youtube.com/watch?v=..."]],
-      "cover": {"t": "num", "big": "4", "small": "annunci dentro una sola risposta AI"}
+      "yt": [["Titolo video", "https://www.youtube.com/watch?v=..."]]
     }
   ]
 }
 ```
-
-Copertine ammesse:
-- `{"t":"num","big":"33","small":"anni alla guida di Nvidia"}` — `big` cortissimo (max 7 caratteri).
-- `{"t":"bars","rows":[["Etichetta",40,"oltre 40.000",0],["Etichetta",100,"oltre 100.000",1]],"caption":"...","min":0,"max":100,"mark":50}`
-  — l'ultimo valore 1 evidenzia la barra; `min`, `max`, `mark` facoltativi.
-- `{"t":"dots","n":10,"on":5,"caption":"..."}`
-- `{"t":"flow","steps":["A","B","C"],"hi":[2],"caption":"..."}`
 
 Per un 1vs1 aggiungere: `"vs": true`, `"facts": ["fatto neutro", ...]`,
 `"a": {"h":"Sì: ...","who":"La tesi di ...","pts":["...","..."]}`, `"b": {...}`.
@@ -115,7 +107,7 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 1. Cercare le notizie delle ultime 48 ore per ogni sezione (WebSearch, anche in inglese e cinese).
 2. Aprire e leggere per intero le fonti candidate (WebFetch). Scartare ciò che non passa le regole.
 3. Scegliere al massimo 2 per sezione e 10 in tutto; scegliere l'apertura (la più rilevante non divisiva).
-4. Scrivere `edition.json`, salvare la precedente in `archive/AAAA-MM-GG.json`.
+4. Scrivere `edition.json`, salvarne una copia identica in `archive/AAAA-MM-GG.json` (data di oggi) e aggiungere in fondo a `archive/index.json` la voce `{"date":"AAAA-MM-GG","label":"…","n":numero_notizie}` (senza duplicati). L'archivio si sfoglia dalla pagina con `?d=AAAA-MM-GG`.
 5. Validare il JSON, fare commit su `main` con messaggio "Edizione AAAA-MM-GG" e push.
 6. Sezioni private: se lo strumento claude-artifacts `db_write` è disponibile, aggiornare il documento
    `private/edition` dell'artifact `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con lo stesso formato

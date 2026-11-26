@@ -169,6 +169,16 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .sf span.hi{background:linear-gradient(135deg,#753cef,#ff3d71)}
 .sf em{font-style:normal;color:rgba(255,255,255,.6)}
 @media(max-width:600px){.sr{grid-template-columns:minmax(0,7em) minmax(0,1fr) auto;font-size:13px}}
+.c-ads{--c:#753cef}.c-ia{--c:#e0306a}.c-regole{--c:#2563eb}.c-ind{--c:#d97706}.c-lavoro{--c:#059669}.c-succ{--c:#0891b2}
+.c-pol{--c:#dc2626}.c-eco{--c:#ea580c}.c-geo{--c:#0284c7}.c-cielo{--c:#4f46e5}.c-uap{--c:#0d9488}.c-rimini{--c:#ca8a04}.c-f1{--c:#b91c1c}
+.kick{display:inline-block;background:var(--c,#753cef);color:#fff!important;border-radius:6px;padding:3px 9px;font-size:13px;font-weight:700}
+.catcov{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;background:radial-gradient(120% 120% at 100% 0%,color-mix(in srgb,var(--c,#753cef) 85%,#fff 0%),transparent 65%),radial-gradient(100% 100% at 0% 100%,color-mix(in srgb,var(--c,#753cef) 55%,#14121c),transparent 70%),#14121c}
+.catcov::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1px);background-size:18px 18px}
+.catcov span{position:relative;z-index:1;font:800 clamp(22px,3.4vw,38px)/1.05 "Inter",sans-serif;letter-spacing:-.02em;color:#fff;background:var(--c,#753cef);padding:.4em .7em;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.35);text-align:center;max-width:86%}
+.lead .catcov span{font-size:clamp(28px,4.4vw,52px)}
+
+.end{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))!important}
+.archl{max-height:260px;overflow:auto}
 .cover .sr b{font:700 15px/1.2 "Inter",sans-serif;letter-spacing:0;white-space:nowrap}
 .cover .ck{font-size:13px;font-weight:700;color:rgba(255,255,255,.8)}
 .cover b{font:800 clamp(52px,9vw,112px)/.9 "Inter",sans-serif;letter-spacing:-.05em;white-space:nowrap}
@@ -227,6 +237,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
   <div class="end">
     <div class="box"><h3>Come funziona</h3><ul><li>Solo notizie delle ultime 48 ore, al massimo 10 al giorno.</li><li>Ogni notizia viene da fonti primarie o da due fonti indipendenti.</li><li>I temi che dividono escono in formato 1vs1, con le due tesi a confronto.</li></ul></div>
     <div class="box"><h3>Il giornale impara da te</h3><ul id="learn"></ul></div>
+    <div class="box arch"><h3>Edizioni precedenti</h3><ul id="arch" class="archl"><li>Caricamento…</li></ul></div>
   </div>
   <section class="done" id="done"><h2>Hai finito. A domani.</h2><p>Edizione chiusa, nessuno scroll infinito. La prossima arriva domattina.</p></section>
   <footer><p style="margin:0 0 6px">Questo non è un giornale: è una rassegna automatica realizzata con l'intelligenza artificiale, senza redazione né direttore responsabile. I riassunti possono contenere errori: verifica sempre sulle fonti.</p>A cura di <a href="https://raimondo.it">Federico Raimondo</a>.</footer>
@@ -241,20 +252,16 @@ const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v)
 const HUE={ads:0,ind:1,ia:4,regole:0,lavoro:1,succ:3};
 let S=[],SECS=[],N=0,st={read:{},pref:{}};
 const bars=c=>{const lo=+c.min||0,hi=+c.max||Math.max(...c.rows.map(r=>+r[1]||0)),pc=v=>Math.max(3,Math.min(100,(v-lo)/(hi-lo||1)*100)).toFixed(1);return `<div class="sb">${c.rows.map(r=>`<div class="sr"><span>${esc(r[0])}</span><i><u style="width:${pc(+r[1])}%" class="${r[3]?"hi":""}"></u>${c.mark!=null?`<s style="left:${pc(+c.mark)}%"></s>`:""}</i><b>${esc(r[2])}</b></div>`).join("")}</div>`};
-function cover(s){const c=s.cover||{};const v=HUE[s.sec]??2;const k=`<span class="ck">${esc(s.kick)}</span>`;
-  if(c.t==="bars"&&Array.isArray(c.rows))return `<div class="cover sch v${v}">${k}${bars(c)}<span class="cs">${esc(c.caption)}</span></div>`;
-  if(c.t==="dots")return `<div class="cover sch v${v}">${k}<div class="sp">${Array.from({length:Math.min(20,+c.n||10)},(_,i)=>`<i class="${i<(+c.on||0)?"on":""}"></i>`).join("")}</div><span class="cs">${esc(c.caption)}</span></div>`;
-  if(c.t==="flow"&&Array.isArray(c.steps)){const h=new Set(c.hi||[]);return `<div class="cover sch v${v}">${k}<div class="sf">${c.steps.map((x,i)=>`${i?"<em>→</em>":""}<span class="${h.has(i)?"hi":""}">${esc(x)}</span>`).join("")}</div>${c.caption?`<span class="cs">${esc(c.caption)}</span>`:""}</div>`}
-  return `<div class="cover v${v}">${k}<b>${esc(c.big||s.kick)}</b><span class="cs">${esc(c.small)}</span></div>`}
+function cover(s){const n=(SECS.find(x=>x[0]===s.sec)||[0,s.kick])[1];return `<div class="catcov"><span>${esc(n)}</span></div>`}
 const parts=s=>`<span class="kick">${esc(s.kick)}</span> <span class="date">· ${esc(s.date)}</span>`;
 const srcs=s=>`<div class="src">Fonti: ${(s.src||[]).filter(x=>okUrl(x[1])).map(([n,u,l])=>`<a href="${esc(u)}">${esc(n)}${l==="EN"||l==="ZH"?`<sup class="lg">${l}</sup>`:l==="GOV"?`<sup class="lg">fonte governativa</sup>`:""}</a>`).join("")}</div>${(s.yt||[]).length?`<div class="src vid">Video: ${s.yt.filter(x=>okUrl(x[1])).map(([n,u])=>`<a href="${esc(u)}"><i aria-hidden="true">▶</i>${esc(n)}</a>`).join("")}</div>`:""}`;
 const x2=l=>l==="GOV"?`<sup class="lg">fonte governativa</sup>`:"";
 const share=s=>{const u=encodeURIComponent(BASE+"#"+s.id),t=encodeURIComponent(s.title+" · News.Raimondo.it");return `<div class="social"><span>Condividi</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}">LinkedIn</a><a href="https://wa.me/?text=${t}%20${u}">WhatsApp</a><a href="https://twitter.com/intent/tweet?text=${t}&url=${u}">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=${u}">Facebook</a><button data-copy="${s.id}">Copia link</button></div>`};
 const tail=s=>`<div class="why"><b>Perché conta</b>${esc(s.why)}</div>${srcs(s)}<div class="acts"><button class="act" data-a="more" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="more"}">Più così</button><button class="act" data-a="less" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="less"}">Meno così</button><button class="act" data-a="read" data-id="${s.id}" aria-pressed="${!!st.read[s.id]}">${st.read[s.id]?"Letto":"Segna come letto"}</button></div>${share(s)}`;
 const side=(c,x)=>`<div class="side ${c}"><h4>${esc(x.h)}</h4><p class="who">${esc(x.who)}</p><ul>${(x.pts||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>`;
-function renderStory(s){const a=document.createElement("article");a.dataset.id=s.id;a.dataset.sec=s.sec;a.id=s.id;
-  if(s.vs&&s.a&&s.b){a.className="story vs";a.innerHTML=`<div class="head"><div>${parts(s)}<h3>${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p><ul class="facts">${(s.facts||[]).map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div><div class="art">${cover(s)}<span class="badge">1vs1</span></div></div><div class="sides">${side("a",s.a)}${side("b",s.b)}</div><div class="foot"><p class="note2">Formato 1vs1: le due tesi più nette, attribuite a chi le sostiene. Il giornale non prende posizione.</p>${tail(s)}</div>`}
-  else{a.className="story";a.innerHTML=`<div class="art">${cover(s)}</div><div class="in">${parts(s)}<h3>${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p>${tail(s)}</div>`}
+function renderStory(s){const a=document.createElement("article");a.classList.add("c-"+s.sec);a.dataset.id=s.id;a.dataset.sec=s.sec;a.id=s.id;
+  if(s.vs&&s.a&&s.b){a.classList.add("story","vs");a.innerHTML=`<div class="head"><div>${parts(s)}<h3>${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p><ul class="facts">${(s.facts||[]).map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div><div class="art">${cover(s)}<span class="badge">1vs1</span></div></div><div class="sides">${side("a",s.a)}${side("b",s.b)}</div><div class="foot"><p class="note2">Formato 1vs1: le due tesi più nette, attribuite a chi le sostiene. Il giornale non prende posizione.</p>${tail(s)}</div>`}
+  else{a.classList.add("story");a.innerHTML=`<div class="art">${cover(s)}</div><div class="in">${parts(s)}<h3>${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p>${tail(s)}</div>`}
   document.getElementById(s.vs?"col-vs":"col-"+s.sec).appendChild(a)}
 function refresh(){
   const r=S.filter(s=>st.read[s.id]).length;
@@ -279,7 +286,7 @@ function boot(ed){
   if(ed.date&&ed.date<today){const p=document.getElementById("past");p.hidden=false;p.textContent="Questa è l'ultima edizione disponibile: quella di oggi non è ancora uscita."}
   document.getElementById("secs").innerHTML=`<div class="sech vsh" data-sec="vs"><h2><span class="vsb">1vs1</span> Il confronto del giorno</h2><p>Le notizie che dividono, con le due tesi più nette messe una di fronte all'altra.</p></div><div class="cards vsc" id="col-vs"></div>`+SECS.map(([k,n])=>`<div class="sech" data-sec="${k}"><h2>${esc(n)}</h2></div><div class="cards" id="col-${k}"></div>`).join("");
   const L=S.find(s=>s.id===ed.lead&&!s.vs);const lead=document.getElementById("lead");
-  if(L){lead.dataset.id=L.id;lead.dataset.sec=L.sec;lead.id=L.id;lead.innerHTML=`<div>${parts(L)}<h2>${esc(L.title)}</h2><p class="sum">${esc(L.sum)}</p>${tail(L)}</div><div class="art">${cover(L)}</div>`}else lead.remove();
+  if(L){lead.classList.add("c-"+L.sec);lead.dataset.id=L.id;lead.dataset.sec=L.sec;lead.id=L.id;lead.innerHTML=`<div>${parts(L)}<h2>${esc(L.title)}</h2><p class="sum">${esc(L.sum)}</p>${tail(L)}</div><div class="art">${cover(L)}</div>`}else lead.remove();
   for(const s of S)if(s!==L)renderStory(s);
   for(const h of document.querySelectorAll(".sech")){const any=document.querySelector(`#col-${h.dataset.sec} article`);if(!any)h.classList.add("empty")}
   const chips=document.getElementById("chips");
@@ -315,7 +322,11 @@ function boot(ed){
   refresh();
   if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)setTimeout(()=>t.scrollIntoView({block:"start"}),60)}
 }
-fetch((document.documentElement.dataset.src||"edition.json")+"?v="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(boot).catch(()=>{document.getElementById("lead").innerHTML='<p class="load">Edizione non disponibile in questo momento. Riprova tra poco.</p>'});
+const DB=document.documentElement.dataset.base||"";
+const qd=new URLSearchParams(location.search).get("d");
+const wantDay=qd&&/^\d{4}-\d{2}-\d{2}$/.test(qd)?qd:null;
+fetch(DB+(wantDay?"archive/"+wantDay+".json":"edition.json")+"?v="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(ed=>{boot(ed);if(wantDay){const p=document.getElementById("past");p.hidden=false;p.innerHTML=`Stai leggendo l'edizione del ${esc(ed.label||wantDay)}. <a href="${esc(location.pathname)}">Torna all'edizione di oggi</a>`}}).catch(()=>{document.getElementById("lead").innerHTML='<p class="load">Edizione non disponibile in questo momento. Riprova tra poco.</p>'});
+fetch(DB+"archive/index.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).then(list=>{const L=(Array.isArray(list)?list:[]).filter(x=>x&&/^\d{4}-\d{2}-\d{2}$/.test(x.date)).slice(-60).reverse();const box=document.getElementById("arch");if(!L.length){box.innerHTML="<li>Le edizioni precedenti compariranno qui dal secondo giorno.</li>";return}box.innerHTML=L.map(x=>`<li><a href="?d=${x.date}">${esc(x.label||x.date)}</a>${x.n?` · ${esc(x.n)} notizie`:""}</li>`).join("")}).catch(()=>{});
 }
 </script>
 </body>

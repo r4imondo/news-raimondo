@@ -5,6 +5,10 @@
  "lead": "aimode",
  "secs": [
   [
+   "ind",
+   "Economia e industria"
+  ],
+  [
    "ads",
    "Pubblicità e AI"
   ],
@@ -15,10 +19,6 @@
   [
    "regole",
    "Regole sull'AI"
-  ],
-  [
-   "ind",
-   "Industria e robotica"
   ],
   [
    "lavoro",
@@ -49,12 +49,7 @@
      "https://www.seroundtable.com/category/google-adwords?amp%3Bpage=2&page=2",
      "EN"
     ]
-   ],
-   "cover": {
-    "t": "num",
-    "big": "4",
-    "small": "annunci dentro una sola risposta AI"
-   }
+   ]
   },
   {
    "id": "chatgpt",
@@ -70,12 +65,7 @@
      "https://buttondown.com/brandonmangan/archive/google-ads-changes-oct-19-nov-1-ads-in-ai-mode-in/",
      "EN"
     ]
-   ],
-   "cover": {
-    "t": "num",
-    "big": "ON",
-    "small": "di default: le riscritture automatiche degli annunci"
-   }
+   ]
   },
   {
    "id": "pmax",
@@ -91,12 +81,7 @@
      "https://www.seroundtable.com/category/google-adwords?amp%3Bpage=2&page=2",
      "EN"
     ]
-   ],
-   "cover": {
-    "t": "num",
-    "big": "PMax",
-    "small": "filtra da sola le ricerche di marca"
-   }
+   ]
   },
   {
    "id": "pmi",
@@ -122,34 +107,7 @@
      "https://en.ilsole24ore.com/radiocor/nRC_02.11.2026_09.55_19410194",
      ""
     ]
-   ],
-   "cover": {
-    "t": "bars",
-    "rows": [
-     [
-      "Agosto",
-      49.6,
-      "49,6",
-      0
-     ],
-     [
-      "Settembre",
-      50.4,
-      "50,4",
-      0
-     ],
-     [
-      "Ottobre",
-      49.4,
-      "49,4",
-      1
-     ]
-    ],
-    "min": 48,
-    "max": 51,
-    "mark": 50,
-    "caption": "PMI manifatturiero Italia: sopra 50 = crescita"
-   }
+   ]
   },
   {
    "id": "gpt",
@@ -171,25 +129,7 @@
      "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-18-2026/",
      "EN"
     ]
-   ],
-   "cover": {
-    "t": "bars",
-    "rows": [
-     [
-      "Modello precedente",
-      100,
-      "1",
-      0
-     ],
-     [
-      "GPT-6.2 Astra",
-      31,
-      "meno di ⅓",
-      1
-     ]
-    ],
-    "caption": "Costo per attività dichiarato da OpenAI"
-   }
+   ]
   },
   {
    "id": "senior",
@@ -210,12 +150,7 @@
      "https://www.agendadigitale.eu/people-and-change/la-forza-lavoro-invecchia-come-devono-cambiare-le-imprese/",
      ""
     ]
-   ],
-   "cover": {
-    "t": "num",
-    "big": "55+",
-    "small": "i lavoratori della conoscenza escono prima"
-   }
+   ]
   },
   {
    "id": "fondi",
@@ -241,12 +176,7 @@
      "https://www.fondoforte.it/wp-content/uploads/2026/07/Avviso-di-sistema-2_26_P.pdf",
      ""
     ]
-   ],
-   "cover": {
-    "t": "num",
-    "big": "506",
-    "small": "milioni raccolti da Fondimpresa nel 2025"
-   }
+   ]
   },
   {
    "id": "robot",
@@ -273,25 +203,7 @@
      "https://en.ilsole24ore.com/art/mitsubishis-humanoid-robots-help-tackle-the-labour-shortage-AJs4DGt",
      ""
     ]
-   ],
-   "cover": {
-    "t": "bars",
-    "rows": [
-     [
-      "Marzo",
-      3,
-      "3 ore",
-      0
-     ],
-     [
-      "Novembre",
-      8,
-      "8 ore",
-      1
-     ]
-    ],
-    "caption": "Turno più lungo di un umanoide Xiaomi in fabbrica"
-   }
+   ]
   },
   {
    "id": "succ",
@@ -312,13 +224,7 @@
      "https://www.pmi.it/?p=503530",
      ""
     ]
-   ],
-   "cover": {
-    "t": "dots",
-    "n": 10,
-    "on": 5,
-    "caption": "Oltre 5 piccoli industriali su 10 hanno più di 60 anni (imprese da 20 a 49 dipendenti)"
-   }
+   ]
   },
   {
    "id": "regole",
@@ -344,21 +250,7 @@
      "https://www.clearygottlieb.com/news-and-insights/publication-listing/italy-ai-regulation-new-rules-and-risks-for-businesses",
      "EN"
     ]
-   ],
-   "cover": {
-    "t": "flow",
-    "steps": [
-     "AI Act UE",
-     "Legge 132/2025",
-     "D.lgs. 179/2026",
-     "AgID e ACN controllano",
-     "Sanzioni fino a 35 mln €"
-    ],
-    "hi": [
-     3,
-     4
-    ]
-   }
+   ]
   },
   {
    "id": "openaica",
@@ -414,12 +306,7 @@
      "https://news.bloomberglaw.com/esg/california-sues-openai-over-entirely-forseeable-agent-breaches",
      "EN"
     ]
-   ],
-   "cover": {
-    "t": "num",
-    "big": "80+",
-    "small": "volte in cui OpenAI ha perso il controllo dei suoi agenti nei test"
-   }
+   ]
   },
   {
    "id": "robocn",
@@ -440,25 +327,7 @@
      "https://www.huxiu.com/article/4905647.html",
      "ZH"
     ]
-   ],
-   "cover": {
-    "t": "bars",
-    "rows": [
-     [
-      "Primo semestre",
-      40,
-      "oltre 40.000",
-      0
-     ],
-     [
-      "Intero 2026 (stima)",
-      100,
-      "oltre 100.000",
-      1
-     ]
-    ],
-    "caption": "Robot umanoidi prodotti in Cina"
-   }
+   ]
   }
  ]
 }
