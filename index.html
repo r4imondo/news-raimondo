@@ -274,6 +274,23 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .me{position:absolute;z-index:2;right:12px;top:calc(var(--meH)*-.81 + 5px);height:var(--meH);width:auto;pointer-events:none;filter:drop-shadow(0 14px 18px rgba(0,0,0,.45))}
 @media(min-width:760px){.mast .brand{padding-right:calc(var(--meH)*.9)}.mrow{min-height:calc(var(--meH)*.81 - 54px)}}
 .glass{padding-right:20px!important}.glass .meta{padding-right:calc(var(--meH)*.72)}.glass .chips{margin-top:14px;position:relative;z-index:3}.bar{padding-top:10px}@media(max-width:600px){.glass{padding:14px 12px!important}.glass .meta{padding-left:4px}.glass .chips{gap:6px}.glass .chip{font-size:14px!important;padding:7px 11px!important}}
+/* effetti discreti */
+@media (prefers-reduced-motion:no-preference){
+.rv{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.rv.shown{opacity:1;transform:none}
+.glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.15) 50%,transparent 60%) no-repeat;background-size:300% 100%;background-position:100% 0;animation:sheen 1.8s .6s ease-out 1 forwards}
+@keyframes sheen{to{background-position:0 0}}
+.me{animation:lean .7s .15s cubic-bezier(.2,.8,.2,1) both}
+@keyframes lean{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.catcov b,.catcov .cn{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.catcov::after{transition:transform .8s ease}
+@media (hover:hover){.story:hover .catcov b,.lead:hover .catcov b{transform:translateY(-3px)}.story:hover .catcov .cn{transform:translateX(-6px)}.story:hover .catcov::after,.lead:hover .catcov::after{transform:scale(1.04)}}
+.cvs u{transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.rv.shown .cvs u{animation:pop .6s .25s cubic-bezier(.3,1.6,.5,1) both}
+@keyframes pop{from{transform:scale(.6)}to{transform:none}}
+.chip,.btn,.act{transition:transform .12s ease,background-color .2s ease,border-color .2s ease}
+.chip:active,.btn:active,.act:active{transform:scale(.96)}
+}
 </style>
 </head>
 <body>
@@ -399,5 +416,11 @@ fetch(DB+(wantDay?"archive/"+wantDay+".json":"edition.json")+"?v="+Date.now(),{c
 fetch(DB+"archive/index.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).then(list=>{const L=(Array.isArray(list)?list:[]).filter(x=>x&&/^\d{4}-\d{2}-\d{2}$/.test(x.date)).slice(-60).reverse();const box=document.getElementById("arch");if(!L.length){box.innerHTML="<li>Le edizioni precedenti compariranno qui dal secondo giorno.</li>";return}box.innerHTML=L.map(x=>`<li><a href="?d=${x.date}">${esc(x.label||x.date)}</a>${x.n?` · ${esc(x.n)} notizie`:""}</li>`).join("")}).catch(()=>{});
 }
 </script>
+<script>(()=>{if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+const io=new IntersectionObserver(es=>{for(const e of es)if(e.isIntersecting){e.target.classList.add("shown");io.unobserve(e.target)}},{rootMargin:"0px 0px -6% 0px"});
+const seen=new WeakSet(),scan=()=>{const vh=innerHeight;for(const el of document.querySelectorAll("article.story,.lead")){if(seen.has(el))continue;seen.add(el);if(el.getBoundingClientRect().top<vh)continue;el.classList.add("rv");io.observe(el)}};
+const go=()=>{scan();new MutationObserver(scan).observe(document.body,{childList:true,subtree:true})};
+document.readyState==="loading"?addEventListener("DOMContentLoaded",()=>setTimeout(go,0)):setTimeout(go,0)})();</script>
+
 </body>
 </html>
