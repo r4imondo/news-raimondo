@@ -423,5 +423,10 @@ const seen=new WeakSet(),scan=()=>{const vh=innerHeight;for(const el of document
 const go=()=>{scan();new MutationObserver(scan).observe(document.body,{childList:true,subtree:true})};
 document.readyState==="loading"?addEventListener("DOMContentLoaded",()=>setTimeout(go,0)):setTimeout(go,0)})();</script>
 
+<script>(()=>{if(location.hash)return;let moved=false;const stop=()=>moved=true;
+["wheel","touchstart","keydown","mousedown"].forEach(e=>addEventListener(e,stop,{once:true,passive:true}));
+addEventListener("load",()=>setTimeout(()=>{if(moved||scrollY>40)return;const t=document.querySelector(".lead")||document.querySelector("article.story");if(!t)return;
+const y=t.getBoundingClientRect().top+scrollY-12;scrollTo({top:y,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})},1000))})();</script>
+
 </body>
 </html>
