@@ -227,7 +227,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 </div>
 <script>
 {
-const BASE="https://news.raimondo.it/";
+const BASE=location.origin+location.pathname;
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const okUrl=u=>typeof u==="string"&&/^https:\/\//.test(u);
 const okId=v=>typeof v==="string"&&/^[a-z0-9-]{1,40}$/.test(v);
