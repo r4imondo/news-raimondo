@@ -8,16 +8,16 @@
       "Economia e industria"
     ],
     [
+      "inc",
+      "Incentivi e formazione"
+    ],
+    [
       "ads",
       "Marketing e AI"
     ],
     [
       "ia",
       "Intelligenza artificiale"
-    ],
-    [
-      "lavoro",
-      "Lavoro e formazione"
     ]
   ],
   "stories": [
@@ -367,7 +367,7 @@
     },
     {
       "id": "lav-protocollo-ministero-anci",
-      "sec": "lavoro",
+      "sec": "inc",
       "kick": "Politiche attive",
       "date": "26 novembre",
       "title": "Lavoro e competenze, Ministero e Comuni firmano un protocollo biennale",

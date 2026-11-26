@@ -13,11 +13,10 @@ Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 ## Sezioni pubbliche (id → nome), in questo ordine
 
 - `ind` → Economia e industria (congiuntura, manifattura, robotica, automazione) — sempre per prima
-- `inc` → Incentivi e finanza agevolata (Transizione 5.0, Nuova Sabatini, crediti d'imposta, bandi regionali, nazionali ed europei, scadenze e click day)
+- `inc` → Incentivi e formazione (Transizione 5.0, Nuova Sabatini, crediti d'imposta, bandi regionali, nazionali ed europei, scadenze e click day; fondi interprofessionali e formazione finanziata; competenze e lavoratori senior nell'era dell'AI)
 - `ads` → Marketing e AI (Google Ads, Meta, ChatGPT Ads, AI Mode, SEO e ricerca con l'AI, marketing B2B, strumenti AI per il marketing, misurazione)
 - `ia` → Intelligenza artificiale (modelli, aziende, sicurezza, adozione nelle imprese; anche AI Act e norme, solo se toccano le imprese)
 - `geo` → Geopolitica e mercati (dazi, guerre, energia, rotte commerciali, export: sempre visti da chi produce ed esporta; niente politica interna)
-- `lavoro` → Lavoro e formazione (competenze, lavoratori senior e AI, fondi interprofessionali)
 - `sci` → Scienza e filosofia (grandi scoperte scientifiche; AI ed etica, coscienza e mente, lavoro e senso; dibattiti tra filosofi, scienziati e laboratori: ottima per i 1vs1)
 
 Niente politica interna, né pubblica né privata (decisione del 26/11/2026).
@@ -94,8 +93,8 @@ Se in futuro verranno riattivate, non dovranno mai finire in questo repository (
   "date": "2026-11-27",
   "label": "Venerdì 27 novembre 2026",
   "lead": "id-della-notizia-di-apertura",
-  "secs": [["ind","Economia e industria"],["inc","Incentivi e finanza agevolata"],["ads","Marketing e AI"],["ia","Intelligenza artificiale"],
-           ["geo","Geopolitica e mercati"],["lavoro","Lavoro e formazione"],["sci","Scienza e filosofia"]],
+  "secs": [["ind","Economia e industria"],["inc","Incentivi e formazione"],["ads","Marketing e AI"],["ia","Intelligenza artificiale"],
+           ["geo","Geopolitica e mercati"],["sci","Scienza e filosofia"]],
   "stories": [
     {
       "id": "slug-minuscolo-con-trattini",
