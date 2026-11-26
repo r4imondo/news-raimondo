@@ -17,7 +17,6 @@ Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 - `ia` → Intelligenza artificiale (modelli, aziende, sicurezza, adozione nelle imprese)
 - `regole` → Regole sull'AI (AI Act, norme italiane, autorità, sanzioni)
 - `lavoro` → Lavoro e formazione (competenze, lavoratori senior e AI, fondi interprofessionali, bandi)
-- `succ` → Passaggio generazionale (successione d'impresa, PMI senza successore)
 
 Le sezioni private NON vanno mai in questo repository (che è pubblico). Vivono solo nella pagina
 privata su claude.ai (vedi in fondo). Sezioni private e ordine obbligatorio:
@@ -84,7 +83,7 @@ economia e geopolitica escono in formato 1vs1.
   "label": "Venerdì 27 novembre 2026",
   "lead": "id-della-notizia-di-apertura",
   "secs": [["ind","Economia e industria"],["ads","Pubblicità e AI"],["ia","Intelligenza artificiale"],
-           ["regole","Regole sull'AI"],["lavoro","Lavoro e formazione"],["succ","Passaggio generazionale"]],
+           ["regole","Regole sull'AI"],["lavoro","Lavoro e formazione"]],
   "stories": [
     {
       "id": "slug-minuscolo-con-trattini",
