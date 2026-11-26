@@ -6,14 +6,14 @@ Il sito legge un solo file: `edition.json`. Ogni mattina va riscritto per intero
 ## Pubblico e posizionamento
 
 Lettori: imprenditori e manager di PMI italiane B2B (manifattura, industria, 500K–5M€ di fatturato),
-interessati a pubblicità digitale, intelligenza artificiale e industria.
+interessati a marketing digitale, intelligenza artificiale e industria.
 Curatore: Federico Raimondo (raimondo.it), consulente di marketing e AI per PMI industriali.
 Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 
 ## Sezioni pubbliche (id → nome), in questo ordine
 
 - `ind` → Economia e industria (congiuntura, manifattura, robotica, automazione) — sempre per prima
-- `ads` → Pubblicità e AI (Google Ads, Meta, ChatGPT Ads, AI Mode, misurazione)
+- `ads` → Marketing e AI (Google Ads, Meta, ChatGPT Ads, AI Mode, SEO e ricerca con l'AI, marketing B2B, strumenti AI per il marketing, misurazione)
 - `ia` → Intelligenza artificiale (modelli, aziende, sicurezza, adozione nelle imprese)
 - `regole` → Regole sull'AI (AI Act, norme italiane, autorità, sanzioni)
 - `lavoro` → Lavoro e formazione (competenze, lavoratori senior e AI, fondi interprofessionali, bandi)
@@ -91,7 +91,7 @@ posizioni contrapposte reali (sempre per politica, economia e geopolitica).
   "date": "2026-11-27",
   "label": "Venerdì 27 novembre 2026",
   "lead": "id-della-notizia-di-apertura",
-  "secs": [["ind","Economia e industria"],["ads","Pubblicità e AI"],["ia","Intelligenza artificiale"],
+  "secs": [["ind","Economia e industria"],["ads","Marketing e AI"],["ia","Intelligenza artificiale"],
            ["regole","Regole sull'AI"],["lavoro","Lavoro e formazione"]],
   "stories": [
     {

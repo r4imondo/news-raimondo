@@ -1,6 +1,6 @@
 # News.Raimondo.it
 
-Rassegna quotidiana di notizie su pubblicità digitale, intelligenza artificiale e industria per le PMI B2B, selezionate e riassunte con l'intelligenza artificiale.
+Rassegna quotidiana di notizie su marketing digitale, intelligenza artificiale e industria per le PMI B2B, selezionate e riassunte con l'intelligenza artificiale.
 
 Sito: https://news.raimondo.it
 
