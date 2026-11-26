@@ -63,6 +63,8 @@ posizioni contrapposte reali (sempre per politica, economia e geopolitica).
    Vincolo che vince su tutto: MAI inventare o forzare una controparte. Se le fonti riportano una sola
    posizione, cerca la reazione di chi è coinvolto (associazioni, concorrenti, sindacati, analisti,
    ricercatori); se non la trovi in fonti verificabili, la notizia esce in formato normale.
+   Ordine: i 1vs1 vengono SEMPRE prima delle altre notizie, sia nella pagina sia dentro ogni sezione
+   (in `stories` elencare prima tutti i 1vs1). La pagina mostra la fascia 1vs1 prima dell'apertura.
    Il giornale non prende posizione. I primi due 1vs1 vanno nella fascia "Il confronto del giorno"
    in cima; gli altri restano nella loro sezione con il layout 1vs1 (lo fa la pagina, in ordine di
    `stories`: metti per primi i due confronti più forti).

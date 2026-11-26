@@ -293,6 +293,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .chip:active,.btn:active,.act:active{transform:scale(.96)}
 }
 .catcov[data-open]{cursor:pointer}.catcov[data-open]:focus-visible{outline:3px solid #fff;outline-offset:-3px}
+.cards>.vs{order:-1}.leadband{margin:34px calc(50% - 50vw);padding:34px 0}.leadband>.wrap>.lead{margin:0}
 </style>
 </head>
 <body>
@@ -374,7 +375,7 @@ function boot(ed){
   document.getElementById("secs").innerHTML=`<div class="sech vsh" data-sec="vs"><h2><span class="vsb">1vs1</span> Il confronto del giorno</h2><p>Le notizie che dividono, con le due tesi più nette messe una di fronte all'altra.</p></div><div class="cards vsc" id="col-vs"></div>`+SECS.map(([k,n])=>`<div class="sech" data-sec="${k}"><h2>${esc(n)}</h2></div><div class="cards" id="col-${k}"></div>`).join("");
   const L=S.find(s=>s.id===ed.lead&&!s.vs);const lead=document.getElementById("lead");
   if(L){lead.classList.add("c-"+L.sec);lead.dataset.id=L.id;lead.dataset.sec=L.sec;lead.id=L.id;lead.innerHTML=`<div>${parts(L)}<h2 class="vh">${esc(L.title)}</h2><p class="sum">${esc(L.sum)}</p>${tail(L)}</div><div class="art">${cover(L)}</div>`}else lead.remove();
-  for(const s of S)if(s!==L)renderStory(s);
+  for(const s of S)if(s!==L)renderStory(s);{const cv=document.getElementById("col-vs"),ld=document.querySelector(".lead");if(cv&&ld&&cv.querySelector("article")&&!document.querySelector(".leadband")){const b=document.createElement("div");b.className="top leadband";const w=document.createElement("div");w.className="wrap";b.appendChild(w);cv.after(b);w.appendChild(ld)}}
   for(const h of document.querySelectorAll(".sech")){const any=document.querySelector(`#col-${h.dataset.sec} article`);if(!any)h.classList.add("empty")}
   const chips=document.getElementById("chips");
   const topics=[["1vs1","1vs1"],["all","Tutto"],...SECS.filter(([k])=>S.some(s=>s.sec===k))];
@@ -427,7 +428,7 @@ document.readyState==="loading"?addEventListener("DOMContentLoaded",()=>setTimeo
 
 <script>(()=>{if(location.hash)return;let moved=false;const stop=()=>moved=true;
 ["wheel","touchstart","keydown","mousedown"].forEach(e=>addEventListener(e,stop,{once:true,passive:true}));
-addEventListener("load",()=>setTimeout(()=>{if(moved||scrollY>40)return;const t=document.querySelector(".lead")||document.querySelector("article.story");if(!t)return;
+addEventListener("load",()=>setTimeout(()=>{if(moved||scrollY>40)return;const t=document.querySelector("#col-vs article")||document.querySelector(".lead")||document.querySelector("article.story");if(!t)return;
 const y=t.getBoundingClientRect().top+scrollY-12;scrollTo({top:y,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})},1000))})();</script>
 
 <script>document.addEventListener("keydown",e=>{const o=e.target.closest&&e.target.closest("[data-open]");if(o&&(e.key==="Enter"||e.key===" ")){e.preventDefault();o.click()}});</script>
