@@ -136,8 +136,8 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 4. La data dell'edizione è SEMPRE quella di oggi nel fuso Europe/Rome (anche se l'esecuzione è serale).
    Scrivere `edition.json`, salvarne una copia identica in `archive/AAAA-MM-GG.json` (data di oggi) e aggiungere in fondo a `archive/index.json` la voce `{"date":"AAAA-MM-GG","label":"…","n":numero_notizie}` (senza duplicati). L'archivio si sfoglia dalla pagina con `?d=AAAA-MM-GG`.
 4b. Pagine di condivisione: eseguire `python3 scripts/share.py` (se manca Pillow: `pip install --break-system-packages pillow`).
-   Crea `a/AAAA-MM-GG/<id>.html` e `.png` con titolo e immagine di ogni notizia per le anteprime social.
-   Includere la cartella `a/` nel commit. Se lo script fallisce, proseguire comunque (il sito ha un rinvio di riserva).
+   Crea `n/AAAA-MM-GG/<id>.html` e `.png` con titolo e immagine di ogni notizia per le anteprime social.
+   Includere la cartella `n/` nel commit. Se lo script fallisce, proseguire comunque (il sito ha un rinvio di riserva).
 5. Validare il JSON, fare commit su `main` con messaggio "Edizione AAAA-MM-GG" e push.
 6. Pagina su claude.ai: se lo strumento claude-artifacts `db_write` è disponibile, scrivere il documento `private/public` dell'artifact
    `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con il contenuto IDENTICO di `edition.json` (stessi campi `date`, `label`, `lead`, `secs`,

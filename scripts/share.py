@@ -2,8 +2,8 @@
 """Genera le pagine di condivisione (anteprime per Facebook, LinkedIn, WhatsApp, X).
 
 Uso: python3 scripts/share.py [file_edizione.json]   (default: edition.json)
-Per ogni notizia crea a/AAAA-MM-GG/<id>.html (tag Open Graph + rinvio alla notizia)
-e, se Pillow è disponibile, a/AAAA-MM-GG/<id>.png (immagine 1200x630 con il titolo).
+Per ogni notizia crea n/AAAA-MM-GG/<id>.html (tag Open Graph + rinvio alla notizia)
+e, se Pillow è disponibile, n/AAAA-MM-GG/<id>.png (immagine 1200x630 con il titolo).
 """
 import html, json, os, re, sys, textwrap
 
@@ -55,7 +55,7 @@ def main():
     ed = json.load(open(src, encoding="utf-8"))
     date = ed["date"]; assert re.match(r"^\d{4}-\d{2}-\d{2}$", date)
     names = {k: v for k, v in ed.get("secs", [])}
-    out = os.path.join(ROOT, "a", date); os.makedirs(out, exist_ok=True)
+    out = os.path.join(ROOT, "n", date); os.makedirs(out, exist_ok=True)
     n = 0
     for s in ed["stories"]:
         sid = s["id"]
@@ -63,7 +63,7 @@ def main():
         cat = names.get(s["sec"], s.get("kick", ""))
         img = f"{SITE}/thumb.png"
         if card(os.path.join(out, sid + ".png"), s["title"], cat, COL.get(s["sec"], "#753cef"), bool(s.get("vs"))):
-            img = f"{SITE}/a/{date}/{sid}.png"
+            img = f"{SITE}/n/{date}/{sid}.png"
         target = f"{SITE}/?d={date}#{sid}"
         desc = s.get("sum", "")
         if len(desc) > 220: desc = desc[:217].rsplit(" ", 1)[0] + "…"
@@ -80,7 +80,7 @@ def main():
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:image" content="{e(img)}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:url" content="{SITE}/a/{date}/{sid}.html">
+<meta property="og:url" content="{SITE}/n/{date}/{sid}.html">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
 <script>location.replace({json.dumps(target)})</script>
@@ -89,7 +89,7 @@ def main():
 </body></html>
 """
         open(os.path.join(out, sid + ".html"), "w", encoding="utf-8").write(page); n += 1
-    print(f"{n} pagine di condivisione in a/{date}/")
+    print(f"{n} pagine di condivisione in n/{date}/")
 
 if __name__ == "__main__":
     main()
