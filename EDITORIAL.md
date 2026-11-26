@@ -50,8 +50,17 @@ Se in futuro verranno riattivate, non dovranno mai finire in questo repository (
 4. **Quantità e consumo.** Al massimo 2 notizie per sezione e 10 in tutto, 1vs1 compresi. Per ogni notizia
    aprire al massimo 3 fonti: se non regge con quelle, scartarla senza cercarne altre. Mai a scapito
    di freschezza e verifica.
-5. **Lingue.** Per AI, robotica e temi tecnici usare anche fonti in inglese e cinese; scrivere sempre
-   in italiano. Indicare la lingua della fonte: "EN", "ZH", "GOV" (governativa), "" per italiano.
+5. **Lingue e fonti cinesi.** Scrivere sempre in italiano. Indicare la lingua della fonte: "EN", "ZH",
+   "GOV" (governativa), "" per italiano.
+   Le fonti cinesi sono OBBLIGATORIE da cercare (con query in cinese) per Intelligenza artificiale,
+   Economia e industria (manifattura, robotica, auto elettriche, componentistica), Geopolitica e mercati
+   (dazi, export, terre rare) e Scienza e filosofia. Obiettivo: almeno 2 notizie per edizione con almeno
+   una fonte in cinese, se ci sono notizie valide. Il punto di vista cinese è prezioso anche come
+   controparte nei 1vs1 (per esempio Pechino contro Bruxelles sui dazi).
+   Fonti cinesi utili: Caixin 财新, Yicai 第一财经, The Paper 澎湃新闻, Jiemian 界面新闻, 36Kr, Huxiu 虎嗅,
+   Jiqizhixin 机器之心, QbitAI 量子位, Sina Tech 新浪科技, South China Morning Post (in inglese).
+   Governative (etichetta "GOV", da attribuire sempre come posizione ufficiale): Xinhua 新华社, People's Daily
+   人民日报, China Daily, Global Times, ministeri (MOFCOM 商务部, MIIT 工信部).
 6. **1vs1, il formato di punta.** Il 1vs1 è il formato predefinito: usalo SEMPRE quando nelle fonti
    lette esistono due posizioni contrapposte reali e attribuibili. Non solo politica: anche regole
    contese, cause legali, scontri tra aziende, aziende contro critici o autorità, analisti divisi su un
