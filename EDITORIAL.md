@@ -18,7 +18,12 @@ Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 - `regole` → Regole sull'AI (AI Act, norme italiane, autorità, sanzioni)
 - `lavoro` → Lavoro e formazione (competenze, lavoratori senior e AI, fondi interprofessionali, bandi)
 
-Non ci sono sezioni private (eliminate il 26/11/2026): l'edizione è solo quella pubblica.
+Le sezioni private NON vanno mai in questo repository (che è pubblico). Vivono solo nella pagina
+privata su claude.ai (vedi in fondo). Sezioni private e ordine obbligatorio:
+`pol` Politica, `eco` Economia, `geo` Geopolitica (queste tre compaiono in cima, prima delle sezioni
+pubbliche), poi `cielo` Astronomia e spazio, `rimini` Rimini e Romagna (sempre ultima).
+UAP e Formula 1 sono state eliminate il 26/11/2026. Massimo 1 notizia per sezione privata; anche qui vale la regola 6: 1vs1 ogni volta che ci sono due
+posizioni contrapposte reali (sempre per politica, economia e geopolitica).
 
 ## Regole (decise con Federico il 26/11/2026)
 
@@ -121,7 +126,10 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 4. La data dell'edizione è SEMPRE quella di oggi nel fuso Europe/Rome (anche se l'esecuzione è serale).
    Scrivere `edition.json`, salvarne una copia identica in `archive/AAAA-MM-GG.json` (data di oggi) e aggiungere in fondo a `archive/index.json` la voce `{"date":"AAAA-MM-GG","label":"…","n":numero_notizie}` (senza duplicati). L'archivio si sfoglia dalla pagina con `?d=AAAA-MM-GG`.
 5. Validare il JSON, fare commit su `main` con messaggio "Edizione AAAA-MM-GG" e push.
-6. Pagina su claude.ai: se lo strumento claude-artifacts `db_write` è disponibile, scrivere il documento `private/public` dell'artifact
+6. Sezioni private: se lo strumento claude-artifacts `db_write` è disponibile, aggiornare il documento
+   `private/edition` dell'artifact `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con lo stesso formato
+   (`secs` nell'ordine indicato sopra, anche se una sezione è vuota, + `stories`, al massimo 1 notizia per sezione privata, stesse regole). Altrimenti saltare.
+7. Pagina su claude.ai: se lo strumento claude-artifacts `db_write` è disponibile, scrivere il documento `private/public` dell'artifact
    `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con il contenuto IDENTICO di `edition.json` (stessi campi `date`, `label`, `lead`, `secs`,
    `stories`). La pagina su claude.ai lo legge per mostrare l'edizione del giorno; se manca, mostra la demo.
    Prima leggerlo con `db_get` per avere la versione (`ifVersion`), poi `db_write` con op `set`.
