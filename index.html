@@ -330,7 +330,7 @@ const side=(c,x)=>`<div class="side ${c}"><h4>${esc(x.h)}</h4><p class="who">${e
 function renderStory(s){const a=document.createElement("article");a.classList.add("c-"+s.sec);a.dataset.id=s.id;a.dataset.sec=s.sec;a.id=s.id;
   if(s.vs&&s.a&&s.b){a.classList.add("story","vs");a.innerHTML=`<div class="head"><div>${parts(s)}<h3 class="vh">${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p><ul class="facts">${(s.facts||[]).map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div><div class="art">${cover(s)}<span class="badge">1vs1</span></div></div><div class="sides">${side("a",s.a)}${side("b",s.b)}</div><div class="foot"><p class="note2">Formato 1vs1: le due tesi più nette, attribuite a chi le sostiene. Il giornale non prende posizione.</p>${tail(s)}</div>`}
   else{a.classList.add("story");a.innerHTML=`<div class="art">${cover(s)}</div><div class="in">${parts(s)}<h3 class="vh">${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p>${tail(s)}</div>`}
-  document.getElementById(s.vs?"col-vs":"col-"+s.sec).appendChild(a)}
+  document.getElementById(s.vs&&(window.__vsTop=(window.__vsTop||0)+1)<=2?"col-vs":"col-"+s.sec).appendChild(a)}
 function refresh(){
   const r=S.filter(s=>st.read[s.id]).length;
   document.getElementById("progtxt").textContent=`${r} di ${N} letti`;

@@ -22,8 +22,8 @@ Le sezioni private NON vanno mai in questo repository (che è pubblico). Vivono 
 privata su claude.ai (vedi in fondo). Sezioni private e ordine obbligatorio:
 `pol` Politica, `eco` Economia, `geo` Geopolitica (queste tre compaiono in cima, prima delle sezioni
 pubbliche), poi `cielo` Astronomia e spazio, `uap` UAP, `rimini` Rimini e Romagna (penultima),
-`f1` Formula 1 (sempre ultima). Massimo 1 notizia per sezione privata; le notizie divisive di politica,
-economia e geopolitica escono in formato 1vs1.
+`f1` Formula 1 (sempre ultima). Massimo 1 notizia per sezione privata; anche qui vale la regola 6: 1vs1 ogni volta che ci sono due
+posizioni contrapposte reali (sempre per politica, economia e geopolitica).
 
 ## Regole (decise con Federico il 26/11/2026)
 
@@ -52,10 +52,19 @@ economia e geopolitica escono in formato 1vs1.
    punta ad almeno 2 per sezione: meglio un'edizione ricca, ma mai a scapito di freschezza e verifica.
 5. **Lingue.** Per AI, robotica e temi tecnici usare anche fonti in inglese e cinese; scrivere sempre
    in italiano. Indicare la lingua della fonte: "EN", "ZH", "GOV" (governativa), "" per italiano.
-6. **1vs1.** Ogni notizia divisiva (politica, regolazione contesa, cause legali, scontri tra aziende…)
-   esce in formato 1vs1: fatti neutri + le due tesi più nette, ciascuna ATTRIBUITA a chi la sostiene,
-   con 2-4 punti per lato, senza inventare posizioni né citazioni. Il giornale non prende posizione.
-   Vanno nella fascia "Il confronto del giorno" in cima.
+6. **1vs1, il formato di punta.** Il 1vs1 è il formato predefinito: usalo SEMPRE quando nelle fonti
+   lette esistono due posizioni contrapposte reali e attribuibili. Non solo politica: anche regole
+   contese, cause legali, scontri tra aziende, aziende contro critici o autorità, analisti divisi su un
+   dato, favorevoli e contrari a una tecnologia, a un investimento o a una scelta industriale.
+   Struttura: fatti neutri + le due tesi più nette, ciascuna ATTRIBUITA a chi la sostiene (nel campo
+   `who`, breve: "La tesi di Confindustria", max ~30 caratteri dopo "La tesi di"), 2-4 punti per lato.
+   Obiettivo: almeno metà delle notizie dell'edizione in formato 1vs1, se le fonti lo permettono.
+   Vincolo che vince su tutto: MAI inventare o forzare una controparte. Se le fonti riportano una sola
+   posizione, cerca la reazione di chi è coinvolto (associazioni, concorrenti, sindacati, analisti,
+   ricercatori); se non la trovi in fonti verificabili, la notizia esce in formato normale.
+   Il giornale non prende posizione. I primi due 1vs1 vanno nella fascia "Il confronto del giorno"
+   in cima; gli altri restano nella loro sezione con il layout 1vs1 (lo fa la pagina, in ordine di
+   `stories`: metti per primi i due confronti più forti).
 7. **Immagini.** Nessuna foto e nessun grafico: la copertina mostra solo il nome della categoria su un badge
    colorato, generato dalla pagina. Non serve il campo `cover`.
 8. **Video.** Facoltativi, solo da canali di testate o aziende ufficiali.
