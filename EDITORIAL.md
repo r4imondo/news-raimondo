@@ -116,3 +116,11 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 6. Sezioni private: se lo strumento claude-artifacts `db_write` è disponibile, aggiornare il documento
    `private/edition` dell'artifact `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con lo stesso formato
    (`secs` private + `stories`, al massimo 1 notizia per sezione privata, stesse regole). Altrimenti saltare.
+
+## Pubblicazione su raimondo.it/news
+
+La cartella `per-raimondo-it/` contiene la versione della pagina caricata a mano nella cartella `/news`
+del sito WordPress raimondo.it. Legge `edition.json` direttamente da GitHub
+(raw.githubusercontent.com), quindi si aggiorna da sola ogni mattina senza ricaricare nulla.
+Se cambia la grafica (`index.html`), va rigenerata e ricaricata a mano da Federico.
+L'edizione automatica NON tocca questa cartella.
