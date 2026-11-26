@@ -18,12 +18,7 @@ Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 - `regole` → Regole sull'AI (AI Act, norme italiane, autorità, sanzioni)
 - `lavoro` → Lavoro e formazione (competenze, lavoratori senior e AI, fondi interprofessionali, bandi)
 
-Le sezioni private NON vanno mai in questo repository (che è pubblico). Vivono solo nella pagina
-privata su claude.ai (vedi in fondo). Sezioni private e ordine obbligatorio:
-`pol` Politica, `eco` Economia, `geo` Geopolitica (queste tre compaiono in cima, prima delle sezioni
-pubbliche), poi `cielo` Astronomia e spazio, `uap` UAP, `rimini` Rimini e Romagna (penultima),
-`f1` Formula 1 (sempre ultima). Massimo 1 notizia per sezione privata; anche qui vale la regola 6: 1vs1 ogni volta che ci sono due
-posizioni contrapposte reali (sempre per politica, economia e geopolitica).
+Non ci sono sezioni private (eliminate il 26/11/2026): l'edizione è solo quella pubblica.
 
 ## Regole (decise con Federico il 26/11/2026)
 
@@ -48,8 +43,9 @@ posizioni contrapposte reali (sempre per politica, economia e geopolitica).
      YouTube che non sono di testate o aziende.
    - Esclusi: siti senza autore o data, siti che riscrivono notizie altrui.
    - Media statali cinesi (Xinhua, China Securities Journal…): lingua "GOV" = etichetta "fonte governativa".
-4. **Quantità.** Al massimo 3 notizie per sezione e 15 in tutto, 1vs1 compresi. Se ci sono notizie valide,
-   punta ad almeno 2 per sezione: meglio un'edizione ricca, ma mai a scapito di freschezza e verifica.
+4. **Quantità e consumo.** Al massimo 2 notizie per sezione e 10 in tutto, 1vs1 compresi. Per ogni notizia
+   aprire al massimo 3 fonti: se non regge con quelle, scartarla senza cercarne altre. Mai a scapito
+   di freschezza e verifica.
 5. **Lingue.** Per AI, robotica e temi tecnici usare anche fonti in inglese e cinese; scrivere sempre
    in italiano. Indicare la lingua della fonte: "EN", "ZH", "GOV" (governativa), "" per italiano.
 6. **1vs1, il formato di punta.** Il 1vs1 è il formato predefinito: usalo SEMPRE quando nelle fonti
@@ -69,7 +65,7 @@ posizioni contrapposte reali (sempre per politica, economia e geopolitica).
    colorato, generato dalla pagina. Non serve il campo `cover`.
 8. **Video.** Facoltativi, solo da canali di testate o aziende ufficiali.
 12. **Approfondimento.** Ogni notizia (non i 1vs1, dove è facoltativo) ha il campo `deep`: 3-5 paragrafi,
-    circa 200-400 parole, scritti con parole proprie mettendo insieme le fonti lette per intero.
+    circa 150-250 parole, scritti con parole proprie mettendo insieme le fonti lette per intero.
     Contenuto: contesto e antefatti, dettagli e numeri presenti nelle fonti, cosa è confermato e cosa no,
     posizioni dei soggetti coinvolti, cosa succede dopo. Non ricostruire l'articolo originale paragrafo per
     paragrafo, non copiare frasi, niente numeri o citazioni che non siano nelle fonti.
@@ -121,15 +117,12 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 
 1. Cercare le notizie delle ultime 48 ore per ogni sezione (WebSearch, anche in inglese e cinese).
 2. Aprire e leggere per intero le fonti candidate (WebFetch). Scartare ciò che non passa le regole.
-3. Scegliere al massimo 3 per sezione e 15 in tutto; scegliere l'apertura (la più rilevante non divisiva).
+3. Scegliere al massimo 2 per sezione e 10 in tutto; scegliere l'apertura (la più rilevante non divisiva).
 4. La data dell'edizione è SEMPRE quella di oggi nel fuso Europe/Rome (anche se l'esecuzione è serale).
    Scrivere `edition.json`, salvarne una copia identica in `archive/AAAA-MM-GG.json` (data di oggi) e aggiungere in fondo a `archive/index.json` la voce `{"date":"AAAA-MM-GG","label":"…","n":numero_notizie}` (senza duplicati). L'archivio si sfoglia dalla pagina con `?d=AAAA-MM-GG`.
 5. Validare il JSON, fare commit su `main` con messaggio "Edizione AAAA-MM-GG" e push.
-6. Sezioni private: se lo strumento claude-artifacts `db_write` è disponibile, aggiornare il documento
-   `private/edition` dell'artifact `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con lo stesso formato
-   (`secs` nell'ordine indicato sopra, anche se una sezione è vuota, + `stories`, al massimo 1 notizia per sezione privata, stesse regole). Altrimenti saltare.
-7. Pagina su claude.ai: con lo stesso strumento scrivere anche il documento `private/public` dello stesso
-   artifact con il contenuto IDENTICO di `edition.json` (stessi campi `date`, `label`, `lead`, `secs`,
+6. Pagina su claude.ai: se lo strumento claude-artifacts `db_write` è disponibile, scrivere il documento `private/public` dell'artifact
+   `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con il contenuto IDENTICO di `edition.json` (stessi campi `date`, `label`, `lead`, `secs`,
    `stories`). La pagina su claude.ai lo legge per mostrare l'edizione del giorno; se manca, mostra la demo.
    Prima leggerlo con `db_get` per avere la versione (`ifVersion`), poi `db_write` con op `set`.
 
