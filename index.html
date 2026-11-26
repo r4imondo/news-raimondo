@@ -291,6 +291,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .chip,.btn,.act{transition:transform .12s ease,background-color .2s ease,border-color .2s ease}
 .chip:active,.btn:active,.act:active{transform:scale(.96)}
 }
+.catcov[data-open]{cursor:pointer}.catcov[data-open]:focus-visible{outline:3px solid #fff;outline-offset:-3px}
 </style>
 </head>
 <body>
@@ -335,7 +336,7 @@ function cover(s){const n=(SECS.find(x=>x[0]===s.sec)||[0,s.kick])[1];
   const t=String(s.title||""),L=t.length,cls=["catcov",L<=50?"t-s":L<=84?"t-m":"t-l"];let x="";
   if(s.vs&&s.a&&s.b){const A=nm(s.a),B=nm(s.b);if(A&&B&&A.length<=34&&B.length<=34){cls.push("is-vs");x=`<div class="cvs" aria-hidden="true"><em>${esc(A)}</em><u>vs</u><em>${esc(B)}</em></div>`}}
   else{const m=t.match(/(?:^|[\s(«“"'])(\d{1,3}(?:[.,]\d{1,2})?%?)(?=$|[\s).,;:»”"'?!])/);if(m&&m[1].length<=5)x=`<i class="cn k${m[1].length}" aria-hidden="true">${esc(m[1])}</i>`}
-  return `<div class="${cls.join(" ")}"><span class="ck">${esc(n)}</span>${x}<b>${esc(t)}</b></div>`
+  return `<div class="${cls.join(" ")}"${Array.isArray(s.deep)&&s.deep.length?` data-open="${esc(s.id)}" role="button" tabindex="0" aria-label="Leggi l'approfondimento"`:""}><span class="ck">${esc(n)}</span>${x}<b>${esc(t)}</b></div>`
 }
 const parts=s=>`<span class="date">${esc(s.date)}</span>`;
 const srcs=s=>`<div class="src">Fonti: ${(s.src||[]).filter(x=>okUrl(x[1])).map(([n,u,l])=>`<a href="${esc(u)}">${esc(n)}${l==="EN"||l==="ZH"?`<sup class="lg">${l}</sup>`:l==="GOV"?`<sup class="lg">fonte governativa</sup>`:""}</a>`).join("")}</div>${(s.yt||[]).length?`<div class="src vid">Video: ${s.yt.filter(x=>okUrl(x[1])).map(([n,u])=>`<a href="${esc(u)}"><i aria-hidden="true">▶</i>${esc(n)}</a>`).join("")}</div>`:""}`;
@@ -401,6 +402,7 @@ function boot(ed){
       if(a==="read"){st.read[id]=!st.read[id];b.setAttribute("aria-pressed",!!st.read[id]);b.textContent=st.read[id]?"Letto":"Segna come letto"}
       if(a==="more"||a==="less"){st.pref[id]=st.pref[id]===a?null:a;for(const x of document.querySelectorAll(`.act[data-id="${id}"]`))if(x.dataset.a!=="read")x.setAttribute("aria-pressed",st.pref[id]===x.dataset.a)}
       refresh();return}
+    const op=e.target.closest("[data-open]");if(op){const bt=document.querySelector(`[data-deep="${op.dataset.open}"]`);if(bt){bt.click();if(bt.getAttribute("aria-expanded")==="true")setTimeout(()=>bt.scrollIntoView({behavior:"smooth",block:"center"}),50)}return}
     const db=e.target.closest("[data-deep]");
     if(db){const x=document.getElementById("dx-"+db.dataset.deep);const o=x.hidden;x.hidden=!o;db.setAttribute("aria-expanded",o);db.textContent=o?"Chiudi l'approfondimento":"Leggi l'approfondimento";return}
     const cp=e.target.closest("[data-copy]");
@@ -427,5 +429,6 @@ document.readyState==="loading"?addEventListener("DOMContentLoaded",()=>setTimeo
 addEventListener("load",()=>setTimeout(()=>{if(moved||scrollY>40)return;const t=document.querySelector(".lead")||document.querySelector("article.story");if(!t)return;
 const y=t.getBoundingClientRect().top+scrollY-12;scrollTo({top:y,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})},1000))})();</script>
 
+<script>document.addEventListener("keydown",e=>{const o=e.target.closest&&e.target.closest("[data-open]");if(o&&(e.key==="Enter"||e.key===" ")){e.preventDefault();o.click()}});</script>
 </body>
 </html>
