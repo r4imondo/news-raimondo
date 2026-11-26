@@ -16,10 +16,6 @@
       "Intelligenza artificiale"
     ],
     [
-      "regole",
-      "Regole sull'AI"
-    ],
-    [
       "lavoro",
       "Lavoro e formazione"
     ]
@@ -144,7 +140,7 @@
     },
     {
       "id": "reg-milano-sede-onu-ia",
-      "sec": "regole",
+      "sec": "ia",
       "kick": "Parlamento europeo",
       "date": "26 novembre",
       "title": "Polo ONU sulla governance dell'IA: Strasburgo appoggia le candidature europee, ma senza nominare Milano",

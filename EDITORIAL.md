@@ -14,8 +14,7 @@ Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 
 - `ind` → Economia e industria (congiuntura, manifattura, robotica, automazione) — sempre per prima
 - `ads` → Marketing e AI (Google Ads, Meta, ChatGPT Ads, AI Mode, SEO e ricerca con l'AI, marketing B2B, strumenti AI per il marketing, misurazione)
-- `ia` → Intelligenza artificiale (modelli, aziende, sicurezza, adozione nelle imprese)
-- `regole` → Regole sull'AI (AI Act, norme italiane, autorità, sanzioni)
+- `ia` → Intelligenza artificiale (modelli, aziende, sicurezza, adozione nelle imprese; anche AI Act e norme, solo se toccano le imprese)
 - `lavoro` → Lavoro e formazione (competenze, lavoratori senior e AI, fondi interprofessionali, bandi)
 
 Le sezioni private NON vanno mai in questo repository (che è pubblico). Vivono solo nella pagina
@@ -98,7 +97,7 @@ posizioni contrapposte reali (sempre per politica, economia e geopolitica).
   "label": "Venerdì 27 novembre 2026",
   "lead": "id-della-notizia-di-apertura",
   "secs": [["ind","Economia e industria"],["ads","Marketing e AI"],["ia","Intelligenza artificiale"],
-           ["regole","Regole sull'AI"],["lavoro","Lavoro e formazione"]],
+           ["lavoro","Lavoro e formazione"]],
   "stories": [
     {
       "id": "slug-minuscolo-con-trattini",
