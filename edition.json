@@ -1,326 +1,395 @@
 {
- "date": "2026-11-27",
- "label": "Venerdì 27 novembre 2026",
- "lead": "ind-rapporto-industria-2026-csc",
- "secs": [
-  [
-   "ind",
-   "Economia e industria"
+  "date": "2026-11-26",
+  "label": "Giovedì 26 novembre 2026",
+  "lead": "ind-rapporto-industria-2026-csc",
+  "secs": [
+    [
+      "ind",
+      "Economia e industria"
+    ],
+    [
+      "ads",
+      "Pubblicità e AI"
+    ],
+    [
+      "ia",
+      "Intelligenza artificiale"
+    ],
+    [
+      "regole",
+      "Regole sull'AI"
+    ],
+    [
+      "lavoro",
+      "Lavoro e formazione"
+    ]
   ],
-  [
-   "ads",
-   "Pubblicità e AI"
-  ],
-  [
-   "ia",
-   "Intelligenza artificiale"
-  ],
-  [
-   "regole",
-   "Regole sull'AI"
-  ],
-  [
-   "lavoro",
-   "Lavoro e formazione"
+  "stories": [
+    {
+      "id": "ia-amodei-controllo-umano-1vs1",
+      "sec": "ia",
+      "kick": "Sicurezza AI",
+      "date": "25 novembre",
+      "title": "Anthropic e il controllo umano sull'AI: Amodei respinge le accuse, i critici chiedono di più",
+      "sum": "Dopo un articolo di Axios basato su fonti anonime, secondo cui i vertici di Anthropic riterrebbero irrazionale negare all'AI decisioni che sa prendere meglio degli umani, il CEO Dario Amodei ha risposto con un lungo post su X definendo le accuse assurde. Sostiene che affidare il governo all'AI sarebbe una pessima idea, ma distingue tra questo e l'automazione di compiti specifici. I critici ribattono che il controllo si può perdere anche senza deciderlo.",
+      "why": "Il dibattito su quanto delegare alle macchine riguarda anche le imprese che introducono agenti AI: dove fermare l'automazione e chi firma le decisioni sono scelte da fare in modo esplicito.",
+      "vs": true,
+      "facts": [
+        "Axios, citando fonti anonime, ha riferito che Amodei e altri dirigenti di Anthropic ritengono irrazionale, o persino non etico, negare all'AI autorità su compiti che svolge meglio degli umani (Al Jazeera).",
+        "Mercoledì 25 novembre Amodei ha risposto su X definendo l'accusa assurda e scrivendo che consegnare il governo all'AI sarebbe una pessima idea (TechCrunch, Al Jazeera).",
+        "Nelle settimane precedenti Sam Altman (OpenAI) e Alexandr Wang (Meta) avevano parlato pubblicamente di mantenere l'iniziativa umana e di non accettare un passaggio di consegne all'AI (TechCrunch).",
+        "Anthropic ha appena completato la quotazione in Borsa; a giugno aveva dichiarato che Claude scriveva oltre l'80% del codice integrato nei suoi sistemi (Al Jazeera, TechCrunch)."
+      ],
+      "a": {
+        "h": "Nessuna resa all'AI: si automatizzano compiti, non il governo",
+        "who": "La tesi di Dario Amodei (Anthropic)",
+        "pts": [
+          "Affidare il governo all'AI è un errore: legittimità e autodeterminazione non vanno sacrificate in nome dell'efficienza o della sicurezza.",
+          "Far guidare un'auto o scrivere software da cima a fondo a un'AI è automazione di compiti, non un'AI che guida il mondo.",
+          "Serve un limite sull'auto-miglioramento ricorsivo: non è considerato sicuro che Claude costruisca da solo i modelli successivi senza una supervisione umana significativa.",
+          "I concorrenti usano parole come controllo umano per posizionamento commerciale e politico, senza cambiare il modo in cui partecipano alla corsa."
+        ]
+      },
+      "b": {
+        "h": "Il controllo si perde anche senza volerlo: serve fermarsi",
+        "who": "La tesi di David Krueger (Evitable)",
+        "pts": [
+          "Il controllo può sfuggire senza una scelta consapevole, man mano che cresce la pressione per togliere gli umani dalle decisioni.",
+          "Gli stessi ricercatori di Anthropic hanno avvertito che le capacità dell'AI crescono più in fretta della capacità umana di controllarle.",
+          "Se Amodei teme davvero la perdita di controllo, Anthropic dovrebbe sospendere lo sviluppo; serve una moratoria internazionale sull'AI di frontiera.",
+          "Anche altri protagonisti del settore, come Alexandr Wang di Meta, ritengono difficile mantenere il controllo su un auto-miglioramento senza vincoli."
+        ]
+      },
+      "src": [
+        [
+          "TechCrunch",
+          "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd",
+          "EN"
+        ],
+        [
+          "Al Jazeera",
+          "https://www.aljazeera.com/economy/2026/11/26/anthropic-ceo-amodei-denies-wanting-humanity-to-surrender-free-will-to-ai",
+          "EN"
+        ]
+      ]
+    },
+    {
+      "id": "ev2035",
+      "sec": "ind",
+      "vs": true,
+      "kick": "Automotive",
+      "date": "4 novembre",
+      "title": "Auto elettriche e Green Deal: il Parlamento Ue ammorbidisce lo stop ai motori termici del 2035",
+      "sum": "La commissione Ambiente del Parlamento europeo ha approvato con 48 sì, 30 no e 2 astenuti un testo che porta l'obiettivo 2035 per le auto nuove da -100% a -87,5% di CO2, aprendo alla vendita di auto termiche e ibride anche dopo quella data. A dicembre è atteso il voto in plenaria, poi il negoziato con i governi.",
+      "facts": [
+        "Fino a 7,5 punti si possono coprire con acciaio a basse emissioni prodotto nell'Ue; un altro 5% resta libero.",
+        "Furgoni: -35% nel 2030 (oggi -50%) e -80% nel 2035.",
+        "Supercrediti per le piccole elettriche costruite nell'Ue e una nuova categoria per i veicoli a biocarburanti ed e-fuel.",
+        "Finché l'iter non si chiude resta in vigore il -100% al 2035."
+      ],
+      "a": {
+        "h": "Sì: serve flessibilità per salvare l'industria",
+        "who": "La tesi di Germania, Italia e case auto",
+        "pts": [
+          "Il divieto di fatto è considerato troppo rigido con una domanda di auto elettriche ancora debole.",
+          "Il cancelliere Merz sostiene che milioni di auto con motore termico circoleranno ancora nel 2035, nel 2040 e nel 2050.",
+          "Volkswagen chiede che sia il mercato, e non il regolatore, a decidere quando abbandonare i motori termici.",
+          "Ibride, plug-in, range extender ed e-fuel vengono visti come strade per ridurre le emissioni senza imporre un'unica tecnologia."
+        ]
+      },
+      "b": {
+        "h": "No: così si regala il mercato alla Cina",
+        "who": "La tesi di T&E, Spagna, Volvo e Polestar",
+        "pts": [
+          "Per T&E prendere tempo non salverà l'industria europea e toglie risorse allo sviluppo delle elettriche, avvantaggiando i costruttori cinesi.",
+          "Il segnale ambiguo confonde consumatori e investitori proprio mentre le elettriche sono destinate a dominare il mercato dal 2030.",
+          "Il premier spagnolo Sánchez ha scritto a von der Leyen chiedendo di non rinviare lo stop.",
+          "Volvo e Polestar hanno chiesto di mantenere il divieto del 2035; resta aperto il nodo dei circa 300 miliardi già investiti dalle case nell'elettrico."
+        ]
+      },
+      "why": "La regola fissa per i prossimi dieci anni quali motori si potranno vendere in Europa: da qui dipendono gli ordini di tutta la filiera della componentistica, compresi i fornitori meccanici italiani.",
+      "deep": [
+        "Il percorso parte dal pacchetto automotive presentato dalla Commissione europea a dicembre 2025, che sostituiva il divieto di fatto dei motori termici con un taglio del 90% delle emissioni medie di flotta dal 2035. Il restante 10% andava compensato con acciaio a basse emissioni prodotto nell'Ue oppure con carburanti sintetici e biocarburanti.",
+        "Il 4 novembre la commissione Ambiente del Parlamento è andata oltre: il compromesso sostenuto da popolari, socialisti e liberali fissa il target al -87,5%. Fino a 7,5 punti possono arrivare dall'acciaio europeo decarbonizzato, mentre un 5% residuo non è legato a condizioni. Fino al 2034 il contributo dell'acciaio è limitato al 3%. Per i furgoni il taglio al 2030 scende al 35% e quello al 2035 all'80%.",
+        "Per spingere l'offerta di auto a batteria accessibili, il testo introduce i supercrediti: le elettriche compatte sotto i 4,2 metri costruite nell'Ue contano come 1,4 veicoli nel calcolo delle emissioni di flotta, 1,5 se vendute con il leasing sociale. Nasce inoltre una categoria dedicata ai veicoli alimentati solo a biocarburanti o e-fuel, trattati come quelli a zero emissioni.",
+        "Non è ancora legge. Il voto in commissione fissa soltanto la posizione negoziale del Parlamento: serve il via libera della plenaria, previsto a dicembre, e poi l'accordo con i 27 governi. Nel frattempo vale la regola attuale del -100% al 2035. Le posizioni dei governi restano diverse: Merz e Macron hanno concordato un -90% senza compensazioni, mentre la Spagna ha chiesto di non rinviare lo stop."
+      ],
+      "src": [
+        [
+          "Motor1",
+          "https://motor1.com/news/814805/eu-parliament-proposal-soften-2035",
+          "EN"
+        ],
+        [
+          "SicurAUTO",
+          "https://www.sicurauto.it/news/novita-del-mercato/commissione-ambiente-ue-ok-al-875-di-emissioni-auto/",
+          "IT"
+        ],
+        [
+          "Transport & Environment Italia",
+          "https://www.transportenvironment.org/te-italia/articles/retromarcia-ue-sul-2035-prendere-tempo-non-salvera-lindustria-automobilistica-europea",
+          "IT"
+        ],
+        [
+          "electrive",
+          "https://www.electrive.com/2026/10/23/eu-auto-package-committee-vote-to-relax-co%e2%82%82-rules/",
+          "EN"
+        ],
+        [
+          "S&P Global Mobility",
+          "https://www.spglobal.com/automotive-insights/en/blogs/2025/12/europe-shifts-into-reverse-on-eu-2035-ice-ban",
+          "EN"
+        ]
+      ]
+    },
+    {
+      "id": "reg-milano-sede-onu-ia",
+      "sec": "regole",
+      "kick": "Parlamento europeo",
+      "date": "26 novembre",
+      "title": "Polo ONU sulla governance dell'IA: Strasburgo appoggia le candidature europee, ma senza nominare Milano",
+      "sum": "Riunito in plenaria a Strasburgo, il Parlamento europeo ha approvato una risoluzione che appoggia le città europee candidate a ospitare una nuova struttura delle Nazioni Unite per la valutazione indipendente e la governance etica dell'intelligenza artificiale. Il PPE ha tolto dal testo il riferimento esplicito a Milano. Gli emendamenti di Lega e Fratelli d'Italia che volevano reinserirlo sono stati respinti, e nel centrodestra italiano è nato uno scontro.",
+      "why": "La città che ospiterà il nuovo organismo sulla governance dell'IA la sceglierà l'ONU. Il voto europeo è un segnale politico e non una decisione. Per le imprese lombarde, però, la candidatura di Milano conta: è sostenuta da Assolombarda, Confcommercio Milano Lodi Monza Brianza e dalla Camera di commercio americana in Italia.",
+      "vs": true,
+      "facts": [
+        "Il 26 novembre la plenaria del Parlamento europeo ha approvato una risoluzione a sostegno delle candidature delle città europee a sede di una nuova struttura ONU sulla valutazione indipendente e la governance etica dell'IA. Le fonti non riportano il numero dei voti.",
+        "La prima firmataria è l'eurodeputata Letizia Moratti (Forza Italia-PPE). Il PPE ha eliminato dal testo il riferimento esplicito a Milano e si è limitato a sostenere le candidature europee.",
+        "Fratelli d'Italia e Lega avevano presentato emendamenti per reinserire il nome di Milano: sono stati respinti.",
+        "La proposta milanese è stata elaborata a luglio 2026 e presentata in un Manifesto promosso da American Chamber of Commerce in Italy, Assolombarda e Confcommercio Milano Lodi Monza Brianza. Il 9 novembre è nato il Comitato Promotore MilanoAI.",
+        "Il Movimento 5 Stelle, con Gaetano Pedullà, ha criticato la destra e ricordato che è stato bocciato anche un suo emendamento sulla sostenibilità ambientale dei data center e sulla partecipazione dei cittadini."
+      ],
+      "a": {
+        "h": "Sì: Milano andava nominata esplicitamente",
+        "who": "La tesi di Lega e Fratelli d'Italia",
+        "pts": [
+          "I due partiti hanno presentato emendamenti per rimettere nel testo un sostegno esplicito a Milano.",
+          "Sardone accusa Forza Italia di aver escluso Milano e definisce la scelta \"inaccettabile\". Aveva minacciato di votare contro i testi se gli emendamenti non fossero passati.",
+          "Per Fidanza la candidatura milanese avrebbe meritato un sostegno più forte da Strasburgo."
+        ]
+      },
+      "b": {
+        "h": "No: meglio sostenere le candidature europee senza fare nomi",
+        "who": "La tesi di Forza Italia-PPE",
+        "pts": [
+          "Secondo Sorte la sede sarà scelta all'ONU e non al Parlamento europeo. Mettere il nome di Milano nella risoluzione avrebbe rischiato di bruciarne la candidatura.",
+          "Per Sorte gran parte della risoluzione riprende i contenuti del Manifesto di Milano. Il voto, a suo dire, apre la strada a una candidatura europea unitaria che Milano può rappresentare.",
+          "Moratti parla di un «fondamentale passo avanti» per la candidatura milanese e chiede che l'Europa converga su Milano, nel rispetto delle procedure ONU.",
+          "Per Tosi l'Europa deve contare nella governance globale dell'IA, perché le regole non possono deciderle solo Stati Uniti e Cina."
+        ]
+      },
+      "src": [
+        [
+          "Il Fatto Quotidiano",
+          "https://www.ilfattoquotidiano.it/2026/11/26/milano-sede-onu-intelligenza-artificiale-centrodestra-notizie/8584857/",
+          ""
+        ],
+        [
+          "ANSA",
+          "https://www.ansa.it/europa/notizie/rubriche/voceeurodeputati/2026/11/26/tosi-fi-italia-pronta-per-ospitare-un-pilastro-onu-sullai_5fc08ef5-a599-4a3b-be65-d664b31cec92.html",
+          ""
+        ],
+        [
+          "Agenparl (comunicato Moratti)",
+          "https://agenparl.eu/2026/11/26/intelligenza-artificiale-moratti-fi-ppe-via-libera-del-parlamento-europeo-alla-risoluzione-sul-nuovo-pilastro-onu-milano-in-pole-position/",
+          ""
+        ],
+        [
+          "Agenzia giornalistica Opinione (dichiarazione Sorte)",
+          "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-intelligenza-artificiale-sorte-fi-milano-in-pole-position-grazie-al-lavoro-di-forza-italia-evitiamo-polemiche-che-rischiano-di-indebolirne-la-candidatura/",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "ind-rapporto-industria-2026-csc",
+      "sec": "ind",
+      "kick": "Confindustria",
+      "date": "25 novembre",
+      "title": "Rapporto Industria 2026: manifattura più solida, ma produttività ed energia restano i nodi",
+      "sum": "Il Centro Studi Confindustria ha presentato il Rapporto Industria 2026, dedicato alla \"manifattura oltre la fabbrica\". L'Italia resta il secondo produttore manifatturiero dell'UE, con imprese più patrimonializzate e un tasso di investimento superiore a Francia e Germania. Pesano però la crescita lenta della produttività, il ritardo negli investimenti immateriali e un costo dell'energia salito al 5,5% dei costi di produzione nei primi dieci mesi del 2026. Le imprese che integrano l'AI nei processi sono passate dall'11,5% al 18,7% in un anno.",
+      "why": "Il rapporto conferma che le micro e piccole imprese sono il punto debole della produttività italiana, mentre le medie competono alla pari o meglio delle concorrenti europee: crescere di dimensione, investire in software e servizi e adottare l'AI sono le leve indicate.",
+      "deep": [
+        "Il Rapporto Industria 2026 del Centro Studi Confindustria, presentato il 25 novembre, si articola in quattro capitoli: lo stato della manifattura italiana, il suo legame con i servizi, intelligenza artificiale e cambiamento climatico, e i profili territoriali raccolti con le associazioni locali del sistema. Il messaggio di fondo è che la competitività di una fabbrica dipende sempre più da ciò che le sta intorno: servizi interni ed esterni, fornitori qualificati, infrastrutture e tempi della burocrazia.",
+        "I punti di forza: l'Italia è seconda in Europa dopo la Germania, ha mantenuto la propria quota di produzione mondiale e le imprese hanno rafforzato i bilanci, con un patrimonio netto salito al 50% dell'attivo nel 2024. Gli investimenti fissi lordi sono stati in media circa il 25% del valore aggiunto nel 2023-2025, contro il 22% della Francia e il 20% della Germania. A parità di dimensione, le medie imprese italiane risultano circa il 20% più produttive delle omologhe tedesche, francesi e spagnole.",
+        "Le debolezze sono note ma quantificate: tra il 1995 e il 2025 il valore aggiunto per ora lavorata nella manifattura è cresciuto del 27%, contro il 76% della Germania e oltre il 100% della Francia. Micro e piccole imprese generano più del 30% del valore aggiunto manifatturiero, contro meno del 15% in Francia e Germania. Gli investimenti immateriali (ricerca, software, banche dati) valgono circa il 6% del valore aggiunto, contro il 10-11% dei due vicini. Sull'energia, nel primo semestre 2026 le piccole utenze elettriche hanno pagato in Italia 0,30 euro/kWh, contro 0,23 in Germania e 0,21 in Francia.",
+        "Sull'intelligenza artificiale l'adozione cresce ma resta disomogenea: 30,6% tra le imprese con oltre 100 addetti, 17-18% tra le più piccole, e 14,2% nell'industria contro 24,7% nei servizi. Gli ostacoli più citati sono la mancanza di competenze, la sicurezza dei dati e le difficoltà di integrazione. Uno studio europeo richiamato nel rapporto stima un guadagno medio di produttività del lavoro di circa il 4%, concentrato però nelle aziende medie e grandi.",
+        "Sul territorio, distretti industriali sono presenti in 64 province su 110; i tempi e l'incertezza delle procedure amministrative e le carenze logistiche sono gli ostacoli più diffusi. Il rapporto segnala anche il rischio climatico: quasi un lavoratore su tre opera in unità locali esposte ad almeno un rischio fisico, e le ondate di calore riducono la produttività soprattutto nelle imprese minori."
+      ],
+      "src": [
+        [
+          "Confindustria",
+          "https://www.confindustria.it/news/rapporto-industria-2026-la-competitivita-si-gioca-anche-oltre-i-cancelli-della-fabbrica",
+          ""
+        ],
+        [
+          "Avanti!",
+          "https://avantionline.it/confindustria-lancia-lallarme-produttivita/",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "ind-mckinsey-industria-europea-stress",
+      "sec": "ind",
+      "kick": "Industria europea",
+      "date": "25 novembre",
+      "title": "McKinsey: quasi metà delle grandi industrie europee è in difficoltà finanziaria",
+      "sum": "Un'analisi di McKinsey su quasi 1.200 imprese industriali europee con ricavi oltre 100 milioni di euro indica che circa il 45% era in stress o in crisi finanziaria nel 2025, contro il 42% del 2024 e il 39% del 2023, con stime preliminari 2026 in ulteriore peggioramento. In gioco ci sarebbero circa 3,7 milioni di posti di lavoro. Le cause indicate: costo dell'energia, divario di produttività e concorrenza cinese.",
+      "why": "Molte PMI italiane lavorano come fornitori di grandi gruppi europei, soprattutto in automotive, meccanica e componentistica: la tenuta finanziaria dei clienti è un rischio da monitorare su ordini, pagamenti e concentrazione del fatturato.",
+      "deep": [
+        "Lo studio, ripreso il 25 novembre da Euronews e da European Business Magazine, si basa sull'indice di salute finanziaria industriale di McKinsey, che valuta quasi 1.200 produttori europei, quotati e non, con ricavi superiori a 100 milioni di euro, attraverso indicatori di redditività, flussi di cassa e debito. Secondo i dati riportati, la quota di imprese in stress o in crisi è salita al 45% nel 2025, dal 42% del 2024 e dal 39% del 2023; le prime stime per il 2026 indicano che la quota sta crescendo ancora più rapidamente, tanto che diverse testate parlano ormai di circa metà del campione.",
+        "Il peso del settore è rilevante: secondo McKinsey le imprese industriali generano circa il 36% del valore aggiunto europeo, il 29% dell'occupazione e oltre il 45% della spesa in ricerca e sviluppo. I posti di lavoro direttamente a rischio sono stimati in circa 3,7 milioni, e Euronews riporta anche oltre 500 miliardi di euro di valore aggiunto in bilico. Le difficoltà si concentrano in automotive, macchinari, apparecchiature elettriche e materiali. In Germania la quota di imprese in difficoltà è salita di 12 punti percentuali nel 2025.",
+        "Tra le cause, il rapporto indica tre fattori: prezzi dell'elettricità industriale ben superiori a quelli di Cina e Stati Uniti, un divario di produttività (McKinsey stima quella cinese circa 1,5 volte quella europea in alcuni ambiti) e la pressione competitiva cinese. Sul fronte degli investimenti, la Cina avrebbe destinato circa 6.000 miliardi di dollari agli investimenti produttivi lordi nel 2025, circa il doppio dell'Europa, il cui livello è rimasto sostanzialmente fermo.",
+        "McKinsey definisce i problemi strutturalmente risolvibili, ma sostiene che la ripresa debba partire presto. Le ricette indicate includono energia più economica, recupero di produttività tramite automazione e AI industriale, riforme fiscali e regolatorie e, a livello aziendale, ristrutturazioni con task force dedicate, dismissione delle attività più deboli e uso dell'AI per ridurre il lavoro amministrativo. Il rapporto originale non è stato consultato direttamente: i dati provengono dalle due testate citate."
+      ],
+      "src": [
+        [
+          "Euronews (via Yahoo Finance)",
+          "https://uk.finance.yahoo.com/news/around-3-7-million-jobs-120656964.html",
+          "EN"
+        ],
+        [
+          "European Business Magazine",
+          "https://europeanbusinessmagazine.com/european-industry-financial-stress",
+          "EN"
+        ]
+      ]
+    },
+    {
+      "id": "ind-xpeng-iron-umanoide-produzione",
+      "sec": "ind",
+      "kick": "Robotica",
+      "date": "25 novembre",
+      "title": "Xpeng: il robot umanoide Iron entra in produzione di serie a gennaio 2027",
+      "sum": "Al Tech Day 2026 di Canton, il costruttore cinese di auto elettriche Xpeng ha annunciato che la produzione in serie dell'hardware del robot umanoide Iron partirà a gennaio 2027. Il primo impiego previsto è come assistente alla vendita nei concessionari del gruppo. Restano aperti i dubbi sugli ordini esterni e sul ritorno economico, ammessi dallo stesso fondatore He Xiaopeng.",
+      "why": "Le case automobilistiche cinesi portano nella robotica umanoide catene di fornitura e capacità produttive dell'auto: per chi fa automazione e componentistica in Europa è un segnale su costi e tempi di arrivo di questi robot, anche se gli usi in fabbrica restano per ora limitati.",
+      "deep": [
+        "Il 25 novembre Xpeng ha tenuto il suo Tech Day annuale a Canton. Il presidente e amministratore delegato He Xiaopeng ha presentato una nuova architettura di intelligenza artificiale \"fisica\" che collega controllo in tempo reale, modelli visione-linguaggio-azione e pianificazione, condivisa tra auto, robotaxi, umanoidi e veicoli volanti. Il robot Iron è salito sul palco camminando da solo, ha sostenuto una conversazione vocale e poi è tornato autonomamente alla postazione di ricarica.",
+        "Secondo i dati diffusi dall'azienda e riportati da CnEVPost, Iron è alto 170 cm, pesa 62 kg, ha 76 gradi di libertà, oltre 1.500 punti di rilevamento tattile, tre chip proprietari e una batteria allo stato solido; con 20 minuti di ricarica lavora circa un'ora e mezza. La produzione di serie dell'hardware è fissata a gennaio 2027; sulla presentazione commerciale le fonti divergono (febbraio secondo Xinhua Finance, secondo trimestre 2027 secondo CnEVPost). Dal primo trimestre 2027 il robot farà \"tirocinio\" come addetto alle vendite nei negozi Xpeng in Cina. L'azienda valuta vendita dell'hardware, abbonamenti software e un negozio di abilità.",
+        "La testata cinese Huxiu sottolinea i limiti: Xpeng non ha reso noto il volume di ordini esterni, e produzione, consegne e spedizioni sono metriche diverse spesso confuse. Impiegare i robot nei propri showroom serve soprattutto a vendere auto e non dimostra che sappiano generare ricavi altrove; altri costruttori potrebbero non volere un robot concorrente nelle proprie sedi. Nelle linee di produzione, osserva Huxiu, i robot umanoidi oggi svolgono soprattutto carico e scarico e controllo qualità. La spesa di Xpeng in ricerca sulla robotica quest'anno sarebbe vicina a 3 miliardi di yuan.",
+        "Lo stesso He Xiaopeng si è detto molto ottimista nel lungo periodo e prudente nel breve: a suo avviso il mercato globale vale oggi poche decine di migliaia di unità e la vera sfida è costruire robot che richiedano poco intervento umano e garantiscano un ritorno sull'investimento sostenibile."
+      ],
+      "src": [
+        [
+          "CnEVPost",
+          "https://cnevpost.com/2026/11/25/xpeng-ramps-up-physical-ai-push-2026-ai-day",
+          "EN"
+        ],
+        [
+          "Huxiu",
+          "https://m.huxiu.com/article/4908593.html",
+          "ZH"
+        ],
+        [
+          "Xinhua Finance (via Eastmoney)",
+          "https://finance.eastmoney.com/a/202611253939612795.html",
+          "GOV"
+        ]
+      ]
+    },
+    {
+      "id": "ads-chatgpt-ads-reach-business-agents",
+      "sec": "ads",
+      "kick": "ChatGPT Ads",
+      "date": "25 novembre",
+      "title": "ChatGPT Ads conta le persone raggiunte e porta i Business Agent fuori dagli Stati Uniti",
+      "sum": "Con una comunicazione inviata agli inserzionisti il 25 novembre, OpenAI ha aggiunto ad Ads Manager e alle API nove metriche basate sulle persone raggiunte, tra cui copertura (Reach) e frequenza. I Business Agent, gli assistenti aziendali con cui i clienti possono chattare dentro ChatGPT, si aprono alle aziende idonee di e-commerce e servizi online in mercati supportati fuori dagli USA. Arrivano anche un link «Learn more» predefinito sugli annunci con immagine singola, l'opzione per nascondere i prezzi scontati dei feed prodotto e spiegazioni più chiare sugli annunci respinti.",
+      "why": "Sapere quante persone diverse vedono un annuncio, e quante volte, è il dato minimo per confrontare ChatGPT con Google e Meta prima di spostarci budget. L'apertura dei Business Agent oltre gli USA indica che OpenAI vuole portare la piattaforma anche alle aziende non americane, ma resta da verificare in quali paesi.",
+      "deep": [
+        "Finora i report degli annunci su ChatGPT contavano solo impressioni e clic, non le persone. Chi voleva stimare la copertura reale doveva affidarsi a stime esterne, come i panel di società di ricerca. Con l'aggiornamento inviato via email il 25 novembre, OpenAI introduce in Ads Manager e nelle Ads API nove nuove colonne: Reach, Frequency, Click Reach, Click Frequency, Total Reach, Total Frequency, Unique CTR, Unique CPC e costo per mille persone raggiunte. Si attivano dal menu di modifica delle colonne, nella voce dedicata agli spettatori degli annunci.",
+        "OpenAI definisce la copertura come la stima delle persone uniche che hanno visto un annuncio almeno una volta nel periodo scelto, e la frequenza come il rapporto tra impressioni totali e copertura. Secondo PPC Land, l'email non definisce le altre sette metriche, non spiega come vengono stimate le persone uniche e non chiarisce se il dato si possa suddividere per paese, dispositivo o pubblico, né se elimini i doppioni tra campagne diverse. Le pagine di aiuto di OpenAI, al momento della pubblicazione, non erano ancora aggiornate.",
+        "La seconda novità riguarda i Business Agent: le aziende idonee di e-commerce e servizi online in mercati supportati fuori dagli Stati Uniti possono crearne uno nel Business Hub di ChatGPT. Chi rispetta le regole pubblicitarie può anche collegarlo a una campagna come «Sponsored Business Agent». La pagina di aiuto di OpenAI precisa che questa versione sponsorizzata è in distribuzione «nelle prossime settimane», richiede campagne con obiettivo di conversione e non prevede costi aggiuntivi per le conversazioni. L'inserzionista non riceve le singole chat: vede solo andamenti aggregati, approfonditi dopo oltre 25 conversazioni. OpenAI non ha indicato l'elenco dei paesi supportati.",
+        "Completano il pacchetto tre ritocchi pratici: un link «Learn more» attivo per impostazione predefinita sotto gli annunci con immagine singola, che porta alla pagina di destinazione già impostata; un'opzione per mostrare il prezzo pieno invece di quello scontato negli annunci da feed prodotto; messaggi di revisione che indicano quale regola ha causato il rifiuto di un annuncio. OpenAI sottolinea che le linee guida di approvazione non sono cambiate. Restano aperte la disponibilità effettiva nei singoli mercati e la metodologia di calcolo della copertura."
+      ],
+      "src": [
+        [
+          "Search Engine Roundtable",
+          "https://www.seroundtable.com/chatgpt-ads-updates-42623.html",
+          "EN"
+        ],
+        [
+          "PPC Land",
+          "https://ppc.land/chatgpt-ad-reports-add-9-metrics-built-on-how-many-people-see-the-ads/",
+          "EN"
+        ],
+        [
+          "OpenAI Help Center",
+          "https://help.openai.com/en/articles/20001651",
+          "EN"
+        ]
+      ]
+    },
+    {
+      "id": "ia-anthropic-api-rust-agenti",
+      "sec": "ia",
+      "kick": "Anthropic",
+      "date": "25 novembre",
+      "title": "Anthropic riscrive in Rust la sua API con gli agenti Claude: il vero collo di bottiglia è la verifica",
+      "sum": "Anthropic ha raccontato sul proprio blog come ha spostato da Python a Rust la Messages API, il canale con cui clienti e app dell'azienda accedono a Claude, facendo scrivere gran parte del codice ad agenti Claude. Secondo l'azienda, il nuovo sistema usa circa il 70% di CPU in meno per richiesta e oltre l'80% di memoria in meno. La lezione principale dichiarata: i test esistenti non bastavano, e controllare il lavoro degli agenti è diventato più difficile che produrlo.",
+      "why": "Per chi valuta agenti AI su software o processi interni, è un caso concreto: la generazione è veloce, ma servono controlli sul comportamento reale e approvazione umana di ogni modifica prima di andare in produzione.",
+      "deep": [
+        "Anthropic ha pubblicato il 25 novembre un resoconto tecnico sulla migrazione della Messages API, il servizio attraverso cui passano le richieste dei clienti e delle applicazioni dell'azienda come Claude Code e Cowork. L'azienda spiega che il traffico è cresciuto di circa 1.800 volte tra l'inizio del 2024 e l'autunno 2026, e che Python aggiungeva costi a ogni passaggio della richiesta. Un primo intervento parziale in Rust aveva ridotto la CPU solo dell'8-10% circa, così si è scelto di riscrivere tutto.",
+        "Secondo il resoconto, Claude ha prodotto una prima versione del percorso principale in circa una settimana. Ma a fine aprile, pur superando circa il 98% dei test, la nuova versione dava risultati identici a quella vecchia solo su un quarto circa degli input reali, e a inizio maggio la corrispondenza era scesa al 6,5%. I circa 700 test di integrazione erano legati all'implementazione Python e, rileggendoli, sono emerse oltre 100 verifiche indebolite durante il porting.",
+        "La soluzione è stata usare la vecchia API in produzione come riferimento: il traffico reale veniva duplicato verso la versione Rust e le differenze, registrate senza leggere il testo degli utenti, venivano assegnate in automatico ad agenti Claude incaricati di trovare la causa e proporre una correzione con relativo test. Ogni modifica è stata rivista e approvata da un ingegnere prima della produzione, e le correzioni umane sono diventate regole permanenti per gli agenti.",
+        "Il passaggio del traffico pubblico a Rust è avvenuto a settembre, con una corrispondenza finale del 99,6% e senza fermare il servizio. Oltre ai risparmi di CPU e memoria, Anthropic indica un tempo mediano di risposta al primo token più basso di circa il 20%. L'azienda segnala anche errori degli agenti, come una correzione che faceva passare i controlli senza risolvere davvero il problema, respinta da un ingegnere.",
+        "Tutti i dati sono dichiarati da Anthropic e non risultano verificati da terzi. La conclusione del team è che, con agenti capaci di scrivere codice, il lavoro umano si sposta dalla caccia ai singoli errori alla definizione di regole e sistemi di controllo."
+      ],
+      "src": [
+        [
+          "Anthropic",
+          "https://www.anthropic.com/research/migrating-api-to-rust",
+          "EN"
+        ]
+      ]
+    },
+    {
+      "id": "ia-chatgpt-chat-work-limiti",
+      "sec": "ia",
+      "kick": "OpenAI",
+      "date": "25 novembre",
+      "title": "ChatGPT unisce Chat e Work: un unico contatore d'uso, limiti più stretti per chi lo usa molto",
+      "sum": "OpenAI ha iniziato a distribuire a un piccolo gruppo di abbonati Pro un'esperienza unica che fonde la chat di ChatGPT con Work, l'agente per i compiti complessi. Chat e Work attingeranno a un'unica quota d'uso; le conversazioni con il modello Instant restano escluse dal conteggio. Un portavoce ha detto a TechCrunch che la maggior parte degli utenti non vedrà più azzeramenti del solito, ma una piccola parte dei più assidui potrebbe esaurire i limiti prima.",
+      "why": "Le aziende con abbonamenti Plus, Pro o Business che usano ChatGPT per attività lunghe (documenti, analisi, Codex) dovrebbero monitorare i consumi da dicembre: la quota diventa condivisa e i compiti complessi pesano di più.",
+      "deep": [
+        "OpenAI aveva annunciato la fusione via email all'inizio di novembre. Secondo TechCrunch, il primo rilascio è partito questa settimana verso alcuni abbonati Pro, annunciato su X dal responsabile di prodotto Thibault Sottiaux. La pagina di supporto di OpenAI indica che da dicembre i piani Plus, Pro e Business avranno un'unica quota d'uso condivisa tra ChatGPT e Codex, mentre le funzioni agentiche di Work entrano nell'esperienza principale.",
+        "Il consumo viene misurato in token e dipende dal modello e dal compito: modelli più avanzati e attività complesse consumano di più. Le chat con Instant non intaccano la quota. Dalle impostazioni (Settings, Usage) si vede quanto resta e quando si azzera; esaurita la quota, si può attendere, passare a un piano superiore o acquistare crediti per le funzioni ammesse.",
+        "Un portavoce dell'azienda ha spiegato a TechCrunch che per la maggior parte degli utenti la frequenza degli azzeramenti non dovrebbe cambiare, mentre una piccola frazione degli utenti più intensi potrebbe raggiungere i limiti prima. OpenAI dice che continuerà a lavorare sull'efficienza per offrire di più agli abbonati. Sui social e nel forum della comunità, diversi abbonati hanno protestato temendo meno accesso ai modelli di ragionamento allo stesso prezzo.",
+        "OpenAI non ha pubblicato le dimensioni delle quote, né indicazioni specifiche per i piani Enterprise ed Edu. TechCrunch ricorda che Anthropic aveva unificato le interfacce di chat e Cowork di Claude a settembre, e collega la mossa all'aumento dei costi di infrastruttura e alla domanda di modelli più potenti."
+      ],
+      "src": [
+        [
+          "TechCrunch",
+          "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+          "EN"
+        ],
+        [
+          "OpenAI Help Center",
+          "https://help.openai.com/fil-ph/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+          "EN"
+        ]
+      ]
+    },
+    {
+      "id": "lav-protocollo-ministero-anci",
+      "sec": "lavoro",
+      "kick": "Politiche attive",
+      "date": "26 novembre",
+      "title": "Lavoro e competenze, Ministero e Comuni firmano un protocollo biennale",
+      "sum": "Il Ministero del Lavoro e l'ANCI hanno firmato a Verona un protocollo d'intesa di due anni per portare le politiche attive del lavoro più vicino ai cittadini attraverso i Comuni. L'accordo punta su orientamento verso SIISL, APPLI e il programma EDO di alfabetizzazione digitale, sul rafforzamento del sistema duale e degli ITS e su un'attenzione specifica alle aree interne. Il comunicato non indica risorse economiche né numero di beneficiari.",
+      "why": "Se i Comuni diventano uno sportello per l'incontro tra domanda e offerta e per gli ITS, le PMI dei territori periferici possono avere un canale in più per trovare profili tecnici. Conviene seguire gli avvisi territoriali che ne deriveranno.",
+      "deep": [
+        "Il protocollo è stato firmato il 26 novembre dalla ministra del Lavoro Marina Calderone e dal presidente dell'ANCI Gaetano Manfredi durante la 43esima assemblea annuale dei Comuni italiani, a Verona. Secondo il vicepresidente ANCI con delega al Lavoro, Massimo Cavazzana, il testo è il risultato di circa un anno di lavoro comune con il Ministero.",
+        "L'obiettivo dichiarato è usare la rete capillare dei Comuni per collegare politiche del lavoro, servizi sociali, politiche giovanili e sviluppo economico locale. In concreto i Comuni dovranno indirizzare verso gli strumenti nazionali le persone più lontane dal mercato del lavoro, come giovani che non studiano e non lavorano, persone con disabilità, lavoratori precari e donne in contesti fragili. Gli strumenti citati sono la piattaforma SIISL per l'incontro tra domanda e offerta, il servizio di orientamento APPLI e il programma EDO per le competenze digitali di base.",
+        "Il documento prevede anche formazione per gli operatori comunali, la promozione dell'autoimpiego e dell'imprenditoria femminile e giovanile, il rafforzamento del sistema duale e degli ITS Academy e un'attenzione particolare alle aree interne e alle isole minori individuate dal piano nazionale PSNAI 2025. Il supporto tecnico sarà affidato a Sviluppo Lavoro Italia, la società in house del Ministero, che affiancherà i Comuni nella coprogettazione e negli avvisi territoriali.",
+        "Per il monitoraggio nasce un tavolo tecnico paritetico che dovrà valutare i risultati e avviare progetti pilota. Il comunicato ministeriale non riporta però cifre su stanziamenti, numero di Comuni coinvolti o persone da raggiungere: la portata reale dell'intesa si capirà solo quando arriveranno i primi avvisi e progetti sul territorio."
+      ],
+      "src": [
+        [
+          "Ministero del Lavoro e delle Politiche Sociali",
+          "https://lavoro.gov.it/stampa-e-media/comunicati/pagine/lavoro-e-inclusione-firmato-oggi-verona-il-protocollo-intesa-ministero-anci",
+          "GOV"
+        ]
+      ]
+    }
   ]
- ],
- "stories": [
-  {
-   "id": "ia-amodei-controllo-umano-1vs1",
-   "sec": "ia",
-   "kick": "Sicurezza AI",
-   "date": "25 novembre",
-   "title": "Anthropic e il controllo umano sull'AI: Amodei respinge le accuse, i critici chiedono di più",
-   "sum": "Dopo un articolo di Axios basato su fonti anonime, secondo cui i vertici di Anthropic riterrebbero irrazionale negare all'AI decisioni che sa prendere meglio degli umani, il CEO Dario Amodei ha risposto con un lungo post su X definendo le accuse assurde. Sostiene che affidare il governo all'AI sarebbe una pessima idea, ma distingue tra questo e l'automazione di compiti specifici. I critici ribattono che il controllo si può perdere anche senza deciderlo.",
-   "why": "Il dibattito su quanto delegare alle macchine riguarda anche le imprese che introducono agenti AI: dove fermare l'automazione e chi firma le decisioni sono scelte da fare in modo esplicito.",
-   "vs": true,
-   "facts": [
-    "Axios, citando fonti anonime, ha riferito che Amodei e altri dirigenti di Anthropic ritengono irrazionale, o persino non etico, negare all'AI autorità su compiti che svolge meglio degli umani (Al Jazeera).",
-    "Mercoledì 25 novembre Amodei ha risposto su X definendo l'accusa assurda e scrivendo che consegnare il governo all'AI sarebbe una pessima idea (TechCrunch, Al Jazeera).",
-    "Nelle settimane precedenti Sam Altman (OpenAI) e Alexandr Wang (Meta) avevano parlato pubblicamente di mantenere l'iniziativa umana e di non accettare un passaggio di consegne all'AI (TechCrunch).",
-    "Anthropic ha appena completato la quotazione in Borsa; a giugno aveva dichiarato che Claude scriveva oltre l'80% del codice integrato nei suoi sistemi (Al Jazeera, TechCrunch)."
-   ],
-   "a": {
-    "h": "Nessuna resa all'AI: si automatizzano compiti, non il governo",
-    "who": "La tesi di Dario Amodei (Anthropic)",
-    "pts": [
-     "Affidare il governo all'AI è un errore: legittimità e autodeterminazione non vanno sacrificate in nome dell'efficienza o della sicurezza.",
-     "Far guidare un'auto o scrivere software da cima a fondo a un'AI è automazione di compiti, non un'AI che guida il mondo.",
-     "Serve un limite sull'auto-miglioramento ricorsivo: non è considerato sicuro che Claude costruisca da solo i modelli successivi senza una supervisione umana significativa.",
-     "I concorrenti usano parole come controllo umano per posizionamento commerciale e politico, senza cambiare il modo in cui partecipano alla corsa."
-    ]
-   },
-   "b": {
-    "h": "Il controllo si perde anche senza volerlo: serve fermarsi",
-    "who": "La tesi di David Krueger (Evitable)",
-    "pts": [
-     "Il controllo può sfuggire senza una scelta consapevole, man mano che cresce la pressione per togliere gli umani dalle decisioni.",
-     "Gli stessi ricercatori di Anthropic hanno avvertito che le capacità dell'AI crescono più in fretta della capacità umana di controllarle.",
-     "Se Amodei teme davvero la perdita di controllo, Anthropic dovrebbe sospendere lo sviluppo; serve una moratoria internazionale sull'AI di frontiera.",
-     "Anche altri protagonisti del settore, come Alexandr Wang di Meta, ritengono difficile mantenere il controllo su un auto-miglioramento senza vincoli."
-    ]
-   },
-   "src": [
-    [
-     "TechCrunch",
-     "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd",
-     "EN"
-    ],
-    [
-     "Al Jazeera",
-     "https://www.aljazeera.com/economy/2026/11/26/anthropic-ceo-amodei-denies-wanting-humanity-to-surrender-free-will-to-ai",
-     "EN"
-    ]
-   ]
-  },
-  {
-   "id": "reg-milano-sede-onu-ia",
-   "sec": "regole",
-   "kick": "Parlamento europeo",
-   "date": "26 novembre",
-   "title": "Polo ONU sulla governance dell'IA: Strasburgo appoggia le candidature europee, ma senza nominare Milano",
-   "sum": "Riunito in plenaria a Strasburgo, il Parlamento europeo ha approvato una risoluzione che appoggia le città europee candidate a ospitare una nuova struttura delle Nazioni Unite per la valutazione indipendente e la governance etica dell'intelligenza artificiale. Il PPE ha tolto dal testo il riferimento esplicito a Milano. Gli emendamenti di Lega e Fratelli d'Italia che volevano reinserirlo sono stati respinti, e nel centrodestra italiano è nato uno scontro.",
-   "why": "La città che ospiterà il nuovo organismo sulla governance dell'IA la sceglierà l'ONU. Il voto europeo è un segnale politico e non una decisione. Per le imprese lombarde, però, la candidatura di Milano conta: è sostenuta da Assolombarda, Confcommercio Milano Lodi Monza Brianza e dalla Camera di commercio americana in Italia.",
-   "vs": true,
-   "facts": [
-    "Il 26 novembre la plenaria del Parlamento europeo ha approvato una risoluzione a sostegno delle candidature delle città europee a sede di una nuova struttura ONU sulla valutazione indipendente e la governance etica dell'IA. Le fonti non riportano il numero dei voti.",
-    "La prima firmataria è l'eurodeputata Letizia Moratti (Forza Italia-PPE). Il PPE ha eliminato dal testo il riferimento esplicito a Milano e si è limitato a sostenere le candidature europee.",
-    "Fratelli d'Italia e Lega avevano presentato emendamenti per reinserire il nome di Milano: sono stati respinti.",
-    "La proposta milanese è stata elaborata a luglio 2026 e presentata in un Manifesto promosso da American Chamber of Commerce in Italy, Assolombarda e Confcommercio Milano Lodi Monza Brianza. Il 9 novembre è nato il Comitato Promotore MilanoAI.",
-    "Il Movimento 5 Stelle, con Gaetano Pedullà, ha criticato la destra e ricordato che è stato bocciato anche un suo emendamento sulla sostenibilità ambientale dei data center e sulla partecipazione dei cittadini."
-   ],
-   "a": {
-    "h": "Sì: Milano andava nominata esplicitamente",
-    "who": "La tesi di Lega e Fratelli d'Italia",
-    "pts": [
-     "I due partiti hanno presentato emendamenti per rimettere nel testo un sostegno esplicito a Milano.",
-     "Sardone accusa Forza Italia di aver escluso Milano e definisce la scelta \"inaccettabile\". Aveva minacciato di votare contro i testi se gli emendamenti non fossero passati.",
-     "Per Fidanza la candidatura milanese avrebbe meritato un sostegno più forte da Strasburgo."
-    ]
-   },
-   "b": {
-    "h": "No: meglio sostenere le candidature europee senza fare nomi",
-    "who": "La tesi di Forza Italia-PPE",
-    "pts": [
-     "Secondo Sorte la sede sarà scelta all'ONU e non al Parlamento europeo. Mettere il nome di Milano nella risoluzione avrebbe rischiato di bruciarne la candidatura.",
-     "Per Sorte gran parte della risoluzione riprende i contenuti del Manifesto di Milano. Il voto, a suo dire, apre la strada a una candidatura europea unitaria che Milano può rappresentare.",
-     "Moratti parla di un «fondamentale passo avanti» per la candidatura milanese e chiede che l'Europa converga su Milano, nel rispetto delle procedure ONU.",
-     "Per Tosi l'Europa deve contare nella governance globale dell'IA, perché le regole non possono deciderle solo Stati Uniti e Cina."
-    ]
-   },
-   "src": [
-    [
-     "Il Fatto Quotidiano",
-     "https://www.ilfattoquotidiano.it/2026/11/26/milano-sede-onu-intelligenza-artificiale-centrodestra-notizie/8584857/",
-     ""
-    ],
-    [
-     "ANSA",
-     "https://www.ansa.it/europa/notizie/rubriche/voceeurodeputati/2026/11/26/tosi-fi-italia-pronta-per-ospitare-un-pilastro-onu-sullai_5fc08ef5-a599-4a3b-be65-d664b31cec92.html",
-     ""
-    ],
-    [
-     "Agenparl (comunicato Moratti)",
-     "https://agenparl.eu/2026/11/26/intelligenza-artificiale-moratti-fi-ppe-via-libera-del-parlamento-europeo-alla-risoluzione-sul-nuovo-pilastro-onu-milano-in-pole-position/",
-     ""
-    ],
-    [
-     "Agenzia giornalistica Opinione (dichiarazione Sorte)",
-     "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-intelligenza-artificiale-sorte-fi-milano-in-pole-position-grazie-al-lavoro-di-forza-italia-evitiamo-polemiche-che-rischiano-di-indebolirne-la-candidatura/",
-     ""
-    ]
-   ]
-  },
-  {
-   "id": "ind-rapporto-industria-2026-csc",
-   "sec": "ind",
-   "kick": "Confindustria",
-   "date": "25 novembre",
-   "title": "Rapporto Industria 2026: manifattura più solida, ma produttività ed energia restano i nodi",
-   "sum": "Il Centro Studi Confindustria ha presentato il Rapporto Industria 2026, dedicato alla \"manifattura oltre la fabbrica\". L'Italia resta il secondo produttore manifatturiero dell'UE, con imprese più patrimonializzate e un tasso di investimento superiore a Francia e Germania. Pesano però la crescita lenta della produttività, il ritardo negli investimenti immateriali e un costo dell'energia salito al 5,5% dei costi di produzione nei primi dieci mesi del 2026. Le imprese che integrano l'AI nei processi sono passate dall'11,5% al 18,7% in un anno.",
-   "why": "Il rapporto conferma che le micro e piccole imprese sono il punto debole della produttività italiana, mentre le medie competono alla pari o meglio delle concorrenti europee: crescere di dimensione, investire in software e servizi e adottare l'AI sono le leve indicate.",
-   "deep": [
-    "Il Rapporto Industria 2026 del Centro Studi Confindustria, presentato il 25 novembre, si articola in quattro capitoli: lo stato della manifattura italiana, il suo legame con i servizi, intelligenza artificiale e cambiamento climatico, e i profili territoriali raccolti con le associazioni locali del sistema. Il messaggio di fondo è che la competitività di una fabbrica dipende sempre più da ciò che le sta intorno: servizi interni ed esterni, fornitori qualificati, infrastrutture e tempi della burocrazia.",
-    "I punti di forza: l'Italia è seconda in Europa dopo la Germania, ha mantenuto la propria quota di produzione mondiale e le imprese hanno rafforzato i bilanci, con un patrimonio netto salito al 50% dell'attivo nel 2024. Gli investimenti fissi lordi sono stati in media circa il 25% del valore aggiunto nel 2023-2025, contro il 22% della Francia e il 20% della Germania. A parità di dimensione, le medie imprese italiane risultano circa il 20% più produttive delle omologhe tedesche, francesi e spagnole.",
-    "Le debolezze sono note ma quantificate: tra il 1995 e il 2025 il valore aggiunto per ora lavorata nella manifattura è cresciuto del 27%, contro il 76% della Germania e oltre il 100% della Francia. Micro e piccole imprese generano più del 30% del valore aggiunto manifatturiero, contro meno del 15% in Francia e Germania. Gli investimenti immateriali (ricerca, software, banche dati) valgono circa il 6% del valore aggiunto, contro il 10-11% dei due vicini. Sull'energia, nel primo semestre 2026 le piccole utenze elettriche hanno pagato in Italia 0,30 euro/kWh, contro 0,23 in Germania e 0,21 in Francia.",
-    "Sull'intelligenza artificiale l'adozione cresce ma resta disomogenea: 30,6% tra le imprese con oltre 100 addetti, 17-18% tra le più piccole, e 14,2% nell'industria contro 24,7% nei servizi. Gli ostacoli più citati sono la mancanza di competenze, la sicurezza dei dati e le difficoltà di integrazione. Uno studio europeo richiamato nel rapporto stima un guadagno medio di produttività del lavoro di circa il 4%, concentrato però nelle aziende medie e grandi.",
-    "Sul territorio, distretti industriali sono presenti in 64 province su 110; i tempi e l'incertezza delle procedure amministrative e le carenze logistiche sono gli ostacoli più diffusi. Il rapporto segnala anche il rischio climatico: quasi un lavoratore su tre opera in unità locali esposte ad almeno un rischio fisico, e le ondate di calore riducono la produttività soprattutto nelle imprese minori."
-   ],
-   "src": [
-    [
-     "Confindustria",
-     "https://www.confindustria.it/news/rapporto-industria-2026-la-competitivita-si-gioca-anche-oltre-i-cancelli-della-fabbrica",
-     ""
-    ],
-    [
-     "Avanti!",
-     "https://avantionline.it/confindustria-lancia-lallarme-produttivita/",
-     ""
-    ]
-   ]
-  },
-  {
-   "id": "ind-mckinsey-industria-europea-stress",
-   "sec": "ind",
-   "kick": "Industria europea",
-   "date": "25 novembre",
-   "title": "McKinsey: quasi metà delle grandi industrie europee è in difficoltà finanziaria",
-   "sum": "Un'analisi di McKinsey su quasi 1.200 imprese industriali europee con ricavi oltre 100 milioni di euro indica che circa il 45% era in stress o in crisi finanziaria nel 2025, contro il 42% del 2024 e il 39% del 2023, con stime preliminari 2026 in ulteriore peggioramento. In gioco ci sarebbero circa 3,7 milioni di posti di lavoro. Le cause indicate: costo dell'energia, divario di produttività e concorrenza cinese.",
-   "why": "Molte PMI italiane lavorano come fornitori di grandi gruppi europei, soprattutto in automotive, meccanica e componentistica: la tenuta finanziaria dei clienti è un rischio da monitorare su ordini, pagamenti e concentrazione del fatturato.",
-   "deep": [
-    "Lo studio, ripreso il 25 novembre da Euronews e da European Business Magazine, si basa sull'indice di salute finanziaria industriale di McKinsey, che valuta quasi 1.200 produttori europei, quotati e non, con ricavi superiori a 100 milioni di euro, attraverso indicatori di redditività, flussi di cassa e debito. Secondo i dati riportati, la quota di imprese in stress o in crisi è salita al 45% nel 2025, dal 42% del 2024 e dal 39% del 2023; le prime stime per il 2026 indicano che la quota sta crescendo ancora più rapidamente, tanto che diverse testate parlano ormai di circa metà del campione.",
-    "Il peso del settore è rilevante: secondo McKinsey le imprese industriali generano circa il 36% del valore aggiunto europeo, il 29% dell'occupazione e oltre il 45% della spesa in ricerca e sviluppo. I posti di lavoro direttamente a rischio sono stimati in circa 3,7 milioni, e Euronews riporta anche oltre 500 miliardi di euro di valore aggiunto in bilico. Le difficoltà si concentrano in automotive, macchinari, apparecchiature elettriche e materiali. In Germania la quota di imprese in difficoltà è salita di 12 punti percentuali nel 2025.",
-    "Tra le cause, il rapporto indica tre fattori: prezzi dell'elettricità industriale ben superiori a quelli di Cina e Stati Uniti, un divario di produttività (McKinsey stima quella cinese circa 1,5 volte quella europea in alcuni ambiti) e la pressione competitiva cinese. Sul fronte degli investimenti, la Cina avrebbe destinato circa 6.000 miliardi di dollari agli investimenti produttivi lordi nel 2025, circa il doppio dell'Europa, il cui livello è rimasto sostanzialmente fermo.",
-    "McKinsey definisce i problemi strutturalmente risolvibili, ma sostiene che la ripresa debba partire presto. Le ricette indicate includono energia più economica, recupero di produttività tramite automazione e AI industriale, riforme fiscali e regolatorie e, a livello aziendale, ristrutturazioni con task force dedicate, dismissione delle attività più deboli e uso dell'AI per ridurre il lavoro amministrativo. Il rapporto originale non è stato consultato direttamente: i dati provengono dalle due testate citate."
-   ],
-   "src": [
-    [
-     "Euronews (via Yahoo Finance)",
-     "https://uk.finance.yahoo.com/news/around-3-7-million-jobs-120656964.html",
-     "EN"
-    ],
-    [
-     "European Business Magazine",
-     "https://europeanbusinessmagazine.com/european-industry-financial-stress",
-     "EN"
-    ]
-   ]
-  },
-  {
-   "id": "ind-xpeng-iron-umanoide-produzione",
-   "sec": "ind",
-   "kick": "Robotica",
-   "date": "25 novembre",
-   "title": "Xpeng: il robot umanoide Iron entra in produzione di serie a gennaio 2027",
-   "sum": "Al Tech Day 2026 di Canton, il costruttore cinese di auto elettriche Xpeng ha annunciato che la produzione in serie dell'hardware del robot umanoide Iron partirà a gennaio 2027. Il primo impiego previsto è come assistente alla vendita nei concessionari del gruppo. Restano aperti i dubbi sugli ordini esterni e sul ritorno economico, ammessi dallo stesso fondatore He Xiaopeng.",
-   "why": "Le case automobilistiche cinesi portano nella robotica umanoide catene di fornitura e capacità produttive dell'auto: per chi fa automazione e componentistica in Europa è un segnale su costi e tempi di arrivo di questi robot, anche se gli usi in fabbrica restano per ora limitati.",
-   "deep": [
-    "Il 25 novembre Xpeng ha tenuto il suo Tech Day annuale a Canton. Il presidente e amministratore delegato He Xiaopeng ha presentato una nuova architettura di intelligenza artificiale \"fisica\" che collega controllo in tempo reale, modelli visione-linguaggio-azione e pianificazione, condivisa tra auto, robotaxi, umanoidi e veicoli volanti. Il robot Iron è salito sul palco camminando da solo, ha sostenuto una conversazione vocale e poi è tornato autonomamente alla postazione di ricarica.",
-    "Secondo i dati diffusi dall'azienda e riportati da CnEVPost, Iron è alto 170 cm, pesa 62 kg, ha 76 gradi di libertà, oltre 1.500 punti di rilevamento tattile, tre chip proprietari e una batteria allo stato solido; con 20 minuti di ricarica lavora circa un'ora e mezza. La produzione di serie dell'hardware è fissata a gennaio 2027; sulla presentazione commerciale le fonti divergono (febbraio secondo Xinhua Finance, secondo trimestre 2027 secondo CnEVPost). Dal primo trimestre 2027 il robot farà \"tirocinio\" come addetto alle vendite nei negozi Xpeng in Cina. L'azienda valuta vendita dell'hardware, abbonamenti software e un negozio di abilità.",
-    "La testata cinese Huxiu sottolinea i limiti: Xpeng non ha reso noto il volume di ordini esterni, e produzione, consegne e spedizioni sono metriche diverse spesso confuse. Impiegare i robot nei propri showroom serve soprattutto a vendere auto e non dimostra che sappiano generare ricavi altrove; altri costruttori potrebbero non volere un robot concorrente nelle proprie sedi. Nelle linee di produzione, osserva Huxiu, i robot umanoidi oggi svolgono soprattutto carico e scarico e controllo qualità. La spesa di Xpeng in ricerca sulla robotica quest'anno sarebbe vicina a 3 miliardi di yuan.",
-    "Lo stesso He Xiaopeng si è detto molto ottimista nel lungo periodo e prudente nel breve: a suo avviso il mercato globale vale oggi poche decine di migliaia di unità e la vera sfida è costruire robot che richiedano poco intervento umano e garantiscano un ritorno sull'investimento sostenibile."
-   ],
-   "src": [
-    [
-     "CnEVPost",
-     "https://cnevpost.com/2026/11/25/xpeng-ramps-up-physical-ai-push-2026-ai-day",
-     "EN"
-    ],
-    [
-     "Huxiu",
-     "https://m.huxiu.com/article/4908593.html",
-     "ZH"
-    ],
-    [
-     "Xinhua Finance (via Eastmoney)",
-     "https://finance.eastmoney.com/a/202611253939612795.html",
-     "GOV"
-    ]
-   ]
-  },
-  {
-   "id": "ads-chatgpt-ads-reach-business-agents",
-   "sec": "ads",
-   "kick": "ChatGPT Ads",
-   "date": "25 novembre",
-   "title": "ChatGPT Ads conta le persone raggiunte e porta i Business Agent fuori dagli Stati Uniti",
-   "sum": "Con una comunicazione inviata agli inserzionisti il 25 novembre, OpenAI ha aggiunto ad Ads Manager e alle API nove metriche basate sulle persone raggiunte, tra cui copertura (Reach) e frequenza. I Business Agent, gli assistenti aziendali con cui i clienti possono chattare dentro ChatGPT, si aprono alle aziende idonee di e-commerce e servizi online in mercati supportati fuori dagli USA. Arrivano anche un link «Learn more» predefinito sugli annunci con immagine singola, l'opzione per nascondere i prezzi scontati dei feed prodotto e spiegazioni più chiare sugli annunci respinti.",
-   "why": "Sapere quante persone diverse vedono un annuncio, e quante volte, è il dato minimo per confrontare ChatGPT con Google e Meta prima di spostarci budget. L'apertura dei Business Agent oltre gli USA indica che OpenAI vuole portare la piattaforma anche alle aziende non americane, ma resta da verificare in quali paesi.",
-   "deep": [
-    "Finora i report degli annunci su ChatGPT contavano solo impressioni e clic, non le persone. Chi voleva stimare la copertura reale doveva affidarsi a stime esterne, come i panel di società di ricerca. Con l'aggiornamento inviato via email il 25 novembre, OpenAI introduce in Ads Manager e nelle Ads API nove nuove colonne: Reach, Frequency, Click Reach, Click Frequency, Total Reach, Total Frequency, Unique CTR, Unique CPC e costo per mille persone raggiunte. Si attivano dal menu di modifica delle colonne, nella voce dedicata agli spettatori degli annunci.",
-    "OpenAI definisce la copertura come la stima delle persone uniche che hanno visto un annuncio almeno una volta nel periodo scelto, e la frequenza come il rapporto tra impressioni totali e copertura. Secondo PPC Land, l'email non definisce le altre sette metriche, non spiega come vengono stimate le persone uniche e non chiarisce se il dato si possa suddividere per paese, dispositivo o pubblico, né se elimini i doppioni tra campagne diverse. Le pagine di aiuto di OpenAI, al momento della pubblicazione, non erano ancora aggiornate.",
-    "La seconda novità riguarda i Business Agent: le aziende idonee di e-commerce e servizi online in mercati supportati fuori dagli Stati Uniti possono crearne uno nel Business Hub di ChatGPT. Chi rispetta le regole pubblicitarie può anche collegarlo a una campagna come «Sponsored Business Agent». La pagina di aiuto di OpenAI precisa che questa versione sponsorizzata è in distribuzione «nelle prossime settimane», richiede campagne con obiettivo di conversione e non prevede costi aggiuntivi per le conversazioni. L'inserzionista non riceve le singole chat: vede solo andamenti aggregati, approfonditi dopo oltre 25 conversazioni. OpenAI non ha indicato l'elenco dei paesi supportati.",
-    "Completano il pacchetto tre ritocchi pratici: un link «Learn more» attivo per impostazione predefinita sotto gli annunci con immagine singola, che porta alla pagina di destinazione già impostata; un'opzione per mostrare il prezzo pieno invece di quello scontato negli annunci da feed prodotto; messaggi di revisione che indicano quale regola ha causato il rifiuto di un annuncio. OpenAI sottolinea che le linee guida di approvazione non sono cambiate. Restano aperte la disponibilità effettiva nei singoli mercati e la metodologia di calcolo della copertura."
-   ],
-   "src": [
-    [
-     "Search Engine Roundtable",
-     "https://www.seroundtable.com/chatgpt-ads-updates-42623.html",
-     "EN"
-    ],
-    [
-     "PPC Land",
-     "https://ppc.land/chatgpt-ad-reports-add-9-metrics-built-on-how-many-people-see-the-ads/",
-     "EN"
-    ],
-    [
-     "OpenAI Help Center",
-     "https://help.openai.com/en/articles/20001651",
-     "EN"
-    ]
-   ]
-  },
-  {
-   "id": "ia-anthropic-api-rust-agenti",
-   "sec": "ia",
-   "kick": "Anthropic",
-   "date": "25 novembre",
-   "title": "Anthropic riscrive in Rust la sua API con gli agenti Claude: il vero collo di bottiglia è la verifica",
-   "sum": "Anthropic ha raccontato sul proprio blog come ha spostato da Python a Rust la Messages API, il canale con cui clienti e app dell'azienda accedono a Claude, facendo scrivere gran parte del codice ad agenti Claude. Secondo l'azienda, il nuovo sistema usa circa il 70% di CPU in meno per richiesta e oltre l'80% di memoria in meno. La lezione principale dichiarata: i test esistenti non bastavano, e controllare il lavoro degli agenti è diventato più difficile che produrlo.",
-   "why": "Per chi valuta agenti AI su software o processi interni, è un caso concreto: la generazione è veloce, ma servono controlli sul comportamento reale e approvazione umana di ogni modifica prima di andare in produzione.",
-   "deep": [
-    "Anthropic ha pubblicato il 25 novembre un resoconto tecnico sulla migrazione della Messages API, il servizio attraverso cui passano le richieste dei clienti e delle applicazioni dell'azienda come Claude Code e Cowork. L'azienda spiega che il traffico è cresciuto di circa 1.800 volte tra l'inizio del 2024 e l'autunno 2026, e che Python aggiungeva costi a ogni passaggio della richiesta. Un primo intervento parziale in Rust aveva ridotto la CPU solo dell'8-10% circa, così si è scelto di riscrivere tutto.",
-    "Secondo il resoconto, Claude ha prodotto una prima versione del percorso principale in circa una settimana. Ma a fine aprile, pur superando circa il 98% dei test, la nuova versione dava risultati identici a quella vecchia solo su un quarto circa degli input reali, e a inizio maggio la corrispondenza era scesa al 6,5%. I circa 700 test di integrazione erano legati all'implementazione Python e, rileggendoli, sono emerse oltre 100 verifiche indebolite durante il porting.",
-    "La soluzione è stata usare la vecchia API in produzione come riferimento: il traffico reale veniva duplicato verso la versione Rust e le differenze, registrate senza leggere il testo degli utenti, venivano assegnate in automatico ad agenti Claude incaricati di trovare la causa e proporre una correzione con relativo test. Ogni modifica è stata rivista e approvata da un ingegnere prima della produzione, e le correzioni umane sono diventate regole permanenti per gli agenti.",
-    "Il passaggio del traffico pubblico a Rust è avvenuto a settembre, con una corrispondenza finale del 99,6% e senza fermare il servizio. Oltre ai risparmi di CPU e memoria, Anthropic indica un tempo mediano di risposta al primo token più basso di circa il 20%. L'azienda segnala anche errori degli agenti, come una correzione che faceva passare i controlli senza risolvere davvero il problema, respinta da un ingegnere.",
-    "Tutti i dati sono dichiarati da Anthropic e non risultano verificati da terzi. La conclusione del team è che, con agenti capaci di scrivere codice, il lavoro umano si sposta dalla caccia ai singoli errori alla definizione di regole e sistemi di controllo."
-   ],
-   "src": [
-    [
-     "Anthropic",
-     "https://www.anthropic.com/research/migrating-api-to-rust",
-     "EN"
-    ]
-   ]
-  },
-  {
-   "id": "ia-chatgpt-chat-work-limiti",
-   "sec": "ia",
-   "kick": "OpenAI",
-   "date": "25 novembre",
-   "title": "ChatGPT unisce Chat e Work: un unico contatore d'uso, limiti più stretti per chi lo usa molto",
-   "sum": "OpenAI ha iniziato a distribuire a un piccolo gruppo di abbonati Pro un'esperienza unica che fonde la chat di ChatGPT con Work, l'agente per i compiti complessi. Chat e Work attingeranno a un'unica quota d'uso; le conversazioni con il modello Instant restano escluse dal conteggio. Un portavoce ha detto a TechCrunch che la maggior parte degli utenti non vedrà più azzeramenti del solito, ma una piccola parte dei più assidui potrebbe esaurire i limiti prima.",
-   "why": "Le aziende con abbonamenti Plus, Pro o Business che usano ChatGPT per attività lunghe (documenti, analisi, Codex) dovrebbero monitorare i consumi da dicembre: la quota diventa condivisa e i compiti complessi pesano di più.",
-   "deep": [
-    "OpenAI aveva annunciato la fusione via email all'inizio di novembre. Secondo TechCrunch, il primo rilascio è partito questa settimana verso alcuni abbonati Pro, annunciato su X dal responsabile di prodotto Thibault Sottiaux. La pagina di supporto di OpenAI indica che da dicembre i piani Plus, Pro e Business avranno un'unica quota d'uso condivisa tra ChatGPT e Codex, mentre le funzioni agentiche di Work entrano nell'esperienza principale.",
-    "Il consumo viene misurato in token e dipende dal modello e dal compito: modelli più avanzati e attività complesse consumano di più. Le chat con Instant non intaccano la quota. Dalle impostazioni (Settings, Usage) si vede quanto resta e quando si azzera; esaurita la quota, si può attendere, passare a un piano superiore o acquistare crediti per le funzioni ammesse.",
-    "Un portavoce dell'azienda ha spiegato a TechCrunch che per la maggior parte degli utenti la frequenza degli azzeramenti non dovrebbe cambiare, mentre una piccola frazione degli utenti più intensi potrebbe raggiungere i limiti prima. OpenAI dice che continuerà a lavorare sull'efficienza per offrire di più agli abbonati. Sui social e nel forum della comunità, diversi abbonati hanno protestato temendo meno accesso ai modelli di ragionamento allo stesso prezzo.",
-    "OpenAI non ha pubblicato le dimensioni delle quote, né indicazioni specifiche per i piani Enterprise ed Edu. TechCrunch ricorda che Anthropic aveva unificato le interfacce di chat e Cowork di Claude a settembre, e collega la mossa all'aumento dei costi di infrastruttura e alla domanda di modelli più potenti."
-   ],
-   "src": [
-    [
-     "TechCrunch",
-     "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-     "EN"
-    ],
-    [
-     "OpenAI Help Center",
-     "https://help.openai.com/fil-ph/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-     "EN"
-    ]
-   ]
-  },
-  {
-   "id": "lav-protocollo-ministero-anci",
-   "sec": "lavoro",
-   "kick": "Politiche attive",
-   "date": "26 novembre",
-   "title": "Lavoro e competenze, Ministero e Comuni firmano un protocollo biennale",
-   "sum": "Il Ministero del Lavoro e l'ANCI hanno firmato a Verona un protocollo d'intesa di due anni per portare le politiche attive del lavoro più vicino ai cittadini attraverso i Comuni. L'accordo punta su orientamento verso SIISL, APPLI e il programma EDO di alfabetizzazione digitale, sul rafforzamento del sistema duale e degli ITS e su un'attenzione specifica alle aree interne. Il comunicato non indica risorse economiche né numero di beneficiari.",
-   "why": "Se i Comuni diventano uno sportello per l'incontro tra domanda e offerta e per gli ITS, le PMI dei territori periferici possono avere un canale in più per trovare profili tecnici. Conviene seguire gli avvisi territoriali che ne deriveranno.",
-   "deep": [
-    "Il protocollo è stato firmato il 26 novembre dalla ministra del Lavoro Marina Calderone e dal presidente dell'ANCI Gaetano Manfredi durante la 43esima assemblea annuale dei Comuni italiani, a Verona. Secondo il vicepresidente ANCI con delega al Lavoro, Massimo Cavazzana, il testo è il risultato di circa un anno di lavoro comune con il Ministero.",
-    "L'obiettivo dichiarato è usare la rete capillare dei Comuni per collegare politiche del lavoro, servizi sociali, politiche giovanili e sviluppo economico locale. In concreto i Comuni dovranno indirizzare verso gli strumenti nazionali le persone più lontane dal mercato del lavoro, come giovani che non studiano e non lavorano, persone con disabilità, lavoratori precari e donne in contesti fragili. Gli strumenti citati sono la piattaforma SIISL per l'incontro tra domanda e offerta, il servizio di orientamento APPLI e il programma EDO per le competenze digitali di base.",
-    "Il documento prevede anche formazione per gli operatori comunali, la promozione dell'autoimpiego e dell'imprenditoria femminile e giovanile, il rafforzamento del sistema duale e degli ITS Academy e un'attenzione particolare alle aree interne e alle isole minori individuate dal piano nazionale PSNAI 2025. Il supporto tecnico sarà affidato a Sviluppo Lavoro Italia, la società in house del Ministero, che affiancherà i Comuni nella coprogettazione e negli avvisi territoriali.",
-    "Per il monitoraggio nasce un tavolo tecnico paritetico che dovrà valutare i risultati e avviare progetti pilota. Il comunicato ministeriale non riporta però cifre su stanziamenti, numero di Comuni coinvolti o persone da raggiungere: la portata reale dell'intesa si capirà solo quando arriveranno i primi avvisi e progetti sul territorio."
-   ],
-   "src": [
-    [
-     "Ministero del Lavoro e delle Politiche Sociali",
-     "https://lavoro.gov.it/stampa-e-media/comunicati/pagine/lavoro-e-inclusione-firmato-oggi-verona-il-protocollo-intesa-ministero-anci",
-     "GOV"
-    ]
-   ]
-  }
- ]
 }
