@@ -74,7 +74,6 @@ def main():
 <title>{e(title)} · News.Raimondo.it</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="{e(desc)}">
-<link rel="canonical" href="{e(target)}">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="News.Raimondo.it">
 <meta property="og:title" content="{e(title)}">
@@ -84,7 +83,6 @@ def main():
 <meta property="og:url" content="{SITE}/a/{date}/{sid}.html">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<meta http-equiv="refresh" content="0;url={e(target)}">
 <script>location.replace({json.dumps(target)})</script>
 </head><body style="font-family:sans-serif;background:#14121c;color:#fff;padding:24px">
 <p><a style="color:#b592ff" href="{e(target)}">{e(s['title'])}</a> · News.Raimondo.it</p>
