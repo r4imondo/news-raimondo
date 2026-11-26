@@ -303,6 +303,10 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .pk{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c,#753cef)}
 .pi b{color:var(--strong);font-size:17px;line-height:1.25}.ps{font-size:15px;line-height:1.45;color:var(--soft)}
 .more-st{text-align:center;color:var(--soft);font-size:14px;padding:18px 0}
+.nexted{display:block;margin-top:4px;font-size:12.5px;letter-spacing:.01em;color:rgba(236,235,240,.62);font-variant-numeric:tabular-nums}
+.nexted::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#e0306a;margin-right:7px;vertical-align:1px;box-shadow:0 0 0 0 rgba(224,48,106,.6);animation:nxp 2.4s ease-out infinite}
+@keyframes nxp{0%{box-shadow:0 0 0 0 rgba(224,48,106,.55)}70%{box-shadow:0 0 0 7px rgba(224,48,106,0)}100%{box-shadow:0 0 0 0 rgba(224,48,106,0)}}
+@media (prefers-reduced-motion:reduce){.nexted::before{animation:none}}
 </style>
 </head>
 <body>
@@ -323,6 +327,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 </div>
 <div class="wrap">
   <p class="nores" id="nores">Nessun articolo trovato in questa edizione.</p>
+  <div id="arch-res"></div>
   <div id="secs"></div>
   <div id="more"></div>
   <div class="end">
@@ -463,6 +468,29 @@ async function next(){if(busy||queue&&!queue.length||shown>=MAX)return;busy=true
 const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting))next()},{rootMargin:"0px 0px 700px 0px"});
 const wait=()=>{if(ok(qd)||ok(window.__ED))io.observe(st);else setTimeout(wait,300)};wait();
 setInterval(()=>{if(!busy&&st.getBoundingClientRect().top<innerHeight+700)next()},1500)})();</script>
+
+<script>(()=>{const qi=document.getElementById("q"),box=document.getElementById("arch-res");if(!qi||!box)return;
+const DB=document.documentElement.dataset.base||"",qd=new URLSearchParams(location.search).get("d");
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const norm=x=>String(x||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+const ok=d=>/^\d{4}-\d{2}-\d{2}$/.test(d||"");let all=null,loading=null,tm=0;
+async function load(){if(all)return all;if(loading)return loading;loading=(async()=>{
+  const cur=ok(qd)?qd:window.__ED;const l=await fetch(DB+"archive/index.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]);
+  const days=(Array.isArray(l)?l:[]).filter(x=>x&&ok(x.date)&&x.date!==cur).sort((a,b)=>a.date<b.date?1:-1).slice(0,365);
+  const out=[];for(let i=0;i<days.length;i+=8){const part=await Promise.all(days.slice(i,i+8).map(d=>fetch(DB+"archive/"+d.date+".json",{cache:"force-cache"}).then(r=>r.ok?r.json():null).catch(()=>null)));
+    for(const ed of part){if(!ed||!Array.isArray(ed.stories))continue;const nm={};for(const x of ed.secs||[])if(Array.isArray(x))nm[x[0]]=x[1];
+      for(const s of ed.stories){if(!s||!/^[a-z0-9-]{1,80}$/.test(s.id))continue;out.push({s,date:ed.date,label:ed.label||ed.date,cat:nm[s.sec]||s.kick||"",hay:norm([s.kick,s.title,s.sum,s.why,...(s.facts||[]),...(s.a?s.a.pts:[]),...(s.b?s.b.pts:[]),...(s.deep||[]),...(s.src||[]).map(x=>x&&x[0])].join(" "))})}}}
+  return all=out})();return loading}
+async function run(){const w=norm(qi.value.trim()).split(/\s+/).filter(x=>x.length>1);if(!w.length||qi.value.trim().length<3){box.innerHTML="";return}
+  box.innerHTML='<p class="more-st">Cerco nelle edizioni precedenti…</p>';const A=await load();const v=qi.value;
+  const hits=A.filter(x=>w.every(t=>x.hay.includes(t))).slice(0,40);if(v!==qi.value)return;
+  box.innerHTML=hits.length?`<section class="past-ed"><h2><small>Dalle edizioni precedenti</small>${hits.length===40?"Primi 40 risultati":hits.length+(hits.length===1?" risultato":" risultati")}</h2><div class="past-list">${hits.map(({s,date,label,cat})=>{let su=String(s.sum||"");if(su.length>150)su=su.slice(0,147).replace(/\s+\S*$/,"")+"…";return `<a class="pi c-${esc(s.sec)}" href="?d=${date}#${esc(s.id)}"><span class="pk">${esc(cat)}${s.vs?" · 1vs1":""} · ${esc(label)}</span><b>${esc(s.title)}</b><span class="ps">${esc(su)}</span></a>`}).join("")}</div></section>`:(A.length?'<p class="more-st">Nessun risultato nelle edizioni precedenti.</p>':"")}
+qi.addEventListener("input",()=>{clearTimeout(tm);tm=setTimeout(run,350)});})();</script>
+<script>(()=>{const c=document.getElementById("count");if(!c)return;const n=document.createElement("span");n.id="nexted";n.className="nexted";c.after(n);
+const H=6,M=45;const rome=()=>{const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Rome",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}).formatToParts(new Date());const g=t=>+p.find(x=>x.type===t).value;return g("hour")*3600+g("minute")*60+g("second")};
+const tick=()=>{const now=rome(),t=H*3600+M*60;if(now>=6*3600+21*60&&now<t){n.textContent="Nuova edizione in preparazione";return}
+  let d=t-now;if(d<=0)d+=86400;const h=Math.floor(d/3600),m=Math.floor(d%3600/60);n.textContent="Prossima edizione tra "+(h?h+" h ":"")+m+" min"};
+tick();setInterval(tick,30000)})();</script>
 
 </body>
 </html>
