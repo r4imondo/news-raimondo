@@ -126,7 +126,9 @@ footer{font-size:13px;color:var(--soft);padding:18px 0 40px;border-top:1px solid
 .privh h2{font:800 26px/1.1 "Inter",sans-serif;margin:0 0 4px;color:#fff}
 .privh p{margin:0;font-size:14px;color:#c3bece}
 .mine{font-size:12px;font-weight:700;color:#fff;background:var(--vio);border-radius:6px;padding:2px 8px;vertical-align:4px}
-.vsh{padding-top:44px}
+.vsh{padding-top:44px;display:block!important}
+.vsh h2{flex-wrap:wrap;row-gap:8px}
+.vsb{flex:none;white-space:nowrap;line-height:1}
 .vsh h2{display:flex;align-items:center;gap:10px;font-size:clamp(28px,3.4vw,38px)}
 .vsh p{margin:6px 0 4px;color:var(--soft)}
 .vsb{font-size:.62em;font-weight:800;color:#fff;background:linear-gradient(90deg,var(--vio),var(--pink));border-radius:10px;padding:6px 12px}
@@ -219,6 +221,12 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .sr i s{position:absolute;top:-4px;bottom:-4px;width:2px;background:#fff;opacity:.75}
 .load{padding:60px 0;color:var(--soft)}
 .past{font-size:13px;color:#c3bece;padding:0 0 8px}
+.art{container-type:inline-size}
+.catcov{place-items:end start!important;padding:clamp(16px,5cqi,30px)}
+.catcov .ck{position:absolute;top:clamp(12px,4cqi,20px);left:clamp(14px,5cqi,30px);z-index:1;background:var(--c,#753cef);color:#fff;font:700 12px/1 "Inter",sans-serif;padding:5px 9px;border-radius:6px;letter-spacing:.01em}
+.catcov b{position:relative;z-index:1;font:800 clamp(17px,7cqi,40px)/1.05 "Inter",sans-serif;letter-spacing:-.025em;color:#fff;text-wrap:balance;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;text-shadow:0 2px 18px rgba(0,0,0,.35);max-width:94%}
+.lead .catcov b{font-size:clamp(24px,7.6cqi,56px)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 </style>
 </head>
 <body>
@@ -258,8 +266,8 @@ const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v)
 const HUE={ads:0,ind:1,ia:4,regole:0,lavoro:1,succ:3};
 let S=[],SECS=[],N=0,st={read:{},pref:{}};
 const bars=c=>{const lo=+c.min||0,hi=+c.max||Math.max(...c.rows.map(r=>+r[1]||0)),pc=v=>Math.max(3,Math.min(100,(v-lo)/(hi-lo||1)*100)).toFixed(1);return `<div class="sb">${c.rows.map(r=>`<div class="sr"><span>${esc(r[0])}</span><i><u style="width:${pc(+r[1])}%" class="${r[3]?"hi":""}"></u>${c.mark!=null?`<s style="left:${pc(+c.mark)}%"></s>`:""}</i><b>${esc(r[2])}</b></div>`).join("")}</div>`};
-function cover(s){const n=(SECS.find(x=>x[0]===s.sec)||[0,s.kick])[1];return `<div class="catcov"><span>${esc(n)}</span></div>`}
-const parts=s=>`<span class="kick">${esc(s.kick)}</span> <span class="date">· ${esc(s.date)}</span>`;
+function cover(s){const n=(SECS.find(x=>x[0]===s.sec)||[0,s.kick])[1];return `<div class="catcov"><span class="ck">${esc(n)}</span><b>${esc(s.title)}</b></div>`}
+const parts=s=>`<span class="date">${esc(s.date)}</span>`;
 const srcs=s=>`<div class="src">Fonti: ${(s.src||[]).filter(x=>okUrl(x[1])).map(([n,u,l])=>`<a href="${esc(u)}">${esc(n)}${l==="EN"||l==="ZH"?`<sup class="lg">${l}</sup>`:l==="GOV"?`<sup class="lg">fonte governativa</sup>`:""}</a>`).join("")}</div>${(s.yt||[]).length?`<div class="src vid">Video: ${s.yt.filter(x=>okUrl(x[1])).map(([n,u])=>`<a href="${esc(u)}"><i aria-hidden="true">▶</i>${esc(n)}</a>`).join("")}</div>`:""}`;
 const x2=l=>l==="GOV"?`<sup class="lg">fonte governativa</sup>`:"";
 const share=s=>{const u=encodeURIComponent(BASE+"#"+s.id),t=encodeURIComponent(s.title+" · News.Raimondo.it");return `<div class="social"><span>Condividi</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}">LinkedIn</a><a href="https://wa.me/?text=${t}%20${u}">WhatsApp</a><a href="https://twitter.com/intent/tweet?text=${t}&url=${u}">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=${u}">Facebook</a><button data-copy="${s.id}">Copia link</button></div>`};
@@ -267,8 +275,8 @@ const deep=s=>Array.isArray(s.deep)&&s.deep.length?`<button class="deepb" data-d
 const tail=s=>`${deep(s)}<div class="why"><b>Perché conta</b>${esc(s.why)}</div>${srcs(s)}<div class="acts"><button class="act" data-a="more" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="more"}">Più così</button><button class="act" data-a="less" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="less"}">Meno così</button><button class="act" data-a="read" data-id="${s.id}" aria-pressed="${!!st.read[s.id]}">${st.read[s.id]?"Letto":"Segna come letto"}</button></div>${share(s)}`;
 const side=(c,x)=>`<div class="side ${c}"><h4>${esc(x.h)}</h4><p class="who">${esc(x.who)}</p><ul>${(x.pts||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>`;
 function renderStory(s){const a=document.createElement("article");a.classList.add("c-"+s.sec);a.dataset.id=s.id;a.dataset.sec=s.sec;a.id=s.id;
-  if(s.vs&&s.a&&s.b){a.classList.add("story","vs");a.innerHTML=`<div class="head"><div>${parts(s)}<h3>${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p><ul class="facts">${(s.facts||[]).map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div><div class="art">${cover(s)}<span class="badge">1vs1</span></div></div><div class="sides">${side("a",s.a)}${side("b",s.b)}</div><div class="foot"><p class="note2">Formato 1vs1: le due tesi più nette, attribuite a chi le sostiene. Il giornale non prende posizione.</p>${tail(s)}</div>`}
-  else{a.classList.add("story");a.innerHTML=`<div class="art">${cover(s)}</div><div class="in">${parts(s)}<h3>${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p>${tail(s)}</div>`}
+  if(s.vs&&s.a&&s.b){a.classList.add("story","vs");a.innerHTML=`<div class="head"><div>${parts(s)}<h3 class="vh">${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p><ul class="facts">${(s.facts||[]).map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div><div class="art">${cover(s)}<span class="badge">1vs1</span></div></div><div class="sides">${side("a",s.a)}${side("b",s.b)}</div><div class="foot"><p class="note2">Formato 1vs1: le due tesi più nette, attribuite a chi le sostiene. Il giornale non prende posizione.</p>${tail(s)}</div>`}
+  else{a.classList.add("story");a.innerHTML=`<div class="art">${cover(s)}</div><div class="in">${parts(s)}<h3 class="vh">${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p>${tail(s)}</div>`}
   document.getElementById(s.vs?"col-vs":"col-"+s.sec).appendChild(a)}
 function refresh(){
   const r=S.filter(s=>st.read[s.id]).length;
@@ -293,7 +301,7 @@ function boot(ed){
   if(ed.date&&ed.date<today){const p=document.getElementById("past");p.hidden=false;p.textContent="Questa è l'ultima edizione disponibile: quella di oggi non è ancora uscita."}
   document.getElementById("secs").innerHTML=`<div class="sech vsh" data-sec="vs"><h2><span class="vsb">1vs1</span> Il confronto del giorno</h2><p>Le notizie che dividono, con le due tesi più nette messe una di fronte all'altra.</p></div><div class="cards vsc" id="col-vs"></div>`+SECS.map(([k,n])=>`<div class="sech" data-sec="${k}"><h2>${esc(n)}</h2></div><div class="cards" id="col-${k}"></div>`).join("");
   const L=S.find(s=>s.id===ed.lead&&!s.vs);const lead=document.getElementById("lead");
-  if(L){lead.classList.add("c-"+L.sec);lead.dataset.id=L.id;lead.dataset.sec=L.sec;lead.id=L.id;lead.innerHTML=`<div>${parts(L)}<h2>${esc(L.title)}</h2><p class="sum">${esc(L.sum)}</p>${tail(L)}</div><div class="art">${cover(L)}</div>`}else lead.remove();
+  if(L){lead.classList.add("c-"+L.sec);lead.dataset.id=L.id;lead.dataset.sec=L.sec;lead.id=L.id;lead.innerHTML=`<div>${parts(L)}<h2 class="vh">${esc(L.title)}</h2><p class="sum">${esc(L.sum)}</p>${tail(L)}</div><div class="art">${cover(L)}</div>`}else lead.remove();
   for(const s of S)if(s!==L)renderStory(s);
   for(const h of document.querySelectorAll(".sech")){const any=document.querySelector(`#col-${h.dataset.sec} article`);if(!any)h.classList.add("empty")}
   const chips=document.getElementById("chips");
