@@ -122,11 +122,16 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 1. Cercare le notizie delle ultime 48 ore per ogni sezione (WebSearch, anche in inglese e cinese).
 2. Aprire e leggere per intero le fonti candidate (WebFetch). Scartare ciò che non passa le regole.
 3. Scegliere al massimo 3 per sezione e 15 in tutto; scegliere l'apertura (la più rilevante non divisiva).
-4. Scrivere `edition.json`, salvarne una copia identica in `archive/AAAA-MM-GG.json` (data di oggi) e aggiungere in fondo a `archive/index.json` la voce `{"date":"AAAA-MM-GG","label":"…","n":numero_notizie}` (senza duplicati). L'archivio si sfoglia dalla pagina con `?d=AAAA-MM-GG`.
+4. La data dell'edizione è SEMPRE quella di oggi nel fuso Europe/Rome (anche se l'esecuzione è serale).
+   Scrivere `edition.json`, salvarne una copia identica in `archive/AAAA-MM-GG.json` (data di oggi) e aggiungere in fondo a `archive/index.json` la voce `{"date":"AAAA-MM-GG","label":"…","n":numero_notizie}` (senza duplicati). L'archivio si sfoglia dalla pagina con `?d=AAAA-MM-GG`.
 5. Validare il JSON, fare commit su `main` con messaggio "Edizione AAAA-MM-GG" e push.
 6. Sezioni private: se lo strumento claude-artifacts `db_write` è disponibile, aggiornare il documento
    `private/edition` dell'artifact `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con lo stesso formato
    (`secs` nell'ordine indicato sopra, anche se una sezione è vuota, + `stories`, al massimo 1 notizia per sezione privata, stesse regole). Altrimenti saltare.
+7. Pagina su claude.ai: con lo stesso strumento scrivere anche il documento `private/public` dello stesso
+   artifact con il contenuto IDENTICO di `edition.json` (stessi campi `date`, `label`, `lead`, `secs`,
+   `stories`). La pagina su claude.ai lo legge per mostrare l'edizione del giorno; se manca, mostra la demo.
+   Prima leggerlo con `db_get` per avere la versione (`ifVersion`), poi `db_write` con op `set`.
 
 ## Pubblicazione su raimondo.it/news
 
