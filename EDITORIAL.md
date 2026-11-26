@@ -19,8 +19,12 @@ Tono: italiano chiaro, professionale ma accessibile. Niente sensazionalismo.
 - `lavoro` → Lavoro e formazione (competenze, lavoratori senior e AI, fondi interprofessionali, bandi)
 - `succ` → Passaggio generazionale (successione d'impresa, PMI senza successore)
 
-Le sezioni private (Politica, Formula 1, UAP, Astronomia e spazio, Rimini e Romagna) NON vanno mai
-in questo repository: sono pubblico. Vivono solo nella pagina privata su claude.ai (vedi in fondo).
+Le sezioni private NON vanno mai in questo repository (che è pubblico). Vivono solo nella pagina
+privata su claude.ai (vedi in fondo). Sezioni private e ordine obbligatorio:
+`pol` Politica, `eco` Economia, `geo` Geopolitica (queste tre compaiono in cima, prima delle sezioni
+pubbliche), poi `cielo` Astronomia e spazio, `uap` UAP, `rimini` Rimini e Romagna (penultima),
+`f1` Formula 1 (sempre ultima). Massimo 1 notizia per sezione privata; le notizie divisive di politica,
+economia e geopolitica escono in formato 1vs1.
 
 ## Regole (decise con Federico il 26/11/2026)
 
@@ -115,7 +119,7 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 5. Validare il JSON, fare commit su `main` con messaggio "Edizione AAAA-MM-GG" e push.
 6. Sezioni private: se lo strumento claude-artifacts `db_write` è disponibile, aggiornare il documento
    `private/edition` dell'artifact `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con lo stesso formato
-   (`secs` private + `stories`, al massimo 1 notizia per sezione privata, stesse regole). Altrimenti saltare.
+   (`secs` nell'ordine indicato sopra, anche se una sezione è vuota, + `stories`, al massimo 1 notizia per sezione privata, stesse regole). Altrimenti saltare.
 
 ## Pubblicazione su raimondo.it/news
 

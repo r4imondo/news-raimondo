@@ -79,7 +79,10 @@ button{font:inherit;color:inherit}
 .note{font-size:13px;color:#a9a4b8;margin:0;padding-bottom:6px}
 .sech{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:40px 0 6px}
 .sech h2{font:800 28px/1.1 "Inter",sans-serif;letter-spacing:-.02em;margin:0;color:var(--strong)}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:22px}
+.cards{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards>.story:not(.vs):last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)}
+.cards>.story:not(.vs):last-child:nth-child(odd)>.art{aspect-ratio:auto;min-height:100%}}
 .story{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--bg)}
 .story .art{aspect-ratio:16/9;border-radius:0}
 .story .in{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
@@ -167,6 +170,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .sf span.hi{background:linear-gradient(135deg,#753cef,#ff3d71)}
 .sf em{font-style:normal;color:rgba(255,255,255,.6)}
 @media(max-width:600px){.sr{grid-template-columns:minmax(0,7em) minmax(0,1fr) auto;font-size:13px}}
+.cover .sr b{font:700 15px/1.2 "Inter",sans-serif;letter-spacing:0;white-space:nowrap}
 .cover .ck{font-size:13px;font-weight:700;color:rgba(255,255,255,.8)}
 .cover b{font:800 clamp(52px,9vw,112px)/.9 "Inter",sans-serif;letter-spacing:-.05em;white-space:nowrap}
 .story .cover b{font-size:clamp(48px,7vw,84px)}
