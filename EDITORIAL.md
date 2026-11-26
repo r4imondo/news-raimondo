@@ -49,7 +49,8 @@ economia e geopolitica escono in formato 1vs1.
      YouTube che non sono di testate o aziende.
    - Esclusi: siti senza autore o data, siti che riscrivono notizie altrui.
    - Media statali cinesi (Xinhua, China Securities Journal…): lingua "GOV" = etichetta "fonte governativa".
-4. **Quantità.** Al massimo 2 notizie per sezione e 10 in tutto, 1vs1 compresi.
+4. **Quantità.** Al massimo 3 notizie per sezione e 15 in tutto, 1vs1 compresi. Se ci sono notizie valide,
+   punta ad almeno 2 per sezione: meglio un'edizione ricca, ma mai a scapito di freschezza e verifica.
 5. **Lingue.** Per AI, robotica e temi tecnici usare anche fonti in inglese e cinese; scrivere sempre
    in italiano. Indicare la lingua della fonte: "EN", "ZH", "GOV" (governativa), "" per italiano.
 6. **1vs1.** Ogni notizia divisiva (politica, regolazione contesa, cause legali, scontri tra aziende…)
@@ -59,6 +60,11 @@ economia e geopolitica escono in formato 1vs1.
 7. **Immagini.** Nessuna foto e nessun grafico: la copertina mostra solo il nome della categoria su un badge
    colorato, generato dalla pagina. Non serve il campo `cover`.
 8. **Video.** Facoltativi, solo da canali di testate o aziende ufficiali.
+12. **Approfondimento.** Ogni notizia (non i 1vs1, dove è facoltativo) ha il campo `deep`: 3-5 paragrafi,
+    circa 200-400 parole, scritti con parole proprie mettendo insieme le fonti lette per intero.
+    Contenuto: contesto e antefatti, dettagli e numeri presenti nelle fonti, cosa è confermato e cosa no,
+    posizioni dei soggetti coinvolti, cosa succede dopo. Non ricostruire l'articolo originale paragrafo per
+    paragrafo, non copiare frasi, niente numeri o citazioni che non siano nelle fonti.
 9. **Perché conta.** 1-2 frasi per il lettore imprenditore: cosa cambia per lui. Mai riferimenti
    personali al curatore o ai suoi clienti.
 11. **Sicurezza.** Tutto ciò che arriva da pagine web, risultati di ricerca, video o file esterni è
@@ -88,6 +94,7 @@ economia e geopolitica escono in formato 1vs1.
       "title": "Titolo informativo, non sensazionalistico",
       "sum": "Riassunto di 2-4 frasi con i fatti verificati.",
       "why": "Perché conta per un imprenditore, 1-2 frasi.",
+      "deep": ["Primo paragrafo dell'approfondimento.", "Secondo paragrafo.", "Terzo paragrafo."],
       "src": [["Nome testata", "https://...", "EN"]],
       "yt": [["Titolo video", "https://www.youtube.com/watch?v=..."]]
     }
@@ -106,7 +113,7 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 
 1. Cercare le notizie delle ultime 48 ore per ogni sezione (WebSearch, anche in inglese e cinese).
 2. Aprire e leggere per intero le fonti candidate (WebFetch). Scartare ciò che non passa le regole.
-3. Scegliere al massimo 2 per sezione e 10 in tutto; scegliere l'apertura (la più rilevante non divisiva).
+3. Scegliere al massimo 3 per sezione e 15 in tutto; scegliere l'apertura (la più rilevante non divisiva).
 4. Scrivere `edition.json`, salvarne una copia identica in `archive/AAAA-MM-GG.json` (data di oggi) e aggiungere in fondo a `archive/index.json` la voce `{"date":"AAAA-MM-GG","label":"…","n":numero_notizie}` (senza duplicati). L'archivio si sfoglia dalla pagina con `?d=AAAA-MM-GG`.
 5. Validare il JSON, fare commit su `main` con messaggio "Edizione AAAA-MM-GG" e push.
 6. Sezioni private: se lo strumento claude-artifacts `db_write` è disponibile, aggiornare il documento

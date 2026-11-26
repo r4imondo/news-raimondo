@@ -180,6 +180,12 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 
 .end{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))!important}
 .archl{max-height:260px;overflow:auto}
+.deepb{margin-top:10px;min-height:44px;padding:8px 14px;border-radius:10px;border:1px solid var(--c,#753cef);background:color-mix(in srgb,var(--c,#753cef) 14%,transparent);color:inherit;font:600 14px "Inter",sans-serif;cursor:pointer}
+.deepb[aria-expanded=true]{background:var(--c,#753cef);color:#fff}
+.deepx{margin-top:12px;padding:14px 16px;border-radius:12px;background:var(--card);font-size:16px;line-height:1.6}
+.deepx p{margin:0 0 10px}.deepx p:last-child{margin:0}
+.lead .deepx{background:var(--night2);color:#ecebf0}
+.deepx[hidden]{display:none}
 .cover .sr b{font:700 15px/1.2 "Inter",sans-serif;letter-spacing:0;white-space:nowrap}
 .cover .ck{font-size:13px;font-weight:700;color:rgba(255,255,255,.8)}
 .cover b{font:800 clamp(52px,9vw,112px)/.9 "Inter",sans-serif;letter-spacing:-.05em;white-space:nowrap}
@@ -258,7 +264,8 @@ const parts=s=>`<span class="kick">${esc(s.kick)}</span> <span class="date">· $
 const srcs=s=>`<div class="src">Fonti: ${(s.src||[]).filter(x=>okUrl(x[1])).map(([n,u,l])=>`<a href="${esc(u)}">${esc(n)}${l==="EN"||l==="ZH"?`<sup class="lg">${l}</sup>`:l==="GOV"?`<sup class="lg">fonte governativa</sup>`:""}</a>`).join("")}</div>${(s.yt||[]).length?`<div class="src vid">Video: ${s.yt.filter(x=>okUrl(x[1])).map(([n,u])=>`<a href="${esc(u)}"><i aria-hidden="true">▶</i>${esc(n)}</a>`).join("")}</div>`:""}`;
 const x2=l=>l==="GOV"?`<sup class="lg">fonte governativa</sup>`:"";
 const share=s=>{const u=encodeURIComponent(BASE+"#"+s.id),t=encodeURIComponent(s.title+" · News.Raimondo.it");return `<div class="social"><span>Condividi</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}">LinkedIn</a><a href="https://wa.me/?text=${t}%20${u}">WhatsApp</a><a href="https://twitter.com/intent/tweet?text=${t}&url=${u}">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=${u}">Facebook</a><button data-copy="${s.id}">Copia link</button></div>`};
-const tail=s=>`<div class="why"><b>Perché conta</b>${esc(s.why)}</div>${srcs(s)}<div class="acts"><button class="act" data-a="more" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="more"}">Più così</button><button class="act" data-a="less" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="less"}">Meno così</button><button class="act" data-a="read" data-id="${s.id}" aria-pressed="${!!st.read[s.id]}">${st.read[s.id]?"Letto":"Segna come letto"}</button></div>${share(s)}`;
+const deep=s=>Array.isArray(s.deep)&&s.deep.length?`<button class="deepb" data-deep="${s.id}" aria-expanded="false">Leggi l'approfondimento</button><div class="deepx" id="dx-${s.id}" hidden>${s.deep.map(x=>`<p>${esc(x)}</p>`).join("")}</div>`:"";
+const tail=s=>`${deep(s)}<div class="why"><b>Perché conta</b>${esc(s.why)}</div>${srcs(s)}<div class="acts"><button class="act" data-a="more" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="more"}">Più così</button><button class="act" data-a="less" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="less"}">Meno così</button><button class="act" data-a="read" data-id="${s.id}" aria-pressed="${!!st.read[s.id]}">${st.read[s.id]?"Letto":"Segna come letto"}</button></div>${share(s)}`;
 const side=(c,x)=>`<div class="side ${c}"><h4>${esc(x.h)}</h4><p class="who">${esc(x.who)}</p><ul>${(x.pts||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>`;
 function renderStory(s){const a=document.createElement("article");a.classList.add("c-"+s.sec);a.dataset.id=s.id;a.dataset.sec=s.sec;a.id=s.id;
   if(s.vs&&s.a&&s.b){a.classList.add("story","vs");a.innerHTML=`<div class="head"><div>${parts(s)}<h3>${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p><ul class="facts">${(s.facts||[]).map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div><div class="art">${cover(s)}<span class="badge">1vs1</span></div></div><div class="sides">${side("a",s.a)}${side("b",s.b)}</div><div class="foot"><p class="note2">Formato 1vs1: le due tesi più nette, attribuite a chi le sostiene. Il giornale non prende posizione.</p>${tail(s)}</div>`}
@@ -299,7 +306,7 @@ function boot(ed){
     sync()});
   /* ricerca */
   const norm=x=>String(x).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
-  const hay={};for(const s of S)hay[s.id]=norm([s.kick,s.title,s.sum,s.why,...(s.facts||[]),...(s.a?s.a.pts:[]),...(s.b?s.b.pts:[]),...(s.src||[]).map(x=>x[0]),...(s.yt||[]).map(x=>x[0])].join(" "));
+  const hay={};for(const s of S)hay[s.id]=norm([s.kick,s.title,s.sum,s.why,...(Array.isArray(s.deep)?s.deep:[]),...(s.facts||[]),...(s.a?s.a.pts:[]),...(s.b?s.b.pts:[]),...(s.src||[]).map(x=>x[0]),...(s.yt||[]).map(x=>x[0])].join(" "));
   const qi=document.getElementById("q");
   qi.addEventListener("input",()=>{const w=norm(qi.value.trim()).split(/\s+/).filter(Boolean);let hits=0;
     for(const s of S){const ok=!w.length||w.every(x=>hay[s.id].includes(x));if(ok)hits++;const el=document.querySelector(`article[data-id="${s.id}"]`);if(el)el.classList.toggle("miss",!ok)}
@@ -317,6 +324,8 @@ function boot(ed){
       if(a==="read"){st.read[id]=!st.read[id];b.setAttribute("aria-pressed",!!st.read[id]);b.textContent=st.read[id]?"Letto":"Segna come letto"}
       if(a==="more"||a==="less"){st.pref[id]=st.pref[id]===a?null:a;for(const x of document.querySelectorAll(`.act[data-id="${id}"]`))if(x.dataset.a!=="read")x.setAttribute("aria-pressed",st.pref[id]===x.dataset.a)}
       refresh();return}
+    const db=e.target.closest("[data-deep]");
+    if(db){const x=document.getElementById("dx-"+db.dataset.deep);const o=x.hidden;x.hidden=!o;db.setAttribute("aria-expanded",o);db.textContent=o?"Chiudi l'approfondimento":"Leggi l'approfondimento";return}
     const cp=e.target.closest("[data-copy]");
     if(cp){const url=BASE+"#"+cp.dataset.copy;try{await navigator.clipboard.writeText(url);cp.textContent="Link copiato"}catch(err){cp.textContent=url}setTimeout(()=>{if(cp.textContent==="Link copiato")cp.textContent="Copia link"},2500)}
   });
