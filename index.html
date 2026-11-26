@@ -303,17 +303,17 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .pk{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c,#753cef)}
 .pi b{color:var(--strong);font-size:17px;line-height:1.25}.ps{font-size:15px;line-height:1.45;color:var(--soft)}
 .more-st{text-align:center;color:var(--soft);font-size:14px;padding:18px 0}
-.nxr{position:absolute;z-index:3;top:12px;right:12px;width:54px;height:54px;color:#fff}
+.nxr{position:absolute;z-index:3;top:12px;right:12px;width:64px;height:64px;color:#fff}
 .nxr svg{width:100%;height:100%;display:block}
 .nxb{fill:rgba(20,18,28,.35);stroke:rgba(255,255,255,.16);stroke-width:3.5}
 .nxp{fill:none;stroke:url(#nxg);stroke-width:3.5;stroke-linecap:round;transition:stroke-dashoffset .8s ease}
 .nxt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;pointer-events:none}
-.nxt b{font:800 12px/1 "Inter",sans-serif;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.nxt i{font:600 7.5px/1 "Inter",sans-serif;font-style:normal;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:3px}
+.nxt b{font:800 14px/1 "Inter",sans-serif;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.nxt i{font:600 7px/1.15 "Inter",sans-serif;font-style:normal;letter-spacing:.05em;text-transform:uppercase;text-align:center;color:rgba(255,255,255,.7);margin-top:3px}
 .nxr.prep .nxt b{font-size:8.5px}
 @media (prefers-reduced-motion:no-preference){.nxr.prep svg{animation:nxs 1.6s linear infinite}}
 @keyframes nxs{to{transform:rotate(360deg)}}
-@media(max-width:600px){.nxr{width:48px;height:48px;top:10px;right:10px}.nxt b{font-size:11px}}
+@media(max-width:600px){.nxr{width:66px;height:66px;top:10px;right:10px}.nxt b{font-size:14px}.glass .meta{padding-right:calc(var(--meH)*.72 + 20px)}}
 </style>
 </head>
 <body>
@@ -494,7 +494,7 @@ async function run(){const w=norm(qi.value.trim()).split(/\s+/).filter(x=>x.leng
   box.innerHTML=hits.length?`<section class="past-ed"><h2><small>Dalle edizioni precedenti</small>${hits.length===40?"Primi 40 risultati":hits.length+(hits.length===1?" risultato":" risultati")}</h2><div class="past-list">${hits.map(({s,date,label,cat})=>{let su=String(s.sum||"");if(su.length>150)su=su.slice(0,147).replace(/\s+\S*$/,"")+"…";return `<a class="pi c-${esc(s.sec)}" href="?d=${date}#${esc(s.id)}"><span class="pk">${esc(cat)}${s.vs?" · 1vs1":""} · ${esc(label)}</span><b>${esc(s.title)}</b><span class="ps">${esc(su)}</span></a>`}).join("")}</div></section>`:(A.length?'<p class="more-st">Nessun risultato nelle edizioni precedenti.</p>':"")}
 qi.addEventListener("input",()=>{clearTimeout(tm);tm=setTimeout(run,350)});})();</script>
 <script>(()=>{const g=document.querySelector(".glass");if(!g)return;const r=document.createElement("div");r.className="nxr";r.setAttribute("role","timer");
-const C=2*Math.PI*21;r.innerHTML=`<svg viewBox="0 0 52 52" aria-hidden="true"><defs><linearGradient id="nxg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9b6bff"/><stop offset="1" stop-color="#e0306a"/></linearGradient></defs><circle cx="26" cy="26" r="21" class="nxb"/><circle cx="26" cy="26" r="21" class="nxp" stroke-dasharray="${C.toFixed(2)}" stroke-dashoffset="${C.toFixed(2)}" transform="rotate(-90 26 26)"/></svg><span class="nxt"><b></b><i>prossima</i></span>`;g.appendChild(r);
+const C=2*Math.PI*21;r.innerHTML=`<svg viewBox="0 0 52 52" aria-hidden="true"><defs><linearGradient id="nxg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9b6bff"/><stop offset="1" stop-color="#e0306a"/></linearGradient></defs><circle cx="26" cy="26" r="21" class="nxb"/><circle cx="26" cy="26" r="21" class="nxp" stroke-dasharray="${C.toFixed(2)}" stroke-dashoffset="${C.toFixed(2)}" transform="rotate(-90 26 26)"/></svg><span class="nxt"><b></b><i>prossima<br>edizione</i></span>`;g.appendChild(r);
 const P=r.querySelector(".nxp"),B=r.querySelector("b");const T=6*3600+45*60,S=6*3600+21*60;
 const rome=()=>{const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Rome",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}).formatToParts(new Date());const q=t=>+p.find(x=>x.type===t).value;return q("hour")*3600+q("minute")*60+q("second")};
 const tick=()=>{const now=rome();if(now>=S&&now<T){r.classList.add("prep");B.textContent="in arrivo";P.setAttribute("stroke-dashoffset",(C*.7).toFixed(2));r.title=r.ariaLabel="Nuova edizione in preparazione";return}
