@@ -7,7 +7,7 @@
 <title>News.Raimondo.it</title>
 <meta name="description" content="Rassegna quotidiana di notizie su marketing digitale, intelligenza artificiale e industria per le PMI B2B, selezionate e riassunte con l'intelligenza artificiale.">
 <meta property="og:title" content="News.Raimondo.it">
-<meta property="og:description" content="Marketing digitale, AI e industria per le PMI B2B. Ogni giorno, dalle fonti originali.">
+<meta property="og:description" content="Industria, incentivi, marketing e AI per le PMI B2B. Ogni giorno, dalle fonti originali.">
 <meta property="og:image" content="https://raimondo.it/news/thumb.png">
 <meta property="og:url" content="https://raimondo.it/news/">
 <meta name="twitter:card" content="summary_large_image">
@@ -344,7 +344,8 @@ function cover(s){const n=(SECS.find(x=>x[0]===s.sec)||[0,s.kick])[1];
 const parts=s=>`<span class="date">${esc(s.date)}</span>`;
 const srcs=s=>`<div class="src">Fonti: ${(s.src||[]).filter(x=>okUrl(x[1])).map(([n,u,l])=>`<a href="${esc(u)}">${esc(n)}${l==="EN"||l==="ZH"?`<sup class="lg">${l}</sup>`:l==="GOV"?`<sup class="lg">fonte governativa</sup>`:""}</a>`).join("")}</div>${(s.yt||[]).length?`<div class="src vid">Video: ${s.yt.filter(x=>okUrl(x[1])).map(([n,u])=>`<a href="${esc(u)}"><i aria-hidden="true">▶</i>${esc(n)}</a>`).join("")}</div>`:""}`;
 const x2=l=>l==="GOV"?`<sup class="lg">fonte governativa</sup>`:"";
-const share=s=>{const u=encodeURIComponent(BASE+"#"+s.id),t=encodeURIComponent(s.title+" · News.Raimondo.it");return `<div class="social"><span>Condividi</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}">LinkedIn</a><a href="https://wa.me/?text=${t}%20${u}">WhatsApp</a><a href="https://twitter.com/intent/tweet?text=${t}&url=${u}">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=${u}">Facebook</a><button data-copy="${s.id}">Copia link</button></div>`};
+const shareUrl=id=>/^\d{4}-\d{2}-\d{2}$/.test(window.__ED||"")?"https://news.raimondo.it/a/"+window.__ED+"/"+id+".html":BASE+"#"+id;
+const share=s=>{const u=encodeURIComponent(shareUrl(s.id)),t=encodeURIComponent(s.title+" · News.Raimondo.it");return `<div class="social"><span>Condividi</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}">LinkedIn</a><a href="https://wa.me/?text=${t}%20${u}">WhatsApp</a><a href="https://twitter.com/intent/tweet?text=${t}&url=${u}">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=${u}">Facebook</a><button data-copy="${s.id}">Copia link</button></div>`};
 const deep=s=>Array.isArray(s.deep)&&s.deep.length?`<button class="deepb" data-deep="${s.id}" aria-expanded="false">Leggi l'approfondimento</button><div class="deepx" id="dx-${s.id}" hidden>${s.deep.map(x=>`<p>${esc(x)}</p>`).join("")}</div>`:"";
 const tail=s=>`${deep(s)}<div class="why"><b>Perché conta</b>${esc(s.why)}</div>${srcs(s)}<div class="acts"><button class="act" data-a="more" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="more"}">Più così</button><button class="act" data-a="less" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="less"}">Meno così</button><button class="act" data-a="read" data-id="${s.id}" aria-pressed="${!!st.read[s.id]}">${st.read[s.id]?"Letto":"Segna come letto"}</button></div>${share(s)}`;
 const side=(c,x)=>`<div class="side ${c}"><h4>${esc(x.h)}</h4><p class="who">${esc(x.who)}</p><ul>${(x.pts||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>`;
@@ -364,7 +365,7 @@ function refresh(){
   document.getElementById("learn").innerHTML=li.map(x=>`<li>${esc(x)}</li>`).join("");
   st.pref=st.pref||{};store.set("nr-state",st);
 }
-function boot(ed){
+function boot(ed){window.__ED=ed&&ed.date;
   st=store.get("nr-state",{read:{},pref:{}});if(st.date!==ed.date){st.read={};st.date=ed.date}
   SECS=(ed.secs||[]).filter(x=>Array.isArray(x)&&okId(x[0]));
   S=(ed.stories||[]).filter(s=>s&&okId(s.id)&&SECS.some(x=>x[0]===s.sec));N=S.length;
@@ -409,7 +410,7 @@ function boot(ed){
     const db=e.target.closest("[data-deep]");
     if(db){const x=document.getElementById("dx-"+db.dataset.deep);const o=x.hidden;x.hidden=!o;db.setAttribute("aria-expanded",o);db.textContent=o?"Chiudi l'approfondimento":"Leggi l'approfondimento";return}
     const cp=e.target.closest("[data-copy]");
-    if(cp){const url=BASE+"#"+cp.dataset.copy;try{await navigator.clipboard.writeText(url);cp.textContent="Link copiato"}catch(err){cp.textContent=url}setTimeout(()=>{if(cp.textContent==="Link copiato")cp.textContent="Copia link"},2500)}
+    if(cp){const url=shareUrl(cp.dataset.copy);try{await navigator.clipboard.writeText(url);cp.textContent="Link copiato"}catch(err){cp.textContent=url}setTimeout(()=>{if(cp.textContent==="Link copiato")cp.textContent="Copia link"},2500)}
   });
   refresh();
   if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t)setTimeout(()=>t.scrollIntoView({block:"start"}),60)}
