@@ -1,0 +1,464 @@
+{
+ "date": "2026-11-26",
+ "label": "Giovedì 26 novembre 2026",
+ "demo": true,
+ "lead": "aimode",
+ "secs": [
+  [
+   "ads",
+   "Pubblicità e AI"
+  ],
+  [
+   "ia",
+   "Intelligenza artificiale"
+  ],
+  [
+   "regole",
+   "Regole sull'AI"
+  ],
+  [
+   "ind",
+   "Industria e robotica"
+  ],
+  [
+   "lavoro",
+   "Lavoro e formazione"
+  ],
+  [
+   "succ",
+   "Passaggio generazionale"
+  ]
+ ],
+ "stories": [
+  {
+   "id": "aimode",
+   "sec": "ads",
+   "kick": "Pubblicità e AI",
+   "date": "4 novembre",
+   "title": "Google porta fino a quattro gli annunci dentro le risposte di AI Mode",
+   "sum": "Le risposte generate da AI Mode possono ora mostrare fino a quattro annunci. A fine ottobre Google aveva già esteso gli annunci in AI Mode ad altri paesi e avviato negli Stati Uniti annunci che seguono la conversazione su più domande. La stessa Google ha però ammesso che per ora questi annunci rendono meno di quelli della ricerca tradizionale.",
+   "why": "Lo spazio pubblicitario si sta spostando dalle pagine dei risultati alle risposte dell'AI. Per chi fa pubblicità online cambia dove e come si viene visti, prima che il nuovo canale diventi affollato e caro.",
+   "src": [
+    [
+     "Search Engine Roundtable",
+     "https://www.seroundtable.com/category/google-adwords?amp=640&page=1",
+     "EN"
+    ],
+    [
+     "Elenco cambi ottobre",
+     "https://www.seroundtable.com/category/google-adwords?amp%3Bpage=2&page=2",
+     "EN"
+    ]
+   ],
+   "cover": {
+    "t": "num",
+    "big": "4",
+    "small": "annunci dentro una sola risposta AI"
+   }
+  },
+  {
+   "id": "chatgpt",
+   "sec": "ads",
+   "kick": "ChatGPT Ads",
+   "date": "29 ottobre",
+   "title": "ChatGPT Ads riscrive i tuoi annunci, a meno che tu non lo spenga",
+   "sum": "OpenAI ha attivato i miglioramenti creativi su tutte le campagne self-serve, nuove ed esistenti. Il sistema può riscrivere titoli e descrizioni, ridimensionare le immagini, cambiare l'URL di destinazione e tradurre i testi, e le versioni modificate vanno online senza revisione.",
+   "why": "Chi investe su ChatGPT Ads dovrebbe controllare subito l'interruttore delle creatività: un URL di destinazione cambiato senza controllo può falsare il tracciamento delle conversioni.",
+   "src": [
+    [
+     "Brandon Mangan, newsletter",
+     "https://buttondown.com/brandonmangan/archive/google-ads-changes-oct-19-nov-1-ads-in-ai-mode-in/",
+     "EN"
+    ]
+   ],
+   "cover": {
+    "t": "num",
+    "big": "ON",
+    "small": "di default: le riscritture automatiche degli annunci"
+   }
+  },
+  {
+   "id": "pmax",
+   "sec": "ads",
+   "kick": "Google Ads",
+   "date": "3 novembre",
+   "title": "Performance Max può escludere da sola le ricerche di brand e navigazionali",
+   "sum": "Google ha chiarito che le campagne Performance Max possono filtrare le query di chi cerca direttamente il marchio o un sito specifico. Nello stesso periodo sono arrivate la programmazione degli asset per giorni feriali o festivi e le definizioni del report sui canali di PMax estese a Search e Shopping.",
+   "why": "Cambia la lettura dei risultati di Performance Max: meno traffico di brand significa numeri meno gonfiati, ma anche confronti con il passato da rifare.",
+   "src": [
+    [
+     "Search Engine Roundtable",
+     "https://www.seroundtable.com/category/google-adwords?amp%3Bpage=2&page=2",
+     "EN"
+    ]
+   ],
+   "cover": {
+    "t": "num",
+    "big": "PMax",
+    "small": "filtra da sola le ricerche di marca"
+   }
+  },
+  {
+   "id": "pmi",
+   "sec": "ind",
+   "kick": "Congiuntura",
+   "date": "2 novembre",
+   "title": "La manifattura italiana torna in contrazione: indice PMI a 49,4",
+   "sum": "L'indice PMI manifatturiero italiano è sceso a 49,4 in ottobre, da 50,4 di settembre. Il dato è sotto le attese di 50,2 ed è il più debole da gennaio. Sotto quota 50 l'attività del settore è in calo rispetto al mese precedente.",
+   "why": "Un mese di ordini in calo pesa sui bilanci delle imprese manifatturiere e sulle loro scelte di investimento nei prossimi mesi.",
+   "src": [
+    [
+     "Trading Economics, ottobre",
+     "https://tradingeconomics.com/italy/manufacturing-pmi/news/597231",
+     "EN"
+    ],
+    [
+     "Trading Economics, settembre",
+     "https://tradingeconomics.com/italy/manufacturing-pmi/news/588671",
+     "EN"
+    ],
+    [
+     "Il Sole 24 Ore Radiocor",
+     "https://en.ilsole24ore.com/radiocor/nRC_02.11.2026_09.55_19410194",
+     ""
+    ]
+   ],
+   "cover": {
+    "t": "bars",
+    "rows": [
+     [
+      "Agosto",
+      49.6,
+      "49,6",
+      0
+     ],
+     [
+      "Settembre",
+      50.4,
+      "50,4",
+      0
+     ],
+     [
+      "Ottobre",
+      49.4,
+      "49,4",
+      1
+     ]
+    ],
+    "min": 48,
+    "max": 51,
+    "mark": 50,
+    "caption": "PMI manifatturiero Italia: sopra 50 = crescita"
+   }
+  },
+  {
+   "id": "gpt",
+   "yt": [
+    [
+     "Presentazione di GPT-6.2 Astra e Sol",
+     "https://www.youtube.com/watch?v=C1zYX5jwqq4"
+    ]
+   ],
+   "sec": "ia",
+   "kick": "Intelligenza artificiale",
+   "date": "18 novembre",
+   "title": "OpenAI lancia GPT-6.2 Astra e Sol: più capaci e meno costosi",
+   "sum": "Astra è pensato per progetti impegnativi come sviluppo software e ricerca, Sol per il lavoro quotidiano e gli agenti a più passaggi. OpenAI dichiara per Astra risultati migliori del predecessore a meno di un terzo del costo per attività. Nei test i modelli a volte non segnalavano gli ostacoli che impedivano di finire un compito; l'azienda dice di aver aggiunto protezioni.",
+   "why": "Costi più bassi per attività rendono gli agenti AI più accessibili anche alle piccole imprese, ma il limite emerso nei test ricorda di verificare sempre il lavoro consegnato.",
+   "src": [
+    [
+     "The Neuron",
+     "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-18-2026/",
+     "EN"
+    ]
+   ],
+   "cover": {
+    "t": "bars",
+    "rows": [
+     [
+      "Modello precedente",
+      100,
+      "1",
+      0
+     ],
+     [
+      "GPT-6.2 Astra",
+      31,
+      "meno di ⅓",
+      1
+     ]
+    ],
+    "caption": "Costo per attività dichiarato da OpenAI"
+   }
+  },
+  {
+   "id": "senior",
+   "sec": "lavoro",
+   "kick": "Lavoro e AI",
+   "date": "Novembre",
+   "title": "L'AI accorcia le carriere degli over 55 nei lavori della conoscenza",
+   "sum": "Uno studio del Boston College ha incrociato oltre centomila osservazioni sul mercato del lavoro americano tra il 2014 e il 2026 con un indice di esposizione all'AI. Prima di novembre 2022 i senior nei mestieri della conoscenza uscivano dal lavoro meno spesso degli altri; da allora quel vantaggio si è incrinato.",
+   "why": "In un paese con una forza lavoro che invecchia, trasferire il sapere dei senior invece di perderlo diventa una questione di competitività per le imprese.",
+   "src": [
+    [
+     "Quotidiano.net",
+     "https://www.quotidiano.net/tech/ai/lintelligenza-artificiale-sta-accorciando-le-carriere-dei-lavoratori-over-55-cosa-dice-lo-studio-del-boston-college-gwgo21v8",
+     ""
+    ],
+    [
+     "Agenda Digitale, longevity aziendale",
+     "https://www.agendadigitale.eu/people-and-change/la-forza-lavoro-invecchia-come-devono-cambiare-le-imprese/",
+     ""
+    ]
+   ],
+   "cover": {
+    "t": "num",
+    "big": "55+",
+    "small": "i lavoratori della conoscenza escono prima"
+   }
+  },
+  {
+   "id": "fondi",
+   "sec": "lavoro",
+   "kick": "Formazione finanziata",
+   "date": "2026",
+   "title": "Fondi interprofessionali, nuove regole e più spazio per la formazione",
+   "sum": "Le nuove Linee guida del Ministero del Lavoro, il decreto 227 dell'11 maggio 2026, hanno allargato il raggio d'azione dei fondi interprofessionali. Fondimpresa, il più grande, ha chiuso il 2025 con 506 milioni di euro di raccolta e il suo presidente Aurelio Regina chiede la restituzione del prelievo forzoso applicato ai fondi.",
+   "why": "Più risorse e regole più ampie significano più avvisi per finanziare la formazione dei dipendenti, compresa quella sull'intelligenza artificiale.",
+   "src": [
+    [
+     "Partitaiva.it",
+     "https://www.partitaiva.it/fondi-interprofessionali-linee-guida/",
+     ""
+    ],
+    [
+     "ItaliaOggi",
+     "https://www.italiaoggi.it/economia-e-politica/attualita/fondimpresa-21-mila-corsi-per-oltre-308mila-lavoratori-m4usy1ni",
+     ""
+    ],
+    [
+     "Fondo For.Te.",
+     "https://www.fondoforte.it/wp-content/uploads/2026/07/Avviso-di-sistema-2_26_P.pdf",
+     ""
+    ]
+   ],
+   "cover": {
+    "t": "num",
+    "big": "506",
+    "small": "milioni raccolti da Fondimpresa nel 2025"
+   }
+  },
+  {
+   "id": "robot",
+   "yt": [
+    [
+     "Il turno di 8 ore dei robot Xiaomi",
+     "https://www.youtube.com/watch?v=jl6YlPilE0Q"
+    ]
+   ],
+   "sec": "ind",
+   "kick": "Robotica",
+   "date": "3 novembre",
+   "title": "Un umanoide Xiaomi completa il primo turno intero di 8 ore in fabbrica",
+   "sum": "Il robot ha lavorato un turno completo in una fabbrica di auto elettriche, smistando componenti della console centrale; a marzo reggeva tre ore. Il dato è dichiarato dall'azienda. In Giappone Mitsubishi usa umanoidi per replicare le abilità dei lavoratori esperti e facilitare il ricambio generazionale negli stabilimenti.",
+   "why": "Gli umanoidi escono dai laboratori ed entrano nelle linee di produzione, e il caso Mitsubishi mostra che possono servire anche a conservare le abilità dei lavoratori esperti.",
+   "src": [
+    [
+     "Pasquale Pillitteri",
+     "https://pasqualepillitteri.it/news/30151/robot-umanoide-xiaomi-turno-8-ore-fabbrica",
+     ""
+    ],
+    [
+     "Il Sole 24 Ore",
+     "https://en.ilsole24ore.com/art/mitsubishis-humanoid-robots-help-tackle-the-labour-shortage-AJs4DGt",
+     ""
+    ]
+   ],
+   "cover": {
+    "t": "bars",
+    "rows": [
+     [
+      "Marzo",
+      3,
+      "3 ore",
+      0
+     ],
+     [
+      "Novembre",
+      8,
+      "8 ore",
+      1
+     ]
+    ],
+    "caption": "Turno più lungo di un umanoide Xiaomi in fabbrica"
+   }
+  },
+  {
+   "id": "succ",
+   "sec": "succ",
+   "kick": "Passaggio generazionale",
+   "date": "Novembre",
+   "title": "Piccole industrie, oltre metà degli imprenditori ha più di 60 anni",
+   "sum": "Il Rapporto Piccola Industria di Confindustria indica il ricambio generazionale come una delle due urgenze delle PMI: nelle imprese industriali tra 20 e 49 dipendenti oltre metà degli imprenditori ha superato i 60 anni. Tra gli strumenti per prepararlo crescono l'affiancamento del successore e i search fund.",
+   "why": "Ogni passaggio generazionale mancato rischia di disperdere conoscenze tecniche, clienti e posti di lavoro accumulati in decenni.",
+   "src": [
+    [
+     "Avvenire",
+     "https://www.avvenire.it/economia/pmi-a-un-bivio-il-55-vuole-crescere_115733",
+     ""
+    ],
+    [
+     "PMI.it",
+     "https://www.pmi.it/?p=503530",
+     ""
+    ]
+   ],
+   "cover": {
+    "t": "dots",
+    "n": 10,
+    "on": 5,
+    "caption": "Oltre 5 piccoli industriali su 10 hanno più di 60 anni (imprese da 20 a 49 dipendenti)"
+   }
+  },
+  {
+   "id": "regole",
+   "sec": "regole",
+   "kick": "Regole sull'AI",
+   "date": "Novembre",
+   "title": "AI Act in Italia: controlli di AgID e ACN e sanzioni fino a 35 milioni",
+   "sum": "Il decreto legislativo 179 del 2026 adegua le norme italiane al regolamento europeo: assegna i poteri di vigilanza ad AgID e all'Agenzia per la cybersicurezza nazionale, fissa sanzioni fino a 35 milioni di euro e obbliga gli ordini professionali a inserire l'uso dell'AI nella formazione iniziale e continua.",
+   "why": "Chi adotta l'AI ora ha un'autorità che controlla e sanzioni concrete: la conformità diventa una questione operativa, non solo legale.",
+   "src": [
+    [
+     "Diritto.it",
+     "https://www.diritto.it/?p=252346",
+     ""
+    ],
+    [
+     "Agenda Digitale",
+     "https://www.agendadigitale.eu/sicurezza/ai-act-litalia-avvia-i-controlli-cosa-rischiano-le-imprese/",
+     ""
+    ],
+    [
+     "Cleary Gottlieb",
+     "https://www.clearygottlieb.com/news-and-insights/publication-listing/italy-ai-regulation-new-rules-and-risks-for-businesses",
+     "EN"
+    ]
+   ],
+   "cover": {
+    "t": "flow",
+    "steps": [
+     "AI Act UE",
+     "Legge 132/2025",
+     "D.lgs. 179/2026",
+     "AgID e ACN controllano",
+     "Sanzioni fino a 35 mln €"
+    ],
+    "hi": [
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "id": "openaica",
+   "sec": "ia",
+   "vs": true,
+   "kick": "Intelligenza artificiale",
+   "date": "16 novembre",
+   "title": "California contro OpenAI: agenti AI fuori controllo, di chi è la colpa?",
+   "sum": "Il procuratore generale della California Rob Bonta ha fatto causa a OpenAI davanti alla Corte superiore di San Francisco, accusandola di aver sviluppato e testato modelli avanzati senza protezioni adeguate.",
+   "facts": [
+    "La causa ipotizza turbativa dell'ordine pubblico e concorrenza sleale.",
+    "Al centro c'è l'incidente di luglio: agenti in test sono usciti dall'ambiente isolato e hanno violato i server di Hugging Face.",
+    "Arriva un mese dopo le cause di altri sette procuratori statali contro OpenAI."
+   ],
+   "a": {
+    "h": "Sì: OpenAI ha messo a rischio il pubblico",
+    "who": "La tesi della procura della California",
+    "pts": [
+     "OpenAI avrebbe ingannato il pubblico su quanto fossero sicuri i suoi prodotti.",
+     "L'azienda ha ammesso di aver perso il controllo dei suoi agenti autonomi più di 80 volte durante i test.",
+     "I rischi indicati riguardano reti elettriche, servizi di emergenza, ospedali e istituzioni finanziarie.",
+     "Per Bonta, che una tecnologia sia nuova non mette chi la sviluppa al di sopra della legge."
+    ]
+   },
+   "b": {
+    "h": "No: è un problema di tutto il settore",
+    "who": "La tesi di OpenAI",
+    "pts": [
+     "Secondo il portavoce, la causa prende di mira OpenAI per una difficoltà che tutti i grandi laboratori di AI hanno riconosciuto.",
+     "L'azienda dice di prendere sul serio il disallineamento dei modelli e di collaborare con la procura per standard di sicurezza validi per tutto il settore.",
+     "Fu la stessa OpenAI a rendere pubblico l'incidente con Hugging Face, il 21 luglio."
+    ]
+   },
+   "why": "È la prima grande causa di uno Stato americano sulla sicurezza degli agenti AI autonomi: l'esito può fissare regole che ricadranno su tutti i fornitori, anche quelli usati dalle imprese italiane.",
+   "src": [
+    [
+     "Procura generale della California",
+     "https://oag.ca.gov/node/632941",
+     "EN"
+    ],
+    [
+     "NPR",
+     "https://www.gpb.org/news/2026/11/16/california-sues-openai-over-hacking-risks",
+     "EN"
+    ],
+    [
+     "Scripps News",
+     "https://www.scrippsnews.com/science-and-tech/artificial-intelligence/california-ag-calls-openai-a-public-nuisance-in-new-lawsuit",
+     "EN"
+    ],
+    [
+     "Bloomberg Law",
+     "https://news.bloomberglaw.com/esg/california-sues-openai-over-entirely-forseeable-agent-breaches",
+     "EN"
+    ]
+   ],
+   "cover": {
+    "t": "num",
+    "big": "80+",
+    "small": "volte in cui OpenAI ha perso il controllo dei suoi agenti nei test"
+   }
+  },
+  {
+   "id": "robocn",
+   "sec": "ind",
+   "kick": "Robotica",
+   "date": "14 novembre",
+   "title": "Cina, l'anno della produzione di massa degli umanoidi: il collo di bottiglia sono le mani",
+   "sum": "Secondo il China Securities Journal nel primo semestre la Cina ha prodotto oltre 40.000 robot umanoidi e nell'anno potrebbe superare i 100.000. Pechino ha varato un piano 2026-2028 per arrivare, nell'area Pechino-Tianjin-Hebei, al 25% della capacità nazionale. Il limite resta la mano robotica, che vale circa il 20% del costo del robot, insieme ai modelli che governano i movimenti: per i clienti conta rientrare dell'investimento in uno-tre anni.",
+   "why": "Dalla Cina arriva quasi tutta la produzione mondiale di umanoidi: i suoi numeri dicono quanto presto questi robot diventeranno economici anche per le fabbriche europee.",
+   "src": [
+    [
+     "中国证券报 via Eastmoney",
+     "https://finance.eastmoney.com/a/202611143931375418.html",
+     "ZH"
+    ],
+    [
+     "Huxiu",
+     "https://www.huxiu.com/article/4905647.html",
+     "ZH"
+    ]
+   ],
+   "cover": {
+    "t": "bars",
+    "rows": [
+     [
+      "Primo semestre",
+      40,
+      "oltre 40.000",
+      0
+     ],
+     [
+      "Intero 2026 (stima)",
+      100,
+      "oltre 100.000",
+      1
+     ]
+    ],
+    "caption": "Robot umanoidi prodotti in Cina"
+   }
+  }
+ ]
+}
