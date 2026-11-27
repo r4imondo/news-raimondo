@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-27",
+  "label": "Venerdì 27 novembre 2026",
+  "lead": "baass-caveau-nevada-materiali-esotici",
+  "secs": [["uap", "UAP, UFO e alieni"]],
+  "stories": [
+    {
+      "id": "aawsap-reid-contro-dia",
+      "sec": "uap",
+      "kick": "Documenti del Pentagono",
+      "date": "26 novembre",
+      "title": "Il programma UFO del Pentagono finanziato da Reid: segreto da proteggere o ricerca di scarso valore?",
+      "sum": "I documenti declassificati sul programma AAWSAP, ricostruiti da Fox News il 26 novembre, mostrano lo scontro del 2009 tra il senatore Harry Reid e la Defense Intelligence Agency (DIA). Reid chiedeva una protezione straordinaria e un programma ad accesso riservato; la DIA rifiutò la segretezza e in seguito giudicò di valore limitato i rapporti del contrattista Bigelow Aerospace Advanced Space Studies (BAASS). Il programma, finanziato con 22 milioni di dollari, non fu rinnovato.",
+      "why": "Lo scontro, oggi documentato, è al centro del dibattito sulla trasparenza: i sostenitori vi leggono la prova di risultati da nascondere, le autorità di allora mettevano agli atti l'assenza di informazioni sensibili.",
+      "vs": true,
+      "facts": [
+        "Il programma nasce nel 2008 con 10 milioni di dollari voluti dai senatori Harry Reid e Daniel Inouye; il Congresso aggiunge 12 milioni nel 2010, per un totale di 22 milioni (Fox News).",
+        "Al bando della DIA dell'agosto 2008 risponde una sola società, BAASS, fondata da Robert Bigelow, sostenitore di Reid (Fox News).",
+        "Nel primo anno BAASS paga scienziati esterni per 26 studi su temi come propulsione a curvatura e antigravità; alcuni ricevono valutazioni positive, anche da ricercatori dei Sandia National Laboratories (Fox News).",
+        "La DIA non prosegue il contratto oltre il secondo anno; il progetto di ricerca del Pentagono si chiude nel 2012 (Fox News, CBS News)."
+      ],
+      "a": {
+        "h": "Servono segreto e protezione",
+        "who": "La tesi di Harry Reid (2009)",
+        "pts": [
+          "Il 24 giugno 2009 scrive al vicesegretario alla Difesa William Lynn che gli investigatori hanno trovato risultati aerospaziali non convenzionali e molto sensibili.",
+          "Chiede una «protezione straordinaria»: le normali regole di classificazione non basterebbero.",
+          "Propone un programma speciale ad accesso ristretto con una lista di 14 persone, tra cui lui stesso, Inouye, Lynn e tre contrattisti BAASS.",
+          "Avverte che i servizi segreti stranieri prenderebbero di mira i metodi del programma."
+        ]
+      },
+      "b": {
+        "h": "Niente da proteggere, valore limitato",
+        "who": "La tesi della DIA (2009-2010)",
+        "pts": [
+          "Il 13 novembre 2009 la vicedirettrice Letitia A. Long respinge la richiesta: i documenti erano non classificati, anche perché il contrattista non aveva una struttura sicura.",
+          "Le norme federali vietano di classificare la ricerca di base se non è chiaramente legata alla sicurezza nazionale.",
+          "L'agenzia dichiara di non conoscere alcun rapporto abbastanza sensibile da richiedere protezioni extra.",
+          "Il direttore, il generale Ronald L. Burgess Jr., dice a Reid che i rapporti hanno un «valore limitato» e propone di portare il progetto fuori dalla DIA."
+        ]
+      },
+      "src": [
+        ["Fox News", "https://www.foxnews.com/us/secret-pentagon-ufo-hunt-drew-blueprints-hidden-nevada-bunker-store-exotic-materials", "EN"],
+        ["CBS News", "https://www.cbsnews.com/news/ufo-files-pentagon-contractor/", "EN"]
+      ]
+    },
+    {
+      "id": "baass-caveau-nevada-materiali-esotici",
+      "sec": "uap",
+      "kick": "Pentagono",
+      "date": "26 novembre",
+      "title": "Un contrattista del Pentagono progettò un caveau sotterraneo in Nevada per «materiali esotici»",
+      "sum": "Un rapporto del 2009 di Bigelow Aerospace Advanced Space Studies (BAASS), contrattista di un programma della Defense Intelligence Agency, descrive il progetto di un caveau interrato a North Las Vegas per conservare hardware e campioni biologici legati agli UAP. Il documento è nell'ottava tranche di file UFO diffusa dal Pentagono il 20 novembre ed è stato ricostruito da Fox News il 26 novembre. Non risulta che il caveau sia mai stato costruito né che il materiale esistesse.",
+      "why": "È uno dei documenti più citati dai sostenitori della tesi dei materiali recuperati, ma prova soltanto un progetto su carta: la distinzione tra piano e realtà è il punto su cui si misura la serietà del dibattito.",
+      "deep": [
+        "Il documento è il «Ten Month Report» di BAASS del luglio 2009, 538 pagine prodotte nell'ambito del programma AAWSAP, finanziato dal Congresso su spinta dell'allora senatore Harry Reid. Una copia era circolata online nel 2025, ma con la tranche del 20 novembre il Pentagono lo ha reso pubblico per la prima volta, come riporta CBS News.",
+        "Secondo il rapporto, BAASS riteneva necessario un caveau sotterraneo molto sicuro per custodire hardware recuperato e campioni biologici, compresi materiali provenienti dal Brasile. Il progetto prevedeva circa 465 metri quadrati (5.000 piedi quadrati) sotto la sede di Bigelow Aerospace, a una profondità di 4,5-6 metri, con pareti spesse quasi un metro, una porta d'acciaio e strutture in superficie mimetizzate. Il testo parla di «materiale o tessuto esotico».",
+        "Cosa non è confermato: CBS sottolinea che non esiste alcun riscontro pubblico della costruzione del caveau e che i rapporti successivi di BAASS non lo citano più. Nessuna delle due testate documenta il recupero effettivo di materiali. Fox descrive BAASS come impegnata a prepararsi ad acquisire materiali: è una lettura del piano, non una prova.",
+        "Nella stessa tranche ci sono tre video militari del 2020, 2023 e 2026 inviati all'ufficio AARO, che mostrano punti bianchi in movimento. Il Pentagono precisa che le descrizioni non rappresentano conclusioni analitiche. Una scheda su otto rilevamenti radar del 2023 calcola una velocità minima di circa 2.650 km/h solo se si tratta di un unico oggetto, ma indica che i dati sono insufficienti per dirlo.",
+        "Fox News ha chiesto un commento al Pentagono e ad AARO senza ricevere risposta. Il programma si è chiuso nel 2012; nel 2020 Bigelow Aerospace ha licenziato tutto il personale."
+      ],
+      "src": [
+        ["Fox News", "https://www.foxnews.com/us/secret-pentagon-ufo-hunt-drew-blueprints-hidden-nevada-bunker-store-exotic-materials", "EN"],
+        ["CBS News", "https://www.cbsnews.com/news/ufo-files-pentagon-contractor/", "EN"]
+      ]
+    }
+  ]
+}
