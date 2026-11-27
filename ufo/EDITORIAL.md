@@ -38,8 +38,16 @@ ultime 48 ore, meglio un'edizione corta (anche 2-3 notizie) che notizie vecchie 
 
 - Distinguere SEMPRE tra fatto verificato, dichiarazione attribuita e ipotesi. Mai presentare
   un'affermazione straordinaria come fatto: scrivere chi la fa e su quale base.
-- Il 1vs1 è naturale qui: per esempio chi sostiene una spiegazione non convenzionale contro gli
-  scettici o le autorità. Sempre con nomi e ruoli, sempre attribuito, senza inventare posizioni.
+- **1vs1 come formato predefinito: idealmente OGNI notizia è un 1vs1.** Per ogni notizia cercare
+  attivamente la controparte: chi propone la spiegazione convenzionale o fa il debunk dello STESSO
+  caso (AARO e autorità, astronomi e piloti esperti, analisti di immagini, Mick West/Metabunk,
+  Skeptical Inquirer/CSI, CICAP in Italia, scienziati citati da testate di livello 1-2), oppure, se
+  la notizia è una smentita, chi sostiene la tesi non convenzionale.
+  Per cercare la controparte si può aprire UNA fonte in più oltre alle 3 previste.
+  La controparte deve riguardare quel caso specifico, con nome e ruolo, e argomenti verificabili:
+  niente scetticismo generico ("gli UFO non esistono"), niente posizioni inventate o ricostruite.
+  Se una controparte così non si trova, o non regge, la notizia esce in formato normale: meglio una
+  notizia normale che un 1vs1 forzato.
 - Il "Perché conta" spiega l'importanza della notizia per il dibattito pubblico o scientifico,
   senza riferimenti alle PMI.
 
