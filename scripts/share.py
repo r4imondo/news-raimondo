@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Genera le pagine di condivisione (anteprime per Facebook, LinkedIn, WhatsApp, X).
 
-Uso: python3 scripts/share.py [file_edizione.json]   (default: edition.json)
+Uso: python3 scripts/share.py [file_edizione.json] [sottocartella]   (default: edition.json, radice)
+Esempio per il giornale UFO: python3 scripts/share.py ufo/edition.json ufo
 Per ogni notizia crea n/AAAA-MM-GG/<id>.html (tag Open Graph + rinvio alla notizia)
 e, se Pillow è disponibile, n/AAAA-MM-GG/<id>.png (immagine 1200x630 con il titolo).
 """
@@ -10,7 +11,7 @@ import html, json, os, re, sys, textwrap
 SITE = "https://news.raimondo.it"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 COL = {"ind": "#d97706", "inc": "#ca8a04", "ads": "#753cef", "ia": "#e0306a", "geo": "#0284c7",
-       "sci": "#0f766e", "lavoro": "#059669", "regole": "#2563eb"}
+       "sci": "#0f766e", "uap": "#16a34a", "lavoro": "#059669", "regole": "#2563eb"}
 
 def card(path, title, cat, color, vs):
     try:
@@ -53,18 +54,20 @@ def card(path, title, cat, color, vs):
 def main():
     src = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "edition.json")
     ed = json.load(open(src, encoding="utf-8"))
+    base = (sys.argv[2].strip("/") + "/") if len(sys.argv) > 2 and sys.argv[2].strip("/") else ""
+    assert re.match(r"^([a-z0-9-]+/)?$", base)
     date = ed["date"]; assert re.match(r"^\d{4}-\d{2}-\d{2}$", date)
     names = {k: v for k, v in ed.get("secs", [])}
-    out = os.path.join(ROOT, "n", date); os.makedirs(out, exist_ok=True)
+    out = os.path.join(ROOT, base, "n", date); os.makedirs(out, exist_ok=True)
     n = 0
     for s in ed["stories"]:
         sid = s["id"]
         if not re.match(r"^[a-z0-9-]{1,80}$", sid): continue
         cat = names.get(s["sec"], s.get("kick", ""))
-        img = f"{SITE}/thumb.png"
+        img = f"{SITE}/{base}thumb.png"
         if card(os.path.join(out, sid + ".png"), s["title"], cat, COL.get(s["sec"], "#753cef"), bool(s.get("vs"))):
-            img = f"{SITE}/n/{date}/{sid}.png"
-        target = f"{SITE}/?d={date}#{sid}"
+            img = f"{SITE}/{base}n/{date}/{sid}.png"
+        target = f"{SITE}/{base}?d={date}#{sid}"
         desc = s.get("sum", "")
         if len(desc) > 220: desc = desc[:217].rsplit(" ", 1)[0] + "…"
         e = lambda x: html.escape(x, quote=True)
@@ -80,7 +83,7 @@ def main():
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:image" content="{e(img)}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:url" content="{SITE}/n/{date}/{sid}.html">
+<meta property="og:url" content="{SITE}/{base}n/{date}/{sid}.html">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
 <script>location.replace({json.dumps(target)})</script>
@@ -89,7 +92,7 @@ def main():
 </body></html>
 """
         open(os.path.join(out, sid + ".html"), "w", encoding="utf-8").write(page); n += 1
-    print(f"{n} pagine di condivisione in n/{date}/")
+    print(f"{n} pagine di condivisione in {base}n/{date}/")
 
 if __name__ == "__main__":
     main()

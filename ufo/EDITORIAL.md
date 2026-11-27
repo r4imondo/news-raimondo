@@ -1,0 +1,57 @@
+# UFO · News.Raimondo.it — regole per l'edizione automatica
+
+Giornale gemello di News.Raimondo.it, pubblicato in `/ufo/` e NON linkato da nessuna parte.
+Grafica e funzionamento sono identici al giornale principale; cambiano solo argomento e quantità.
+Valgono TUTTE le regole di `../EDITORIAL.md` (verifica, fonti lette per intero, freschezza 48 ore,
+1vs1, approfondimento, copyright, sicurezza, formato di `edition.json`), salvo quanto scritto qui.
+
+## Sezione
+
+Una sola sezione: `uap` → UAP, UFO e alieni (audizioni e documenti di governi e parlamenti, AARO e
+Pentagono, NASA, avvistamenti documentati, testimoni con nome e ruolo, ricerca scientifica su vita
+extraterrestre, tecnosegnature e SETI, smentite e spiegazioni).
+
+`secs` è sempre `[["uap","UAP, UFO e alieni"]]`. Ogni notizia ha `"sec": "uap"`.
+`lead` è la notizia di apertura più rilevante che non sia un 1vs1.
+
+## Quantità e consumo
+
+Al massimo 6 notizie. Al massimo 3 fonti aperte per notizia. Se non ci sono notizie valide nelle
+ultime 48 ore, meglio un'edizione corta (anche 2-3 notizie) che notizie vecchie o deboli.
+
+## Fonti: gerarchia specifica
+
+- Livello 1, primarie: AARO e Dipartimento della Difesa USA, Congresso USA (audizioni, testi di
+  legge), NASA, ministeri della Difesa e agenzie di altri Paesi, archivi nazionali, articoli
+  scientifici pubblicati, comunicati di osservatori e istituti di ricerca (SETI Institute, ESO…).
+- Livello 2, testate generaliste: Reuters, AP, BBC, New York Times, Washington Post, Politico,
+  The Guardian, Scientific American, New Scientist, ANSA, Il Post, Corriere, South China Morning Post.
+- Livello 3, specializzate (sempre insieme a un'altra fonte di livello 1 o 2): The Debrief,
+  NewsNation, Liberation Times, Popular Mechanics, Space.com, Live Science.
+- Fonti cinesi e russe: utili per avvistamenti e posizioni ufficiali; i media statali hanno
+  l'etichetta "GOV" e la loro posizione va sempre attribuita.
+- Solo spunto, mai citati come fonte: canali YouTube e podcast non giornalistici, forum, X/Twitter,
+  TikTok, siti senza autore o data.
+- Esclusi: video e foto non verificati presentati come prova, siti che vendono prodotti o corsi.
+
+## Rigore
+
+- Distinguere SEMPRE tra fatto verificato, dichiarazione attribuita e ipotesi. Mai presentare
+  un'affermazione straordinaria come fatto: scrivere chi la fa e su quale base.
+- Il 1vs1 è naturale qui: per esempio chi sostiene una spiegazione non convenzionale contro gli
+  scettici o le autorità. Sempre con nomi e ruoli, sempre attribuito, senza inventare posizioni.
+- Il "Perché conta" spiega l'importanza della notizia per il dibattito pubblico o scientifico,
+  senza riferimenti alle PMI.
+
+## Procedura
+
+1. Leggere `../EDITORIAL.md` e questo file.
+2. Cercare notizie delle ultime 48 ore (anche in inglese; in cinese quando utile), leggere le fonti.
+3. Scrivere `ufo/edition.json` con data di oggi nel fuso Europe/Rome, copia identica in
+   `ufo/archive/AAAA-MM-GG.json`, voce `{"date","label","n"}` in fondo a `ufo/archive/index.json`
+   (senza duplicati).
+4. Eseguire `python3 scripts/share.py ufo/edition.json ufo` (se manca Pillow:
+   `pip install --break-system-packages pillow`); se fallisce, proseguire.
+5. Validare il JSON, commit "Edizione UFO AAAA-MM-GG" su `main` e push (in caso di conflitto:
+   `git pull --rebase` e nuovo push). Toccare SOLO file dentro `ufo/`.
+6. Non modificare `ufo/index.html`, i file della radice né le regole.

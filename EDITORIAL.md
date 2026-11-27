@@ -151,3 +151,8 @@ del sito WordPress raimondo.it. Legge `edition.json` direttamente da GitHub
 (raw.githubusercontent.com), quindi si aggiorna da sola ogni mattina senza ricaricare nulla.
 Se cambia la grafica (`index.html`), va rigenerata e ricaricata a mano da Federico.
 L'edizione automatica NON tocca questa cartella.
+
+## Cartella ufo/
+
+La cartella `ufo/` è un giornale gemello con la sua edizione automatica e le sue regole (`ufo/EDITORIAL.md`).
+L'edizione principale non deve MAI toccarla.
