@@ -316,6 +316,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 @keyframes nxs{to{transform:rotate(360deg)}}
 @media(max-width:600px){.nxr{width:66px;height:66px;top:10px;right:10px}.nxt b{font-size:14px}.glass .meta{padding-right:calc(var(--meH)*.72 + 20px)}}
 .vs .head{display:flex!important;flex-direction:column;gap:18px}.vs .head .art{order:-1;width:100%;aspect-ratio:21/9!important;max-height:300px}.vs .head .facts{margin-top:4px}@media(min-width:900px){.vs .head .facts{columns:2;column-gap:32px}.vs .head .facts li{break-inside:avoid}.vs .head .sum{max-width:75ch}}@media(max-width:600px){.vs .head .art{aspect-ratio:16/10!important}}
+.more-btn{display:block;margin:28px auto 8px;padding:12px 22px;min-height:44px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--strong);font:700 15px/1 "Inter",sans-serif;cursor:pointer}.more-btn:hover{border-color:var(--vio)}.more-btn[hidden]{display:none}
 </style>
 </head>
 <body>
@@ -460,23 +461,28 @@ const y=t.getBoundingClientRect().top+scrollY-12;scrollTo({top:y,behavior:matchM
 <script>(()=>{const box=document.getElementById("more");if(!box||!("IntersectionObserver" in window))return;
 const DB=document.documentElement.dataset.base||"",qd=new URLSearchParams(location.search).get("d");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const ok=d=>/^\d{4}-\d{2}-\d{2}$/.test(d||"");let queue=null,busy=false,shown=0;const MAX=30;
+const ok=d=>/^\d{4}-\d{2}-\d{2}$/.test(d||"");let queue=null,busy=false,limit="",win=0;
+const minus=(d,n)=>{const t=new Date(d+"T12:00:00Z");t.setUTCDate(t.getUTCDate()-n);return t.toISOString().slice(0,10)};
 const st=document.createElement("p");st.className="more-st";box.after(st);
-async function next(){if(busy||queue&&!queue.length||shown>=MAX)return;busy=true;try{
-  if(!queue){const cur=ok(qd)?qd:window.__ED;if(!ok(cur)){busy=false;return}
+const btn=document.createElement("button");btn.className="more-btn";btn.hidden=true;st.after(btn);
+btn.addEventListener("click",()=>{win++;limit=minus(limit,30);btn.hidden=true;next()});
+async function next(){if(busy)return;busy=true;try{
+  if(!queue){const cur=ok(qd)?qd:window.__ED;if(!ok(cur))return;limit=minus(cur,30);
     const l=await fetch(DB+"archive/index.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():[]);
     queue=(Array.isArray(l)?l:[]).filter(x=>x&&ok(x.date)&&x.date<cur).sort((a,b)=>a.date<b.date?1:-1)}
-  const it=queue.shift();if(!it){st.textContent="";return}
-  st.textContent="Caricamento dell'edizione precedente…";
+  if(!queue.length){st.textContent="";btn.hidden=true;return}
+  if(queue[0].date<limit){st.textContent="";btn.textContent="Notizie più vecchie di "+(30*(win+1))+" giorni";btn.hidden=false;return}
+  const it=queue.shift();st.textContent="Caricamento dell'edizione precedente…";
   const ed=await fetch(DB+"archive/"+it.date+".json",{cache:"force-cache"}).then(r=>r.ok?r.json():null);
   if(ed&&Array.isArray(ed.stories)){const nm={};for(const x of ed.secs||[])if(Array.isArray(x))nm[x[0]]=x[1];
     const items=ed.stories.filter(s=>s&&/^[a-z0-9-]{1,80}$/.test(s.id)).sort((a,b)=>(b.vs?1:0)-(a.vs?1:0)).map(s=>{let su=String(s.sum||"");if(su.length>170)su=su.slice(0,167).replace(/\s+\S*$/,"")+"…";
       return `<a class="pi c-${esc(s.sec)}" href="?d=${it.date}#${esc(s.id)}"><span class="pk">${esc(nm[s.sec]||s.kick||"")}${s.vs?" · 1vs1":""}</span><b>${esc(s.title)}</b><span class="ps">${esc(su)}</span></a>`}).join("");
-    box.insertAdjacentHTML("beforeend",`<section class="past-ed"><h2><small>Edizione precedente</small>${esc(ed.label||it.date)}</h2><div class="past-list">${items}</div></section>`);shown++}
-  st.textContent=queue.length&&shown<MAX?"":(shown?"Fine dell'archivio caricato":"")}catch(e){st.textContent=""}finally{busy=false}}
+    box.insertAdjacentHTML("beforeend",`<section class="past-ed"><h2><small>Edizione precedente</small>${esc(ed.label||it.date)}</h2><div class="past-list">${items}</div></section>`)}
+  st.textContent=""}catch(e){st.textContent=""}finally{busy=false}}
+const near=()=>st.getBoundingClientRect().top<innerHeight+700;
 const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting))next()},{rootMargin:"0px 0px 700px 0px"});
 const wait=()=>{if(ok(qd)||ok(window.__ED))io.observe(st);else setTimeout(wait,300)};wait();
-setInterval(()=>{if(!busy&&st.getBoundingClientRect().top<innerHeight+700)next()},1500)})();</script>
+setInterval(()=>{if(!busy&&btn.hidden&&near())next()},1200)})();</script>
 
 <script>(()=>{const qi=document.getElementById("q"),box=document.getElementById("arch-res");if(!qi||!box)return;
 const DB=document.documentElement.dataset.base||"",qd=new URLSearchParams(location.search).get("d");
