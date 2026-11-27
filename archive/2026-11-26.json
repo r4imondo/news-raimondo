@@ -67,7 +67,9 @@
           "https://www.aljazeera.com/economy/2026/11/26/anthropic-ceo-amodei-denies-wanting-humanity-to-surrender-free-will-to-ai",
           "EN"
         ]
-      ]
+      ],
+      "seo_title": "Anthropic e controllo umano sull'AI: Amodei contro i critici",
+      "seo_desc": "Dario Amodei respinge le accuse sul controllo umano dell'intelligenza artificiale, i critici chiedono garanzie più forti. Le due tesi a confronto."
     },
     {
       "id": "ev2035",
@@ -136,7 +138,9 @@
           "https://www.spglobal.com/automotive-insights/en/blogs/2025/12/europe-shifts-into-reverse-on-eu-2035-ice-ban",
           "EN"
         ]
-      ]
+      ],
+      "seo_title": "Stop motori termici 2035: l'Ue ammorbidisce il divieto",
+      "seo_desc": "Il Parlamento europeo vota un taglio della CO2 dell'87,5% invece del 100% al 2035: cosa cambia per auto elettriche, ibride e filiera. Favorevoli e contrari."
     },
     {
       "id": "reg-milano-sede-onu-ia",
@@ -194,7 +198,9 @@
           "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-intelligenza-artificiale-sorte-fi-milano-in-pole-position-grazie-al-lavoro-di-forza-italia-evitiamo-polemiche-che-rischiano-di-indebolirne-la-candidatura/",
           ""
         ]
-      ]
+      ],
+      "seo_title": "Polo ONU sull'intelligenza artificiale: Milano resta fuori",
+      "seo_desc": "Il Parlamento europeo sostiene le candidature europee per il polo ONU sulla governance dell'IA, ma senza citare Milano. Cosa significa per l'Italia."
     },
     {
       "id": "ind-rapporto-industria-2026-csc",
@@ -222,7 +228,9 @@
           "https://avantionline.it/confindustria-lancia-lallarme-produttivita/",
           ""
         ]
-      ]
+      ],
+      "seo_title": "Rapporto Industria 2026 Confindustria: manifattura e nodi",
+      "seo_desc": "Il Rapporto Industria 2026 del Centro Studi Confindustria: manifattura più solida, ma produttività e costo dell'energia restano i problemi principali."
     },
     {
       "id": "ind-mckinsey-industria-europea-stress",
@@ -249,7 +257,9 @@
           "https://europeanbusinessmagazine.com/european-industry-financial-stress",
           "EN"
         ]
-      ]
+      ],
+      "seo_title": "McKinsey: metà dell'industria europea è in difficoltà",
+      "seo_desc": "Secondo McKinsey quasi metà delle grandi aziende industriali europee mostra segnali di stress finanziario. I dati, i settori più colpiti e le cause."
     },
     {
       "id": "ind-xpeng-iron-umanoide-produzione",
@@ -281,7 +291,9 @@
           "https://finance.eastmoney.com/a/202611253939612795.html",
           "GOV"
         ]
-      ]
+      ],
+      "seo_title": "Robot umanoide Xpeng Iron in produzione di serie dal 2027",
+      "seo_desc": "Xpeng avvia a gennaio 2027 la produzione di serie del robot umanoide Iron: caratteristiche, impieghi industriali e concorrenza cinese nella robotica."
     },
     {
       "id": "ads-chatgpt-ads-reach-business-agents",
@@ -313,7 +325,9 @@
           "https://help.openai.com/en/articles/20001651",
           "EN"
         ]
-      ]
+      ],
+      "seo_title": "ChatGPT Ads: metrica di copertura e Business Agent in Europa",
+      "seo_desc": "ChatGPT Ads introduce il conteggio delle persone raggiunte e porta i Business Agent fuori dagli Stati Uniti. Cosa cambia per chi fa pubblicità."
     },
     {
       "id": "ia-anthropic-api-rust-agenti",
@@ -336,7 +350,9 @@
           "https://www.anthropic.com/research/migrating-api-to-rust",
           "EN"
         ]
-      ]
+      ],
+      "seo_title": "Anthropic riscrive la sua API in Rust con gli agenti Claude",
+      "seo_desc": "Anthropic ha riscritto in Rust la propria API usando gli agenti Claude: tempi, risultati e perché il vero collo di bottiglia è la verifica del codice."
     },
     {
       "id": "ia-chatgpt-chat-work-limiti",
@@ -363,7 +379,9 @@
           "https://help.openai.com/fil-ph/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
           "EN"
         ]
-      ]
+      ],
+      "seo_title": "ChatGPT unisce Chat e Work: nuovi limiti di utilizzo",
+      "seo_desc": "ChatGPT unifica Chat e Work con un solo contatore d'uso e limiti più stretti per gli utenti intensivi. Cosa cambia per piani e aziende."
     },
     {
       "id": "lav-protocollo-ministero-anci",
@@ -385,7 +403,9 @@
           "https://lavoro.gov.it/stampa-e-media/comunicati/pagine/lavoro-e-inclusione-firmato-oggi-verona-il-protocollo-intesa-ministero-anci",
           "GOV"
         ]
-      ]
+      ],
+      "seo_title": "Protocollo Ministero del Lavoro e ANCI su competenze",
+      "seo_desc": "Ministero del Lavoro e ANCI firmano un protocollo biennale su lavoro e competenze nei Comuni: obiettivi, strumenti e ricadute per le imprese."
     }
   ]
 }

@@ -79,6 +79,15 @@ Se in futuro verranno riattivate, non dovranno mai finire in questo repository (
 7. **Immagini.** Nessuna foto e nessun grafico: la copertina mostra solo il nome della categoria su un badge
    colorato, generato dalla pagina. Non serve il campo `cover`.
 8. **Video.** Facoltativi, solo da canali di testate o aziende ufficiali.
+13. **SEO, obbligatoria per ogni notizia.** Oltre a `title` (titolo giornalistico, può essere lungo)
+   scrivere due campi:
+   - `seo_title`: 45-60 caratteri, parola chiave principale all'inizio (quella che un imprenditore
+     cercherebbe su Google: "Transizione 5.0", "dazi USA", "ChatGPT Ads"...), nomi propri esatti,
+     niente clickbait, niente maiuscolo, niente punto finale. Senza "News.Raimondo.it" (lo aggiunge
+     la pagina).
+   - `seo_desc`: 130-155 caratteri, frase completa che contiene la parola chiave e dice cosa trova
+     il lettore (fatti, cifre, "le due tesi a confronto" per i 1vs1). Niente virgolette doppie.
+   Contare i caratteri prima di scrivere: oltre i limiti la pagina taglia il testo.
 12. **Approfondimento.** Ogni notizia (non i 1vs1, dove è facoltativo) ha il campo `deep`: 3-5 paragrafi,
     circa 150-250 parole, scritti con parole proprie mettendo insieme le fonti lette per intero.
     Contenuto: contesto e antefatti, dettagli e numeri presenti nelle fonti, cosa è confermato e cosa no,
@@ -113,6 +122,8 @@ Se in futuro verranno riattivate, non dovranno mai finire in questo repository (
       "title": "Titolo informativo, non sensazionalistico",
       "sum": "Riassunto di 2-4 frasi con i fatti verificati.",
       "why": "Perché conta per un imprenditore, 1-2 frasi.",
+      "seo_title": "Parola chiave all'inizio, 45-60 caratteri",
+      "seo_desc": "Frase completa di 130-155 caratteri con la parola chiave.",
       "deep": ["Primo paragrafo dell'approfondimento.", "Secondo paragrafo.", "Terzo paragrafo."],
       "src": [["Nome testata", "https://...", "EN"]],
       "yt": [["Titolo video", "https://www.youtube.com/watch?v=..."]]
@@ -135,9 +146,10 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
 3. Scegliere al massimo 2 per sezione e 10 in tutto; scegliere l'apertura (la più rilevante non divisiva).
 4. La data dell'edizione è SEMPRE quella di oggi nel fuso Europe/Rome (anche se l'esecuzione è serale).
    Scrivere `edition.json`, salvarne una copia identica in `archive/AAAA-MM-GG.json` (data di oggi) e aggiungere in fondo a `archive/index.json` la voce `{"date":"AAAA-MM-GG","label":"…","n":numero_notizie}` (senza duplicati). L'archivio si sfoglia dalla pagina con `?d=AAAA-MM-GG`.
-4b. Pagine di condivisione: eseguire `python3 scripts/share.py` (se manca Pillow: `pip install --break-system-packages pillow`).
-   Crea `n/AAAA-MM-GG/<id>.html` e `.png` con titolo e immagine di ogni notizia per le anteprime social.
-   Includere la cartella `n/` nel commit. Se lo script fallisce, proseguire comunque (il sito ha un rinvio di riserva).
+4b. Pagine articolo (SEO e anteprime social): eseguire `python3 scripts/share.py` (se manca Pillow: `pip install --break-system-packages pillow`).
+   Crea `n/AAAA-MM-GG/<id>.html` (pagina indicizzabile con testo completo, dati strutturati e fonti) e
+   `.png` (anteprima social), e aggiorna `sitemap.xml` e `robots.txt`. Includere `n/`, `sitemap.xml` e
+   `robots.txt` nel commit. Se lo script fallisce, proseguire comunque (il sito ha un rinvio di riserva).
 5. Validare il JSON, fare commit su `main` con messaggio "Edizione AAAA-MM-GG" e push.
 6. Pagina su claude.ai: se lo strumento claude-artifacts `db_write` è disponibile, scrivere il documento `private/public` dell'artifact
    `875cc5e6-43d8-45cc-9048-20f51d1e2bc2` con il contenuto IDENTICO di `edition.json` (stessi campi `date`, `label`, `lead`, `secs`,

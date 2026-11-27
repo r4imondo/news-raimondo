@@ -2,7 +2,12 @@
   "date": "2026-11-27",
   "label": "Venerdì 27 novembre 2026",
   "lead": "baass-caveau-nevada-materiali-esotici",
-  "secs": [["uap", "UAP, UFO e alieni"]],
+  "secs": [
+    [
+      "uap",
+      "UAP, UFO e alieni"
+    ]
+  ],
   "stories": [
     {
       "id": "aawsap-reid-contro-dia",
@@ -40,9 +45,19 @@
         ]
       },
       "src": [
-        ["Fox News", "https://www.foxnews.com/us/secret-pentagon-ufo-hunt-drew-blueprints-hidden-nevada-bunker-store-exotic-materials", "EN"],
-        ["CBS News", "https://www.cbsnews.com/news/ufo-files-pentagon-contractor/", "EN"]
-      ]
+        [
+          "Fox News",
+          "https://www.foxnews.com/us/secret-pentagon-ufo-hunt-drew-blueprints-hidden-nevada-bunker-store-exotic-materials",
+          "EN"
+        ],
+        [
+          "CBS News",
+          "https://www.cbsnews.com/news/ufo-files-pentagon-contractor/",
+          "EN"
+        ]
+      ],
+      "seo_title": "Programma UFO del Pentagono AAWSAP: Reid contro la DIA",
+      "seo_desc": "Il programma UFO AAWSAP voluto da Harry Reid: segreto da proteggere o ricerca di scarso valore? Le due versioni a confronto, dai documenti ufficiali."
     },
     {
       "id": "baass-caveau-nevada-materiali-esotici",
@@ -60,9 +75,19 @@
         "Fox News ha chiesto un commento al Pentagono e ad AARO senza ricevere risposta. Il programma si è chiuso nel 2012; nel 2020 Bigelow Aerospace ha licenziato tutto il personale."
       ],
       "src": [
-        ["Fox News", "https://www.foxnews.com/us/secret-pentagon-ufo-hunt-drew-blueprints-hidden-nevada-bunker-store-exotic-materials", "EN"],
-        ["CBS News", "https://www.cbsnews.com/news/ufo-files-pentagon-contractor/", "EN"]
-      ]
+        [
+          "Fox News",
+          "https://www.foxnews.com/us/secret-pentagon-ufo-hunt-drew-blueprints-hidden-nevada-bunker-store-exotic-materials",
+          "EN"
+        ],
+        [
+          "CBS News",
+          "https://www.cbsnews.com/news/ufo-files-pentagon-contractor/",
+          "EN"
+        ]
+      ],
+      "seo_title": "BAASS e il caveau in Nevada per «materiali esotici» UFO",
+      "seo_desc": "Un contrattista del Pentagono, BAASS, progettò un caveau sotterraneo in Nevada per conservare «materiali esotici». Cosa dicono i documenti emersi."
     }
   ]
 }
