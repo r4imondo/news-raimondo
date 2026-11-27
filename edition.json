@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "label": "Venerdì 27 novembre 2026",
-  "lead": "ue-proroga-aiuti-stato-energia-2027",
+  "lead": "automotive-mini-contratti-30-novembre",
   "secs": [
     [
       "ind",
@@ -10,6 +10,10 @@
     [
       "inc",
       "Incentivi e formazione"
+    ],
+    [
+      "ads",
+      "Marketing e AI"
     ],
     [
       "ia",
@@ -26,300 +30,388 @@
   ],
   "stories": [
     {
-      "id": "usa-dazi-301-sovraccapacita-14-paesi",
+      "id": "dazi-301-usa-14-economie",
       "sec": "geo",
       "kick": "Dazi USA",
       "date": "26 novembre",
-      "title": "Washington propone nuovi dazi Sezione 301 su 14 economie: per l'UE tetto al 15%, Cina al 20%",
-      "sum": "L'ufficio del Rappresentante USA per il commercio (USTR) ha proposto nuovi dazi contro 14 grandi partner, Cina e Unione Europea comprese, accusati di sovraccapacità industriale. Per UE, Giappone, Corea del Sud, Taiwan e Svizzera il tetto è del 15%, dazi ordinari inclusi. Alla Cina toccherebbe il 20%, che salirebbe al 40% se la tregua commerciale in scadenza il 10 gennaio non venisse prorogata. Nessuna misura entrerà in vigore prima dell'udienza pubblica del 25 gennaio.",
-      "why": "Per chi esporta negli Stati Uniti il riferimento resta un dazio complessivo massimo del 15%, ma ora poggia su una base giuridica diversa e più solida. C'è tempo fino all'udienza di fine gennaio per rivedere listini e contratti.",
+      "title": "Dazi Sezione 301 su 14 economie: Washington accusa di sovraccapacità, Pechino e Bruxelles respingono",
+      "sum": "L'ufficio del Rappresentante per il commercio USA (USTR) ha proposto dazi contro 14 economie, tra cui UE, Cina, Giappone, India e Corea del Sud, a conclusione di un'indagine durata otto mesi sulla «sovraccapacità strutturale» manifatturiera. Per la Cina si parla di un 20% aggiuntivo; per i partner con un accordo i dazi non supereranno i tetti già concordati, il 15% per l'UE. Il 26 novembre il ministero del Commercio cinese ha definito la misura unilaterale e contraria alle regole OMC, riservandosi contromisure. La Commissione europea respinge l'idea che l'Europa sia fonte di sovraccapacità.",
+      "why": "Chi esporta negli Stati Uniti deve sapere che il quadro tariffario del 2027 è di nuovo in discussione, anche se per l'UE resta il tetto del 15%. Il nuovo dazio non si somma a quelli di settore su auto e acciaio, ma l'elenco dei prodotti e le aliquote finali vanno seguiti nella consultazione pubblica.",
       "vs": true,
       "facts": [
-        "Le 14 economie coinvolte valgono circa metà dell'economia mondiale (AP).",
-        "Il nuovo strumento è la Sezione 301 del Trade Act del 1974: a febbraio la Corte Suprema aveva annullato i dazi globali fondati sulla legge sulle emergenze nazionali.",
-        "Altri tetti: 18% per Cambogia, Indonesia, Malesia, Thailandia e Bangladesh; Vietnam fino al 35% e India fino al 25% se i negoziati falliscono.",
-        "Secondo Capital Economics, i nuovi dazi sostituiscono in gran parte quelli di luglio sul lavoro forzato invece di sommarsi.",
-        "Le Borse europee e asiatiche sono salite: la misura era in gran parte attesa."
+        "L'USTR propone dazi a 14 economie dopo un'indagine Sezione 301 su 16 partner durata otto mesi.",
+        "Cina: proposto un 20% aggiuntivo, oltre ai dazi di circa il 25% del primo mandato Trump.",
+        "Tetti degli accordi rispettati: 15% per UE, Giappone, Corea del Sud e Taiwan, 19% per la Malesia.",
+        "Il nuovo dazio non si cumula con quelli settoriali (auto, acciaio); entrata in vigore non prima di gennaio 2027.",
+        "La tregua commerciale USA-Cina scade il 10 gennaio."
       ],
       "a": {
-        "h": "Sì: la sovraccapacità altrui danneggia il commercio USA",
-        "who": "La tesi dell'USTR (Greer)",
+        "h": "Sì: le sovvenzioni altrui distorcono i mercati",
+        "who": "La tesi dell'USTR",
         "pts": [
-          "Le pratiche dei 14 partner sono giudicate irragionevoli e dannose per il commercio statunitense.",
-          "Secondo Greer i tetti sono coerenti con gli accordi dell'ultimo anno, che hanno ridotto le barriere all'export USA.",
-          "La Sezione 301 dà ai dazi una base legale più solida dopo la sentenza della Corte Suprema."
+          "Ogni partner colpito, con le sue pratiche, crea o alimenta una sovraccapacità strutturale.",
+          "Per sovraccapacità si intende una produzione scollegata dalla domanda reale, sostenuta da politiche industriali e sussidi.",
+          "Il governo USA dice di cercare stabilità con Pechino e non si aspetta ritorsioni.",
+          "I dazi possono spingere i partner verso nuovi accordi commerciali."
         ]
       },
       "b": {
-        "h": "No: la sovraccapacità è un falso problema",
+        "h": "No: è protezionismo travestito",
         "who": "La tesi di Pechino e Bruxelles",
         "pts": [
-          "Per il ministero degli Esteri cinese la sovraccapacità è una «falsa premessa» usata come pretesto politico.",
-          "Il MOFCOM parla di unilateralismo contrario alle regole OMC e si riserva «misure necessarie».",
-          "L'UE respinge l'idea di essere fonte di sovraccapacità strutturale e lamenta l'assenza di un'azione comune con gli USA."
+          "Per il MOFCOM la misura è unilaterale e viola le regole OMC: la sovraccapacità sarebbe solo un pretesto.",
+          "Pechino invita a tornare al dialogo e si riserva le contromisure necessarie.",
+          "La Commissione UE dice che l'Europa subisce la sovraccapacità, non la causa.",
+          "Bruxelles pretende il pieno rispetto del tetto del 15%, anche sommato ai dazi esistenti."
         ]
       },
       "deep": [
-        "La proposta arriva dopo un'indagine Sezione 301 su 14 economie e, secondo l'amministrazione, serve a ripristinare i dazi che la Corte Suprema aveva cancellato a febbraio. L'entrata in vigore è prevista all'inizio del 2027, dopo l'udienza pubblica del 25 gennaio.",
-        "La parte cinese del dossier si intreccia con la tregua: AP riferisce che è stata prorogata di due mesi, fino al 10 gennaio 2027, con riduzioni tariffarie reciproche su prodotti non sensibili per circa 60 miliardi di dollari. Reuters segnala inoltre un vertice Xi-Trump previsto a dicembre.",
-        "Non è ancora definito se e quanto le aliquote finali divergeranno dai tetti proposti."
+        "Le misure sono proposte, non ancora in vigore: passeranno per una consultazione pubblica e un'audizione. Secondo un funzionario USA, l'applicazione potrebbe slittare almeno a gennaio 2027. Le aliquote per singolo Paese saranno pubblicate nel Federal Register. Messico e Norvegia, anch'essi sotto indagine, per ora restano fuori.",
+        "Per l'UE resta in vigore l'attuale dazio del 10%, e la Commissione si aspetta che ogni nuova misura rispetti in pieno il tetto del 15% fissato dall'accordo del 2025, anche sommata ai dazi esistenti. Il nuovo dazio non si cumula con quelli settoriali su auto e acciaio. Dove c'è anche il dazio sul lavoro forzato introdotto a luglio, vale la più alta delle due aliquote.",
+        "Sulla Cina: sono esclusi circa 30 miliardi di dollari di import in discussione per riduzioni reciproche. La tregua commerciale tra Washington e Pechino scade il 10 gennaio e il MOFCOM chiede di prorogarla e di accelerare la lista da 30 miliardi.",
+        "Prossimi passi: i ministri UE del Commercio ne discuteranno al Consiglio Affari esteri di lunedì. Washington punta a nuovi accordi, forse al G20 di Miami a dicembre."
       ],
       "src": [
         [
-          "Reuters (via BNN Bloomberg)",
-          "https://www.bnnbloomberg.ca/tariffs/2026/11/26/five-takeaways-from-trumps-new-tariffs/",
+          "RTÉ (AFP/Reuters)",
+          "https://www.rte.ie/news/us/2026/1125/1600630-us-tariffs/",
           "EN"
         ],
         [
-          "AP (via MPR News)",
-          "https://www.mprnews.org/story/2026/11/26/china-and-other-us-trading-partners-hit-back-at-trumps-new-tariff-plans",
-          "EN"
-        ],
-        [
-          "The Paper (澎湃新闻)",
-          "https://www.thepaper.cn/newsDetail_forward_34566721",
-          "ZH"
+          "Xinhua (MOFCOM)",
+          "https://www.news.cn/world/20261126/ce1c7e87dd2f4406b827d1e00d1b1912/c.html",
+          "GOV"
         ]
       ]
     },
     {
       "id": "ue-cina-quote-ibride-scontro",
       "sec": "ind",
-      "kick": "Auto e commercio",
+      "kick": "Auto ibride",
       "date": "26 novembre",
-      "title": "Ibride cinesi, dal 1° dicembre scattano le quote Ue: Pechino avverte Bruxelles",
+      "title": "Quote UE sulle ibride dal 1° dicembre: Bruxelles difende l'industria, Pechino parla di protezionismo",
+      "sum": "Il 24 novembre la Commissione europea ha introdotto quote provvisorie sulle importazioni di auto ibride (full, plug-in e mild) da tutte le origini, in vigore dal 1° dicembre per un massimo di 200 giorni. Oltre la quota l'import non è consentito. Alla Cina va la quota più ampia, circa 191.800 veicoli. Il 26 novembre il ministero del Commercio cinese ha risposto che «il protezionismo non porta da nessuna parte» e ha chiesto a Bruxelles di rispettare l'intesa raggiunta in ottobre.",
+      "why": "Per la filiera auto europea, componentisti compresi, è la seconda barriera dopo i dazi sulle elettriche cinesi. Un tetto fisso alle quantità tende a spingere i costruttori cinesi a produrre direttamente in Europa, con ricadute su fornitori, concorrenza e prezzi.",
       "vs": true,
-      "sum": "Dal 1° dicembre la Commissione europea applica una misura di salvaguardia provvisoria di 200 giorni, fino al 18 giugno 2027, che fissa quote di importazione per le auto ibride, plug-in comprese. Alla Cina toccano 192.000 veicoli nel periodo transitorio, pari a circa 350.000 l'anno a regime. Il 26 novembre il ministero del Commercio cinese ha fatto sapere che seguirà l'indagine da vicino e ha chiesto all'Ue di rispettare l'intesa raggiunta in ottobre.",
-      "why": "Chi fornisce componenti ai costruttori europei o compra veicoli e ricambi dalla Cina deve mettere in conto un mercato delle ibride contingentato fino a giugno 2027. Le auto prodotte nell'Ue non rientrano nelle quote: un incentivo per i marchi cinesi ad aprire fabbriche in Europa.",
       "facts": [
-        "Quote provvisorie: Cina 192.000, Giappone circa 171.000, Turchia circa 126.000. Una volta esaurita la quota, le importazioni da quel Paese si fermano.",
-        "La misura vale 200 giorni dal 1° dicembre 2026. Le misure definitive possono arrivare entro nove mesi dall'avvio dell'indagine.",
-        "Restano esclusi tra gli altri Norvegia, Islanda, Liechtenstein e Ucraina. Per il Regno Unito non c'è ancora una decisione.",
-        "Secondo il Global Times la quota cinese copre circa metà delle importazioni previste per il 2026, mentre una prima proposta di Bruxelles si sarebbe fermata a 70.000 veicoli l'anno.",
-        "Il 3 dicembre il Consiglio Competitività discuterà l'Industrial Accelerator Act sul \"Made in Europe\"."
+        "La Commissione ha pubblicato le misure di salvaguardia provvisorie il 24 novembre 2026; l'indagine era stata aperta il 30 ottobre.",
+        "I Paesi che nel 2025 pesavano più del 2% dell'import UE di ibride hanno una quota propria, pari ai volumi 2025 aumentati di poco più del 15%; gli altri condividono una quota residua.",
+        "Le misure valgono fino a 200 giorni; le misure definitive possono arrivare entro nove mesi dall'avvio dell'indagine, con una proroga possibile di due mesi.",
+        "Alla Cina spettano 191.780 veicoli nei 200 giorni; gli ibridi range extender (EREV) non rientrano nelle quote.",
+        "Secondo i dati citati dalla stampa cinese, le ibride sono passate dal 33% delle immatricolazioni UE nel 2023 al 44% nel 2025."
       ],
       "a": {
-        "h": "Sì: serve un argine alla crescita delle importazioni",
-        "who": "La tesi di Bruxelles",
+        "h": "Sì: serve un tetto alle quantità",
+        "who": "La tesi della Commissione UE",
         "pts": [
-          "La Commissione presenta la misura come difesa dell'industria europea da un forte aumento recente delle importazioni di ibride.",
-          "Secondo Bruxelles le ibride importate comprimono prezzi e margini dei costruttori europei.",
-          "Le quote valgono per nove Paesi, quindi non solo per la Cina, e partono dai volumi reali del 2025."
+          "L'import di ibride è salito molto dal 2023: i produttori UE perdono quote anche se il mercato cresce, e la minaccia di un grave danno è giudicata imminente.",
+          "A spingere l'import sono la sovraccapacità globale e le restrizioni adottate da altri grandi mercati.",
+          "Con una capacità cinese circa doppia rispetto alla produzione, un dazio verrebbe assorbito dalle case; un limite quantitativo no.",
+          "Le misure mettono in pratica l'intesa sulla moderazione dell'export cinese raggiunta il 9 ottobre."
         ]
       },
       "b": {
-        "h": "No: è protezionismo che viola i patti",
-        "who": "La tesi di Pechino (MOFCOM)",
+        "h": "No: è protezionismo",
+        "who": "La tesi del MOFCOM cinese",
         "pts": [
-          "Il portavoce He Yadong ha detto che il protezionismo non porta da nessuna parte e che la strada giusta è la cooperazione aperta.",
-          "Pechino chiede all'Ue di rispettare il consenso raggiunto nelle consultazioni e di condurre un'indagine equa, conforme alle regole Omc.",
-          "La Cina si riserva tutti i diritti, compreso il ricorso al sistema di risoluzione delle controversie Omc e la richiesta di compensazioni."
+          "Il portavoce He Yadong: il protezionismo non ha futuro, apertura e cooperazione sono la strada giusta.",
+          "Pechino chiede all'UE di rispettare il consenso raggiunto e di condurre l'indagine in modo equo, secondo le regole WTO.",
+          "La Cina difenderà con fermezza i diritti delle proprie imprese.",
+          "Per analisti cinesi la quota copre solo circa il 40% dell'export atteso e, a differenza di un dazio, non lascia spazio a chi pagherebbe di più."
         ]
       },
-      "src": [
-        [
-          "ANSA",
-          "https://www.ansa.it/europa/notizie/rubriche/altrenews/2026/11/25/a-dicembre-scatta-la-stretta-ue-sullimport-delle-auto-ibride-cinesi_aaebbc8a-5ef6-441a-a974-897065e472c2.html",
-          ""
-        ],
-        [
-          "Xinhua",
-          "https://english.news.cn/20261126/d6aef64b899f4be19c8d3283826e6f52/c.html",
-          "GOV"
-        ],
-        [
-          "Global Times / Huanqiu (via Sina Finance)",
-          "https://finance.sina.com.cn/roll/2026-11-26/doc-inizzftm9043411.shtml",
-          "GOV"
-        ]
-      ]
-    },
-    {
-      "id": "unitree-robot-supereranno-auto",
-      "sec": "ind",
-      "kick": "Robotica Cina",
-      "date": "26 novembre",
-      "title": "Unitree: in Cina i robot prodotti potrebbero superare le auto entro 5-10 anni",
-      "sum": "Al convegno WISE2026 di Pechino, il fondatore e presidente di Unitree Robotics, Wang Xingxing, ha previsto che entro 5-10 anni la Cina potrebbe produrre più robot che automobili, con oltre 20 milioni di unità l'anno. Oggi Unitree parte da numeri piccoli: nel 2025 ha spedito più di 5.500 umanoidi. Intanto la produzione cinese di robot industriali è cresciuta del 26% a ottobre.",
-      "why": "Se la previsione si realizzerà anche solo in parte, i robot cinesi arriveranno in grandi volumi. Per chi automatizza la produzione si allarga l'offerta; per chi produce robot o componenti cresce la pressione sui prezzi.",
       "deep": [
-        "Wang Xingxing ha parlato il 26 novembre al convegno WISE2026 di Pechino. Secondo la sua stima, entro 5-10 anni la produzione annua di robot in Cina potrebbe superare quella di automobili e andare oltre i 20 milioni di unità. Come motivi ha indicato i progressi tecnologici, una filiera ormai matura e la crescita degli impieghi possibili.",
-        "Il punto di partenza è lontano. Nel 2025 Unitree ha spedito più di 5.500 robot umanoidi e ne ha prodotti in serie oltre 6.500. Il dato riguarda solo gli umanoidi veri e propri, senza i robot su ruote a doppio braccio. Sul fronte industriale, l'Ufficio nazionale di statistica registra a ottobre 2026 una crescita del 26% annuo nella produzione di robot industriali.",
-        "Il confronto con l'auto va letto con cautela. Secondo l'associazione dei costruttori cinesi CAAM, nel 2025 la Cina ha prodotto 34,53 milioni di veicoli. Sina Tech osserva quindi che 20 milioni di robot equivarrebbero a circa il 60% dell'attuale produzione di auto. La soglia citata e l'idea del sorpasso non coincidono del tutto, e le fonti non chiariscono quali tipi di robot rientrino nel conteggio.",
-        "La previsione resta una dichiarazione d'intenti di un'azienda del settore, non una stima ufficiale. Le fonti lette non riportano tempi intermedi né obiettivi di prezzo."
-      ],
-      "src": [
-        [
-          "The Paper (澎湃新闻)",
-          "https://www.thepaper.cn/newsDetail_forward_34563169",
-          "ZH"
-        ],
-        [
-          "Sina Tech (新浪科技)",
-          "https://finance.sina.com.cn/tech/roll/2026-11-26/doc-inkaatuw8061002.shtml",
-          "ZH"
-        ]
-      ]
-    },
-    {
-      "id": "ue-proroga-aiuti-stato-energia-2027",
-      "sec": "inc",
-      "kick": "Aiuti di Stato Ue",
-      "date": "25 novembre",
-      "title": "Caro energia, l'Ue proroga a giugno 2027 il quadro sugli aiuti di Stato",
-      "sum": "La Commissione europea ha prorogato di sei mesi, fino al 30 giugno 2027, il quadro temporaneo sugli aiuti di Stato adottato ad aprile per gli effetti della crisi in Medio Oriente. Nel primo semestre 2027 i governi potranno concedere nuovi aiuti fino a 50.000 euro per impresa, anche a chi ne ha già ricevuti nel 2026. Finora Bruxelles ha approvato 35 misure di 14 Stati membri, per oltre 3,7 miliardi di euro.",
-      "why": "Le imprese con costi energetici o di carburante alti potranno ricevere un secondo aiuto nel 2027: conviene seguire se e come i regimi nazionali verranno riaperti. Le aziende energivore possono già contare sugli sgravi elettrici del quadro Clean industrial State aid, valido fino al 2030.",
-      "deep": [
-        "Il quadro temporaneo sarebbe scaduto il 31 dicembre: ora resta in vigore fino al 30 giugno 2027. Bruxelles non esclude altre proroghe, ma ribadisce che si tratta di uno strumento temporaneo.",
-        "La novità principale è un secondo aiuto. Chi ha ricevuto un sostegno nel 2026 potrà averne un altro nel nuovo anno, fino a 50.000 euro. Agricoltura, pesca, trasporto terrestre e trasporto marittimo a corto raggio possono coprire fino al 70% dei costi aggiuntivi di carburanti e fertilizzanti. È prevista anche una procedura semplificata, basata su stime generali dei consumi.",
-        "Siderurgia, chimica e le altre industrie energivore hanno già a disposizione lo sgravio sull'elettricità del Clean industrial State aid framework, in vigore dal 2025 al 2030. Con quel quadro la copertura dei costi elettrici ammissibili può salire dal 50% al 70%.",
-        "Dall'avvio del quadro la Commissione ha autorizzato 35 misure di 14 Paesi e 11 modifiche a regimi esistenti, per oltre 3,7 miliardi di euro. La vicepresidente Teresa Ribera ha ricordato che l'Europa ha pagato 150 miliardi in più per importare combustibili fossili. A suo giudizio, solo ridurre la dipendenza da quelle importazioni garantirà prezzi stabili. Le fonti non dicono se l'Italia riaprirà regimi nazionali."
-      ],
-      "src": [
-        [
-          "ANSA",
-          "https://www.ansa.it/sito/notizie/topnews/2026/11/25/lue-proroga-a-giugno-2027-il-quadro-sugli-aiuti-di-stato-per-il-caro_f5c2277c-6514-41dd-b3e4-c5507f488298.html",
-          ""
-        ],
-        [
-          "QN Quotidiano Nazionale",
-          "https://www.quotidiano.net/economia/energia-lue-proroga-gli-aiuti-di-stato-fino-a-giugno-per-le-imprese-rimborsi-fino-al-70-lggccxq3",
-          ""
-        ]
-      ]
-    },
-    {
-      "id": "inps-incentivi-assunzioni-calo-29",
-      "sec": "inc",
-      "kick": "Incentivi al lavoro",
-      "date": "25 novembre",
-      "title": "Inps: nel 2025 i lavoratori coperti da incentivi all'occupazione calano del 29%",
-      "sum": "Secondo l'Osservatorio Inps sulle politiche occupazionali, nel 2025 la media dei lavoratori beneficiari di politiche attive, cioè di agevolazioni contributive per le assunzioni, è stata di circa 2,34 milioni, il 29% in meno rispetto al 2024. Sono scese tutte le categorie tranne le stabilizzazioni, cresciute dell'11%. Dal 2025 la vecchia Decontribuzione Sud ha lasciato il posto alla Decontribuzione Sud PMI, riservata alle imprese fino a 250 dipendenti.",
-      "why": "Le agevolazioni sulle assunzioni si sono ristrette e concentrate. Prima di assumere conviene verificare quali esoneri restano disponibili, come quelli per giovani e donne a tempo indeterminato e il Bonus Zes, e se l'azienda rientra nella Decontribuzione Sud PMI.",
-      "deep": [
-        "L'Inps ha pubblicato il 25 novembre i dati 2025 del suo Osservatorio sulle politiche occupazionali e del lavoro. Nel 2025 i lavoratori che hanno beneficiato di incentivi all'occupazione sono stati in media circa 2,342 milioni, il 29% in meno sull'anno precedente.",
-        "L'unica voce in crescita sono le stabilizzazioni, cioè le trasformazioni di contratti precari in rapporti stabili, salite dell'11%. Restano attivi gli esoneri contributivi totali per le assunzioni a tempo indeterminato di giovani e donne e il Bonus Zes per la Zona economica speciale del Mezzogiorno. L'Inps però non fornisce cifre per singola misura.",
-        "Pesa la fine della Decontribuzione Sud, interrotta nel 2024. Dal 2025 è stata sostituita dalla Decontribuzione Sud PMI, che vale solo per le imprese fino a 250 dipendenti.",
-        "Sul fronte degli ammortizzatori, nel 2025 i trattamenti NASpI sono stati 2,04 milioni (-2,5%), mentre la Dis-Coll per i collaboratori è salita del 22,5% a 28.542 trattamenti. La nota non spiega in dettaglio quanto del calo dipenda dalle singole misure scadute."
-      ],
-      "src": [
-        [
-          "INPS",
-          "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.osservatorio-politiche-occupazionali-e-del-lavoro-i-dati-del-2025.html",
-          ""
-        ],
-        [
-          "Il Sole 24 Ore Radiocor (via Borsa Italiana)",
-          "https://www.borsaitaliana.it/borsa/notizie/radiocor/economia/dettaglio/lavoro-inps-nel-2025-beneficiari-politiche-attive-29-a-2342-milioni-nRC_25112026_1021_224829162.html",
-          ""
-        ]
-      ]
-    },
-    {
-      "id": "google-workspace-agenti-ai-mcp-2027",
-      "sec": "ia",
-      "kick": "Agenti AI in azienda",
-      "date": "25 novembre",
-      "title": "Google Workspace cambia le regole per gli agenti AI: dal 1° febbraio 2027 si entra solo da MCP o CLI",
-      "sum": "Google ha reso disponibili a tutti i server MCP e la riga di comando (CLI) di Workspace, i canali con cui gli agenti AI possono leggere e usare Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat e Tasks. Dal 1° febbraio 2027 gli agenti AI esterni dovranno passare da questi canali e non potranno più chiamare direttamente le API REST. Gli amministratori avranno nuovi controlli: conferme obbligatorie per le azioni delicate, registri delle attività e possibilità di revocare l'accesso.",
-      "why": "Un'azienda che collega a Gmail o Drive assistenti AI, CRM o automazioni di terzi deve chiedere ai fornitori se sono pronti per MCP entro febbraio. Intanto può usare i nuovi controlli per decidere quali agenti accedono ai dati e con quali conferme.",
-      "deep": [
-        "Google presenta l'annuncio come una risposta a un problema di sicurezza. Gli agenti AI si collegano ormai direttamente a email, documenti e calendari, e le aziende chiedono più controllo. Workspace dichiara oltre 13 milioni di organizzazioni clienti.",
-        "Il cambiamento principale riguarda l'accesso. Secondo il nuovo addendum contrattuale per gli strumenti AI, gli agenti dovranno usare i server MCP (lo standard aperto per collegare i modelli ai dati) o la CLI, pensata per gli agenti che girano in locale. Ogni richiesta viene verificata rispetto ai permessi, alle regole di prevenzione della perdita di dati e alle etichette di classificazione. Il blocco tecnico scatta il 1° febbraio 2027; Google non dice con precisione cosa succederà alle chiamate REST dopo quella data.",
-        "Nella console di amministrazione si potranno gestire gli accessi degli strumenti AI esterni e chiedere la conferma dell'utente prima di azioni come inviare email all'esterno, cambiare le condivisioni di Drive o fare modifiche in blocco. L'addendum vieta di conservare in modo permanente i dati grezzi, di usarli per addestrare modelli e di fare scraping. I dati vanno cancellati quando l'agente viene scollegato.",
-        "Ci sono anche novità sui costi. Il livello Standard resta gratuito con limiti pubblicati, e Google dice che lo usa oltre il 99% degli sviluppatori. Il livello Scaled, con quote più alte, sarà a pagamento oltre una soglia giornaliera dal 1° aprile 2027. Le funzioni arrivano ai domini entro due settimane; altri controlli, come il blocco degli agenti su singoli file o cartelle, sono annunciati come in arrivo."
-      ],
-      "src": [
-        [
-          "Google Workspace Blog",
-          "https://workspace.google.com/blog/product-announcements/built-for-trust-and-control-new-ai-agent-protections-and-developer-tools-in-google-workspace",
-          "EN"
-        ],
-        [
-          "Google Workspace Updates",
-          "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
-          "EN"
-        ]
-      ]
-    },
-    {
-      "id": "ue-quantum-act-fondo-tech-50-miliardi",
-      "sec": "ia",
-      "kick": "Tecnologie strategiche",
-      "date": "25 novembre",
-      "title": "Bruxelles propone il Quantum Act e prepara un fondo sovrano da 50 miliardi per le tecnologie strategiche",
-      "sum": "La Commissione europea ha proposto il Quantum Act, un regolamento per trasformare la ricerca europea sulle tecnologie quantistiche in prodotti e capacità industriale. Il testo pone le basi per un Sovereign Tech Equity Fund, che investirà in capitale di rischio nelle tecnologie considerate essenziali per la sovranità tecnologica europea. Secondo la vicepresidente Henna Virkkunen il fondo dovrebbe valere 50 miliardi di euro, finanziati da Commissione, Stati membri e Banca europea per gli investimenti.",
-      "why": "Per le aziende tecnologiche europee si apre una possibile nuova fonte di capitale pubblico in quote societarie. Per tutte le imprese si avvicina il passaggio alla crittografia post-quantistica, cioè la protezione dei dati dai futuri computer quantistici.",
-      "deep": [
-        "La proposta è stata presentata il 25 novembre. Si appoggia alla strategia Quantum Europe del luglio 2025 e all'obiettivo di fare dell'Europa un leader mondiale delle tecnologie quantistiche entro il 2030.",
-        "Il regolamento ha tre linee d'azione. La prima riguarda la capacità industriale, con una rete di istituti di ricerca europei e infrastrutture condivise. La seconda riguarda sicurezza e filiere: monitorare i fornitori critici, ridurre i rischi nelle forniture e preparare il passaggio alla crittografia post-quantistica. La terza riguarda l'attuazione, con un Quantum Strategy Board, una European Quantum Alliance e la rete europea di computer quantistici collegata a EuroHPC.",
-        "Sul fondo la Commissione dice solo che farà investimenti in capitale nelle tecnologie essenziali. Secondo il Sole 24 Ore, Virkkunen lo ha quantificato in 50 miliardi: sarebbe compatibile con il bilancio Ue e potrebbe entrare nel capitale delle aziende più innovative. Non sono ancora noti tempi di avvio, regole di accesso né criteri di selezione.",
-        "La Commissione stima che il mercato quantistico mondiale possa arrivare a 155 miliardi di euro entro il 2040 e ricorda che la strategia del 2025 ha già mobilitato oltre 11 miliardi di investimenti pubblici. La proposta ora passa a Parlamento e Consiglio."
+        "Il meccanismo è insolito: un limite di quantità invece di un dazio. Superata la quota, i veicoli non vengono sdoganati.",
+        "L'analista Cui Dongshu stima che al ritmo attuale l'export cinese nello stesso periodo sarebbe di circa 470.000 veicoli: la quota ne coprirebbe circa il 40%. L'esperto Yang Weibin suggerisce alle case di usare la quota per i plug-in più cari, di puntare sul Regno Unito, fuori dalle quote, e di costruire impianti in Europa, dove però lavoro ed energia costano di più.",
+        "Prossimo passaggio: l'eventuale decisione sulle misure definitive, attesa entro l'estate 2027."
       ],
       "src": [
         [
           "Commissione europea",
-          "https://commission.europa.eu/news-and-media/news/europes-quantum-leap-strengthening-industrial-capacity-and-security-new-quantum-technologies-2026-11-25_en",
+          "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2564/IP_26_2564_EN.pdf",
           "EN"
         ],
         [
-          "Il Sole 24 Ore",
-          "https://en.ilsole24ore.com/art/a-50-billion-fund-for-tech-investments-the-quantum-act-launched-by-the-eu-AJRzYMSC",
+          "Global Times",
+          "https://www.globaltimes.cn/page/202611/1375106.shtml",
+          "GOV"
+        ],
+        [
+          "21 Jingji",
+          "https://www.21jingji.com/article/20261126/herald/ddcf7826002d9087c96ff24350c0af14.html",
+          "ZH"
+        ]
+      ]
+    },
+    {
+      "id": "character-ai-asta-chat-42-procuratori",
+      "sec": "ia",
+      "kick": "Dati all'asta",
+      "date": "26 novembre",
+      "title": "Character.AI in bancarotta mette all'asta le chat di 21 milioni di utenti: 42 procuratori USA si oppongono",
+      "sum": "Character.AI, la piattaforma di chatbot in Chapter 11 da ottobre, vuole vendere all'asta il 1° dicembre un pacchetto di asset che comprende le chat di oltre 21 milioni di account statunitensi, con indirizzi IP e metadati. Una coalizione bipartisan di 42 procuratori generali statali chiede al tribunale fallimentare del Delaware di bloccare la vendita o almeno di escluderne i dati dei minori e quelli sensibili. L'unica offerta nota, 10 milioni di dollari come base d'asta, arriva da Smirks and Pangs Acquisition LLC, società costituita il 13 novembre.",
+      "why": "Il caso mostra che, se un fornitore di AI fallisce, le conversazioni e i dati caricati dai clienti possono diventare un bene da vendere ai creditori. Prima di scegliere un fornitore conviene verificare nei contratti cosa succede ai dati in caso di cessione o insolvenza.",
+      "vs": true,
+      "facts": [
+        "Character.AI ha avviato la procedura di Chapter 11 a ottobre 2026 davanti al tribunale fallimentare del Delaware.",
+        "In vendita ci sono l'app, i modelli e le chat di oltre 21 milioni di account USA; secondo il procuratore della California circa 2,1 milioni sono intestati a minori.",
+        "L'offerente designato, sostenuto dalla società d'investimento Octave Advisors, offre 10 milioni di dollari e, se perde, avrebbe diritto a una penale di 350.000 dollari.",
+        "L'asta è fissata per il 1° dicembre; seguirà l'udienza del tribunale sulla vendita.",
+        "Disney ha un accordo separato di licenza tecnologica e assume gran parte del personale: anche questo è contestato dagli Stati."
+      ],
+      "a": {
+        "h": "Sì: la vendita salva il valore degli asset",
+        "who": "La tesi di Character.AI",
+        "pts": [
+          "L'offerta da 10 milioni fissa un prezzo minimo per gli altri offerenti: senza, verrebbe meno la base d'asta.",
+          "Il trustee federale, il garante della privacy nominato nella procedura e i legali proposti per i creditori non si sono opposti alla bozza di ordinanza.",
+          "L'azienda ha assicurato che i dati restano protetti dalla sua privacy policy e che gli utenti possono esportarli o cancellare l'account."
+        ]
+      },
+      "b": {
+        "h": "No: la bancarotta non aggira la privacy",
+        "who": "La tesi dei 42 procuratori USA",
+        "pts": [
+          "Le chat contengono dati molto sensibili, anche di minori, oltre ai punteggi di rischio assegnati agli utenti.",
+          "La privacy policy prometteva di non vendere i dati, ma nulla obbligherebbe l'acquirente a rispettarla o a non rivenderli.",
+          "Chiedono di respingere l'offerente designato e la sua penale, o almeno di escludere le chat dei minori e i dati sensibili.",
+          "Per il procuratore della California Bonta la bancarotta «non dovrebbe servire ad aggirare» le tutele dei consumatori."
+        ]
+      },
+      "deep": [
+        "Character.AI è nota per i chatbot che interpretano personaggi. Nel 2025 aveva già limitato le funzioni per i minori dopo una causa legale; le accuse di quella causa non sono state accertate.",
+        "Secondo The Next Web, che cita il Wall Street Journal, nei giorni scorsi il giudice avrebbe approvato Smirks and Pangs come offerente principale; PPC Land riporta che il 25 novembre è stata depositata la proposta di ordinanza. Le fonti non concordano sulla data dell'udienza finale.",
+        "Gli utenti possono ancora esportare i propri dati e chiudere l'account, ma non è chiaro se farlo a pochi giorni dall'asta li escluda davvero dal pacchetto in vendita."
+      ],
+      "src": [
+        [
+          "The Next Web",
+          "https://thenextweb.com/news/character-ai-chats-auction-attorneys-general-bankruptcy",
+          "EN"
+        ],
+        [
+          "PCMag",
+          "https://www.yahoo.com/news/us/articles/character-ai-plans-auction-off-124352402.html",
+          "EN"
+        ],
+        [
+          "PPC Land",
+          "https://ppc.land/character-ai-asks-judge-to-make-10m-bid-for-users-chats-the-one-to-beat/",
           "EN"
         ]
       ]
     },
     {
-      "id": "guangxi-denti-denisova-linea-ignota",
-      "sec": "sci",
-      "kick": "Evoluzione umana",
+      "id": "metano-import-rinvio-ue",
+      "sec": "geo",
+      "kick": "Energia UE",
       "date": "26 novembre",
-      "title": "Quattro denti dal Guangxi: Denisoviani nel sud della Cina e forse una linea umana sconosciuta",
-      "sum": "Su Nature un gruppo dell'Istituto di paleontologia dei vertebrati e paleoantropologia dell'Accademia cinese delle scienze ha analizzato quattro denti trovati in due grotte del Guangxi. Quelli della grotta di Longchuan sono attribuiti ai Denisoviani. Quelli della grotta di Chuanshan, vecchi almeno 101.000 anni, non coincidono con nessun Homo noto dell'Asia orientale.",
-      "why": "Mostra come l'analisi delle proteine antiche possa estrarre informazioni anche dove il DNA non c'è, e quanto la ricerca cinese pesi ormai sulle riviste scientifiche di punta.",
+      "title": "Regole UE sul metano per gas e petrolio importati: il Parlamento approva il rinvio di due anni",
+      "sum": "Il 26 novembre il Parlamento europeo ha approvato con 341 voti favorevoli, 224 contrari e 31 astenuti l'accordo con i governi che rinvia gli obblighi del regolamento metano per chi importa petrolio, gas e carbone. Gli obblighi per gli importatori partono dal 1° gennaio 2029 invece che dal 2027. I sostenitori invocano la sicurezza degli approvvigionamenti; gli ambientalisti contestano un rinvio che considerano inutile.",
+      "why": "Il rinvio toglie un possibile fattore di costo e di incertezza sui contratti di importazione di gas, in un mercato ancora teso. Chi consuma molta energia lo segue perché incide su prezzi e disponibilità di GNL, in particolare dagli Stati Uniti.",
+      "vs": true,
+      "facts": [
+        "Voto in plenaria del 26 novembre: 341 sì, 224 no, 31 astenuti.",
+        "Gli obblighi per gli importatori slittano dal 1° gennaio 2027 al 1° gennaio 2029.",
+        "Il compromesso sta a metà: la Commissione proponeva un anno, il Parlamento a ottobre ne chiedeva tre.",
+        "Gli Stati membri non potranno più rinviare da soli; la Commissione farà una revisione a inizio 2028.",
+        "Serve ancora il via libera formale dei governi entro fine 2026."
+      ],
+      "a": {
+        "h": "Sì: prima la sicurezza delle forniture",
+        "who": "La tesi dei relatori PPE",
+        "pts": [
+          "Il relatore Tsiodras: il regolamento non viene sospeso, viene reso applicabile.",
+          "Per Budka (commissione industria) la sicurezza degli approvvigionamenti viene prima.",
+          "I governi citano i rischi di fornitura e i prezzi alti dopo la crisi nel Golfo."
+        ]
+      },
+      "b": {
+        "h": "No: due anni che non servivano",
+        "who": "La tesi di EDF Europe e S&D",
+        "pts": [
+          "Per EDF Europe i governi si sono comprati due anni che il regolamento non richiedeva.",
+          "Nel periodo extra si stimano perdite di circa 24 miliardi di metri cubi di metano.",
+          "Il costo delle regole è minimo: circa lo 0,3% del prezzo del gas secondo Rystad Energy.",
+          "I socialisti temono che il meccanismo apra la strada a rinvii senza fine."
+        ]
+      },
       "deep": [
-        "I reperti, recuperati nel 2021 dopo esplorazioni iniziate nel 2015, sono stati studiati con analisi morfologiche e paleoproteomiche, cioè sulle proteine conservate nello smalto. Le fonti non citano analisi del DNA.",
-        "I denti di Longchuan, datati tra 105.000 e 43.000 anni fa, somigliano per forma e proteine a quelli dei Denisoviani dell'Altai. Per la prima volta l'areale di questo gruppo si estende alla fascia subtropicale del Lingnan.",
-        "Il dente di Chuanshan ha invece tratti in comune con l'Homo erectus tardo e caratteri ancestrali condivisi con altri ominini. L'analisi filogenetica lo colloca come gruppo gemello dell'antenato comune di Neanderthal, Denisoviani e uomo moderno. Secondo il ricercatore Xing Song potrebbe essere un ramo indipendente.",
-        "Lo studio contraddice l'idea che quasi tutti gli umani arcaici dell'Asia orientale nel Pleistocene medio appartenessero a un'unica linea denisoviana. Per l'autrice corrispondente Fu Qiaomei il sud della Cina sarebbe stato un rifugio e un crogiolo evolutivo.",
-        "Restano forti incertezze: le prove poggiano su soli quattro denti, l'età di Chuanshan è solo un limite minimo e non è chiaro se quella linea sia nata sul posto o vi si sia rifugiata. Gli eventuali scambi genetici sono ancora da indagare."
+        "È stata eliminata la possibilità per i governi di rinviare ancora: a inizio 2028 la Commissione valuterà l'attuazione e i rischi per gli approvvigionamenti, e un ulteriore slittamento richiederebbe una nuova legge.",
+        "Il voto ha diviso l'Aula: a favore PPE, ECR e Patrioti, contro Socialisti, Verdi e Sinistra, Renew spaccato.",
+        "Per Rystad Energy le regole valgono pochi centesimi di euro per milione di BTU. Ora serve il via libera formale degli Stati membri entro fine 2026, prima che scattino le scadenze originarie."
       ],
       "src": [
         [
-          "Science and Technology Daily (科技日报)",
-          "https://www.stdaily.com/web/gdxw/2026-11/26/content_619287.html",
+          "EUobserver",
+          "https://euobserver.com/250022/eu-gives-oil-and-gas-importers-until-2029-on-methane-checks-rules-out-more-delay/",
+          "EN"
+        ],
+        [
+          "HowTheyVote.eu (voto PE)",
+          "https://howtheyvote.eu/votes/201321",
+          "EN"
+        ]
+      ]
+    },
+    {
+      "id": "automotive-mini-contratti-30-novembre",
+      "sec": "inc",
+      "kick": "Filiera auto",
+      "date": "25 novembre",
+      "title": "Automotive, dal 30 novembre le domande per i Mini contratti di sviluppo da 300 milioni",
+      "sum": "La Gazzetta Ufficiale del 25 novembre ha pubblicato il comunicato del MIMIT con termini e modalità di domanda per i Mini contratti di sviluppo della filiera automotive. Lo sportello apre alle 12 del 30 novembre 2026 sulla piattaforma dedicata; le domande saranno esaminate in ordine di arrivo fino a esaurimento dei 300 milioni. Sono ammessi programmi di investimento da 5 a 20 milioni di euro, con agevolazioni fino al 75% dei costi.",
+      "why": "Per i componentisti è uno dei pochi strumenti pensati per investimenti produttivi di taglia media. Visto che le domande vengono esaminate in ordine di arrivo, conviene preparare ora la documentazione.",
+      "deep": [
+        "La misura si basa sul decreto ministeriale dell'11 agosto 2026 e sul decreto direttoriale dell'11 novembre 2026. La gestisce il MIMIT, mentre Unioncamere cura l'istruttoria. Possono partecipare imprese di qualsiasi dimensione della filiera automotive, in tutta Italia, anche con progetti congiunti fino a cinque imprese, ciascuna con almeno 1,5 milioni di spese ammissibili.",
+        "Sono finanziabili investimenti in tecnologie per una mobilità sostenibile, autonoma, connessa e sicura: nuovi veicoli e sistemi di propulsione, componenti avanzati e diversificazione verso tecnologie strategiche a duplice uso. Rientrano tra le spese macchinari, impianti e attrezzature nuovi, opere murarie fino al 50% dell'investimento, suolo fino al 10%, software, brevetti e know-how.",
+        "Contributi e finanziamenti agevolati insieme non possono superare il 75% delle spese. Per i primi sei mesi ci sono quote riservate: 60% alle PMI (di cui il 25% del totale a micro e piccole imprese), 40% ai progetti nel Mezzogiorno, 10% ciascuno a chi ha il rating di legalità e la certificazione di parità di genere. I programmi vanno conclusi entro 36 mesi, con possibile proroga di 12, ed è previsto un anticipo fino al 40% dietro garanzia.",
+        "Per la stessa filiera è aperto dal 25 novembre anche lo sportello degli Accordi per l'innovazione automotive, dedicato ai progetti di ricerca e sviluppo."
+      ],
+      "src": [
+        [
+          "Gazzetta Ufficiale",
+          "https://www.gazzettaufficiale.it/eli/gu/2026/11/25/275/SG/html",
+          ""
+        ],
+        [
+          "Unioncamere",
+          "https://www.unioncamere.gov.it/promozione-e-assistenza-alle-imprese/mini-contratti-di-sviluppo-nel-settore-automotive",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "cina-profitti-industriali-ottobre",
+      "sec": "ind",
+      "kick": "Industria cinese",
+      "date": "27 novembre",
+      "title": "Cina, profitti industriali +16% in dieci mesi: elettronica raddoppia, auto a -26%",
+      "sum": "Secondo l'Ufficio nazionale di statistica cinese, nei primi dieci mesi del 2026 i profitti delle imprese industriali sopra soglia sono saliti del 16,0%, a 6.737 miliardi di yuan. In ottobre la crescita è stata del 20,1%. L'elettronica ha circa raddoppiato i profitti, mentre l'auto è scesa del 26%.",
+      "why": "I dati mostrano dove l'industria cinese guadagna e dove la concorrenza interna schiaccia i margini. Il calo dei profitti nell'auto e nelle macchine elettriche aiuta a capire perché i produttori cinesi spingono sull'export, anche verso l'Europa.",
+      "deep": [
+        "Nei primi dieci mesi i ricavi sono cresciuti del 6,7%, a 118.410 miliardi di yuan, e il margine sui ricavi è salito al 5,69%, 0,45 punti in più dell'anno prima. La manifattura ha registrato +17,5% di profitti, le miniere +38,8%.",
+        "Le differenze tra settori sono forti. Elettronica e telecomunicazioni hanno circa raddoppiato i profitti; seguono metalli non ferrosi (+71,7%) e chimica di base (+50,3%). Calano invece auto (-26,0%), macchine e apparecchi elettrici (-8,0%), siderurgia (-14,2%) e minerali non metalliferi (-46,7%). Le macchine generiche crescono del 2,9%, quelle specializzate perdono il 2,9%.",
+        "Per tipo di impresa, le società per azioni crescono del 21,4%, le statali del 13,0% e le private dell'11,4%; le imprese a capitale estero sono quasi ferme (+0,2%).",
+        "Ci sono anche segnali di tensione: a fine ottobre i crediti commerciali erano cresciuti del 10,5% e le scorte di prodotti finiti del 12,0%, entrambi più dei ricavi, e l'indebitamento è salito al 58,6% degli attivi. Le fonti non spiegano le cause del calo nell'auto."
+      ],
+      "src": [
+        [
+          "Ufficio nazionale di statistica cinese",
+          "https://www.stats.gov.cn/sj/zxfbhjd/202611/t20261127_1965949.html",
           "GOV"
         ],
         [
           "Xinhua",
-          "https://english.news.cn/20261126/de68cea8def34ac98d3855ffbb2044b6/c.html",
+          "https://www.news.cn/fortune/20261127/bbfacfb59c844ad091908f7c8a963619/c.html",
           "GOV"
         ]
       ]
     },
     {
-      "id": "tsinghua-misura-quantistica-500-fotoni",
-      "sec": "sci",
-      "kick": "Fisica quantistica",
+      "id": "brevetti-2026-fondi-esauriti-un-giorno",
+      "sec": "inc",
+      "kick": "Proprietà industriale",
       "date": "26 novembre",
-      "title": "Sensori quantistici: a Tsinghua uno stato da 500 fotoni misura nove volte meglio del limite standard",
-      "sum": "Su Nature un gruppo guidato da Sun Luyan dell'Università Tsinghua, con USTC e Università di Zhejiang, ha presentato una sorta di «microscopio confocale» nello spazio del numero di fotoni. Con due «lenti» virtuali prepara stati quantistici molto grandi e ne legge l'informazione con efficienza. In circuiti superconduttori ha raggiunto 500 fotoni medi e una precisione circa nove volte superiore al limite quantistico standard.",
-      "why": "La misura di precisione è la base di sensori, metrologia e controllo qualità. Il risultato è ancora di laboratorio, ma indica dove sta andando la sensoristica di nuova generazione.",
+      "title": "Brevetti+ 2026, i 20 milioni sono finiti nel giorno di apertura",
+      "sum": "Lo sportello Brevetti+ 2026, gestito da Invitalia per conto del MIMIT, ha aperto alle 12 del 25 novembre e ha chiuso alle 18 dello stesso giorno: le domande arrivate hanno esaurito la dotazione di 20 milioni di euro. Un decreto direttoriale del 25 novembre ha disposto la chiusura dal 26 novembre. La misura finanzia con un contributo a fondo perduto fino a 140.000 euro i servizi specialistici con cui le PMI valorizzano i propri brevetti.",
+      "why": "Per gli incentivi a sportello in ordine cronologico conta presentare la domanda completa nei primi minuti: chi aspetta resta escluso. Esaurire i fondi non significa però ottenere il contributo, perché l'istruttoria è ancora da fare.",
       "deep": [
-        "Lo studio trasferisce allo spazio di Fock un principio dell'ottica classica, quello del microscopio confocale. Secondo il comunicato dell'ateneo il numero di operazioni necessarie non cresce con il numero di fotoni, ed è questo che rende lo schema scalabile.",
-        "I numeri dichiarati sono due record. Il primo è lo stato non gaussiano con più fotoni mai ottenuto, 500 in media. Il secondo è un guadagno di 19,2 decibel oltre il limite quantistico standard in un test di misura di spostamento con 400 fotoni medi: la distanza minima risolvibile scende a circa un nono. L'efficienza di estrazione dell'informazione supera il 90%.",
-        "Un revisore di Nature ha definito il risultato «impressionante». Il gruppo aveva già proposto a luglio, su Nature Physics, un primo schema di «ottica nello spazio di Fock».",
-        "Le applicazioni citate restano prospettive e non risultati: ricerca della materia oscura, rilevazione di forze deboli, sensoristica di precisione e standard metrologici. I dati provengono dall'istituto e dalla stampa statale: non è stata possibile una verifica indipendente sul paper originale."
+        "Brevetti+ è rivolto a micro, piccole e medie imprese, anche costituite da poco, con sede legale e operativa in Italia. Copre l'acquisto di servizi specialistici per sfruttare economicamente un brevetto, in termini di redditività, produttività e sviluppo di mercato.",
+        "Il percorso è stato fissato da tre decreti direttoriali del MIMIT: il primo, del 28 luglio 2026, ha stanziato i 20 milioni; il secondo, del 28 settembre, ha emanato il bando con apertura al 25 novembre; il terzo, del 25 novembre, ha preso atto che le risorse erano finite.",
+        "Il bando prevedeva possibili riaperture nei giorni feriali finché c'erano fondi. Secondo Edotto, il numero di richieste del primo giorno ha reso inutile questo calendario.",
+        "Le fonti non dicono quante domande siano state presentate: le domande valgono come prenotazione dei fondi e l'esito dipende dall'istruttoria di Invitalia. Chi è rimasto fuori dovrà attendere un'eventuale nuova dotazione, finora non annunciata."
       ],
       "src": [
         [
-          "Xinhua (新华社)",
-          "https://www.news.cn/tech/20261126/8c28b8b0c0aa4d10a140fe305bdc8d71/c.html",
+          "Invitalia",
+          "https://www.invitalia.it/incentivi-e-strumenti/brevetti-2026",
+          ""
+        ],
+        [
+          "Edotto",
+          "https://www.edotto.com/articolo/brevetti-2026-fondi-esauriti-chiude-lo-sportello-per-le-domande",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "amazon-meta-trattativa-muse-pubblicita",
+      "sec": "ads",
+      "kick": "Agenti AI",
+      "date": "25 novembre",
+      "title": "Amazon e Meta trattano per riaprire lo store all'agente Muse: sul tavolo pubblicità e risultati di ricerca",
+      "sum": "Secondo un'esclusiva di Fortune, Amazon e Meta stanno discutendo un accordo che consentirebbe all'agente AI Muse di acquistare su Amazon, superando il blocco deciso da Amazon a settembre. I nodi sono la gestione della pubblicità, la qualità dei risultati di ricerca e il collegamento tecnico. Le trattative sono aperte, senza tempi certi, e richiederebbero il via libera di entrambi gli amministratori delegati. Le due aziende non hanno commentato.",
+      "why": "Se gli acquisti passano dagli agenti AI, gli annunci sui marketplace rischiano di non essere visti: chi investe in retail media ed e-commerce deve seguire chi controlla la vetrina degli agenti.",
+      "deep": [
+        "Amazon ha bloccato Muse a settembre, sostenendo che il suo accesso violava le condizioni d'uso del sito. Secondo Fortune le parti si sono incontrate più volte, ma non è detto che un accordo arrivi né quando.",
+        "Il timore principale di Amazon riguarda la pubblicità: un agente che compra per conto dell'utente potrebbe saltare gli annunci del sito, un business da 68,6 miliardi di dollari, quasi il 10% dei ricavi annui. L'AD Andy Jassy ha detto che l'apertura non è esclusa, ma serve uno «scambio di valore equo».",
+        "Muse, lanciato da Meta negli Stati Uniti a settembre, a ottobre contava oltre 10 milioni di utenti tra Stati Uniti e Canada. Meta punta a guadagnare con una piccola commissione sulle transazioni e ha già come partner Shopify, Walmart e Best Buy. Secondo dati Forter riportati da The Next Web, nella settimana al 22 novembre Muse ha gestito il 51% degli ordini fatti da agenti AI, davanti a Grok (24%) e ChatGPT (22%).",
+        "Morgan Stanley, citata da Fortune, stima che gli acquisti tramite agenti possano valere tra 190 e 385 miliardi di dollari dell'e-commerce USA entro il 2030. Non ci sono indicazioni su un'estensione all'Europa."
+      ],
+      "src": [
+        [
+          "Fortune",
+          "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/",
+          "EN"
+        ],
+        [
+          "The Next Web",
+          "https://thenextweb.com/news/amazon-and-meta-talks-muse-blockade-ads-fortune",
+          "EN"
+        ]
+      ]
+    },
+    {
+      "id": "cina-piano-servizi-export-ia",
+      "sec": "ia",
+      "kick": "Cina e IA",
+      "date": "26 novembre",
+      "title": "La Cina vara il piano quinquennale sui servizi: cloud e grandi modelli da esportare all'estero",
+      "sum": "Il ministero del Commercio cinese ha pubblicato, insieme ad altri otto dipartimenti, il piano per lo sviluppo del commercio di servizi del 15° Piano quinquennale. Per la prima volta il documento dedica una sezione all'intelligenza artificiale: prevede di esportare in modo «prudente e ordinato» servizi come il cloud computing e i grandi modelli linguistici, e incoraggia le aziende a vendere all'estero pacchetti integrati di tecnologia, prodotto e servizio.",
+      "why": "Per le imprese europee aumenta l'offerta di soluzioni cloud e AI cinesi complete, con hardware, calcolo e servizi nello stesso pacchetto. Ne derivano più concorrenza sui prezzi, ma anche nuove valutazioni da fare su dati e fornitori.",
+      "deep": [
+        "Il piano comprende 25 compiti prioritari divisi in sette aree, tra cui nuovi motori di crescita, digitalizzazione, intelligenza artificiale e transizione verde del commercio di servizi, con l'obiettivo esplicito di sostenere la manifattura attraverso i servizi.",
+        "Sull'IA chiede alle aziende di integrare produttori di hardware, fornitori di potenza di calcolo e operatori di infrastrutture in soluzioni chiavi in mano, con misure contro la fuga di tecnologie. Indica strategie differenziate per mercato, joint venture con partner locali e cooperazione con i Paesi della Belt and Road.",
+        "Le fonti non riportano obiettivi numerici: per il 2030 il piano punta a una crescita stabile e a più competitività, per il 2035 a una posizione di vertice mondiale. Sono previste anche la lista negativa per i servizi transfrontalieri e l'apertura graduale di telecomunicazioni a valore aggiunto e sanità.",
+        "Per Fu Yifu, ricercatore di Suzhou Bank, la formula della soluzione integrata indica pacchetti che uniscono calcolo, hardware e applicazioni di settore. Pang Ming, dell'Hong Kong Trade Development Council, vi legge il passaggio dalla crescita in volume alla qualità tecnologica."
+      ],
+      "src": [
+        [
+          "Huxiu",
+          "https://m.huxiu.com/moment/1300086.html",
+          "ZH"
+        ],
+        [
+          "Shanghai Securities News (Sina)",
+          "https://finance.sina.com.cn/roll/2026-11-27/doc-inkacksp1149039.shtml",
+          "ZH"
+        ]
+      ]
+    },
+    {
+      "id": "denisova-guangxi-linea-ignota",
+      "sec": "sci",
+      "kick": "Evoluzione umana",
+      "date": "26 novembre",
+      "title": "Guangxi, quattro denti rivelano i Denisova e una linea umana sconosciuta",
+      "sum": "Uno studio pubblicato il 26 novembre su Nature analizza quattro denti fossili trovati nel 2021 in due grotte del Guangxi, nel sud della Cina. Il dente della grotta di Longchuan è di un Denisova: per la prima volta la specie compare nella fascia subtropicale del Lingnan. Il dente della grotta di Chuanshan, vecchio almeno 101.000 anni, non corrisponde invece a nessun gruppo umano noto e indicherebbe una linea evolutiva indipendente.",
+      "why": "Le proteine antiche permettono di datare e attribuire reperti da cui il DNA non si recupera più, una tecnica che allarga il campo dell'analisi molecolare. La scoperta conferma anche il peso crescente della ricerca cinese sulle riviste di punta.",
+      "deep": [
+        "Lo studio è guidato da Fu Qiaomei e Xing Song dell'Istituto di paleontologia dei vertebrati e paleoantropologia dell'Accademia cinese delle scienze, con istituti di archeologia del Guangxi e dell'Accademia cinese di scienze sociali. Il progetto nel corridoio migratorio del Guangxi è partito nel 2015.",
+        "I ricercatori hanno unito l'analisi delle proteine dello smalto (paleoproteomica) al confronto della forma dei denti con altri reperti del genere Homo. Il dente di Longchuan, datato tra almeno 105.000 e 43.000 anni fa, ha forma molto simile a quella dei Denisova dell'Altai e proteine compatibili con altri campioni della specie.",
+        "Il dente di Chuanshan presenta varianti proteiche tipiche dell'Homo erectus tardo, ma una forma più evoluta dell'erectus e più primitiva dell'uomo moderno. Per gli autori il sud della Cina avrebbe fatto da rifugio per diverse popolazioni arcaiche, non tutte riconducibili ai Denisova.",
+        "Restano punti aperti: il campione è minimo, e il legame della nuova linea con l'Homo erectus richiede altri fossili e dati genetici."
+      ],
+      "src": [
+        [
+          "Xinhua",
+          "https://www.news.cn/tech/20261126/56270430591744659966ac641982f7dc/c.html",
           "GOV"
         ],
         [
-          "The Paper (澎湃新闻) – comunicato Tsinghua IIIS",
-          "https://www.thepaper.cn/newsDetail_forward_34562750",
+          "Guangming Online (China News Service)",
+          "https://politics.gmw.cn/2026-11/26/content_39122093.htm",
           "ZH"
         ]
       ]
