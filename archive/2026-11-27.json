@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "label": "Venerdì 27 novembre 2026",
-  "lead": "automotive-mini-contratti-30-novembre",
+  "lead": "brevetti-2026-fondi-esauriti-un-giorno",
   "secs": [
     [
       "ind",
@@ -263,35 +263,6 @@
       "seo_desc": "Il Parlamento europeo approva il rinvio di due anni delle regole sulle emissioni di metano per gas e petrolio importati. Chi è favorevole e chi no."
     },
     {
-      "id": "automotive-mini-contratti-30-novembre",
-      "sec": "inc",
-      "kick": "Filiera auto",
-      "date": "25 novembre",
-      "title": "Automotive, dal 30 novembre le domande per i Mini contratti di sviluppo da 300 milioni",
-      "sum": "La Gazzetta Ufficiale del 25 novembre ha pubblicato il comunicato del MIMIT con termini e modalità di domanda per i Mini contratti di sviluppo della filiera automotive. Lo sportello apre alle 12 del 30 novembre 2026 sulla piattaforma dedicata; le domande saranno esaminate in ordine di arrivo fino a esaurimento dei 300 milioni. Sono ammessi programmi di investimento da 5 a 20 milioni di euro, con agevolazioni fino al 75% dei costi.",
-      "why": "Per i componentisti è uno dei pochi strumenti pensati per investimenti produttivi di taglia media. Visto che le domande vengono esaminate in ordine di arrivo, conviene preparare ora la documentazione.",
-      "deep": [
-        "La misura si basa sul decreto ministeriale dell'11 agosto 2026 e sul decreto direttoriale dell'11 novembre 2026. La gestisce il MIMIT, mentre Unioncamere cura l'istruttoria. Possono partecipare imprese di qualsiasi dimensione della filiera automotive, in tutta Italia, anche con progetti congiunti fino a cinque imprese, ciascuna con almeno 1,5 milioni di spese ammissibili.",
-        "Sono finanziabili investimenti in tecnologie per una mobilità sostenibile, autonoma, connessa e sicura: nuovi veicoli e sistemi di propulsione, componenti avanzati e diversificazione verso tecnologie strategiche a duplice uso. Rientrano tra le spese macchinari, impianti e attrezzature nuovi, opere murarie fino al 50% dell'investimento, suolo fino al 10%, software, brevetti e know-how.",
-        "Contributi e finanziamenti agevolati insieme non possono superare il 75% delle spese. Per i primi sei mesi ci sono quote riservate: 60% alle PMI (di cui il 25% del totale a micro e piccole imprese), 40% ai progetti nel Mezzogiorno, 10% ciascuno a chi ha il rating di legalità e la certificazione di parità di genere. I programmi vanno conclusi entro 36 mesi, con possibile proroga di 12, ed è previsto un anticipo fino al 40% dietro garanzia.",
-        "Per la stessa filiera è aperto dal 25 novembre anche lo sportello degli Accordi per l'innovazione automotive, dedicato ai progetti di ricerca e sviluppo."
-      ],
-      "src": [
-        [
-          "Gazzetta Ufficiale",
-          "https://www.gazzettaufficiale.it/eli/gu/2026/11/25/275/SG/html",
-          ""
-        ],
-        [
-          "Unioncamere",
-          "https://www.unioncamere.gov.it/promozione-e-assistenza-alle-imprese/mini-contratti-di-sviluppo-nel-settore-automotive",
-          ""
-        ]
-      ],
-      "seo_title": "Mini contratti di sviluppo automotive: domande dal 30 novembre",
-      "seo_desc": "Dal 30 novembre si presentano le domande per i Mini contratti di sviluppo automotive da 300 milioni: requisiti, spese ammesse e scadenze."
-    },
-    {
       "id": "cina-profitti-industriali-ottobre",
       "sec": "ind",
       "kick": "Industria cinese",
@@ -350,33 +321,33 @@
       "seo_desc": "I 20 milioni del bando Brevetti+ 2026 per la valorizzazione dei brevetti sono finiti nel giorno di apertura. Cosa fare ora e i prossimi incentivi."
     },
     {
-      "id": "amazon-meta-trattativa-muse-pubblicita",
+      "id": "chatgpt-ads-metriche-copertura-agenti",
       "sec": "ads",
-      "kick": "Agenti AI",
+      "kick": "ChatGPT Ads",
       "date": "25 novembre",
-      "title": "Amazon e Meta trattano per riaprire lo store all'agente Muse: sul tavolo pubblicità e risultati di ricerca",
-      "sum": "Secondo un'esclusiva di Fortune, Amazon e Meta stanno discutendo un accordo che consentirebbe all'agente AI Muse di acquistare su Amazon, superando il blocco deciso da Amazon a settembre. I nodi sono la gestione della pubblicità, la qualità dei risultati di ricerca e il collegamento tecnico. Le trattative sono aperte, senza tempi certi, e richiederebbero il via libera di entrambi gli amministratori delegati. Le due aziende non hanno commentato.",
-      "why": "Se gli acquisti passano dagli agenti AI, gli annunci sui marketplace rischiano di non essere visti: chi investe in retail media ed e-commerce deve seguire chi controlla la vetrina degli agenti.",
+      "title": "ChatGPT Ads conta le persone, non solo le impressioni: nove nuove metriche e Business Agent fuori dagli USA",
+      "sum": "OpenAI ha comunicato agli inserzionisti un aggiornamento di ChatGPT Ads: in Ads Manager e nelle API arrivano nove metriche di pubblico, tra cui copertura (Reach) e frequenza. Gli annunci con immagine singola mostrano ora per impostazione predefinita un link «Learn more» verso la pagina di destinazione già impostata. I Business Agent sponsorizzati si aprono alle aziende di e-commerce e servizi online idonee nei mercati supportati fuori dagli Stati Uniti, che però non sono stati elencati.",
+      "why": "Con copertura e frequenza anche ChatGPT si può confrontare con Google e Meta sul costo per raggiungere persone reali, non solo clic. Chi vende online fuori dagli USA può iniziare a verificare se il proprio mercato rientra tra quelli abilitati ai Business Agent.",
+      "seo_title": "ChatGPT Ads, nuove metriche di copertura e frequenza",
+      "seo_desc": "ChatGPT Ads aggiunge nove metriche di pubblico, il link Learn more predefinito e apre i Business Agent fuori dagli USA: cosa cambia per gli inserzionisti.",
       "deep": [
-        "Amazon ha bloccato Muse a settembre, sostenendo che il suo accesso violava le condizioni d'uso del sito. Secondo Fortune le parti si sono incontrate più volte, ma non è detto che un accordo arrivi né quando.",
-        "Il timore principale di Amazon riguarda la pubblicità: un agente che compra per conto dell'utente potrebbe saltare gli annunci del sito, un business da 68,6 miliardi di dollari, quasi il 10% dei ricavi annui. L'AD Andy Jassy ha detto che l'apertura non è esclusa, ma serve uno «scambio di valore equo».",
-        "Muse, lanciato da Meta negli Stati Uniti a settembre, a ottobre contava oltre 10 milioni di utenti tra Stati Uniti e Canada. Meta punta a guadagnare con una piccola commissione sulle transazioni e ha già come partner Shopify, Walmart e Best Buy. Secondo dati Forter riportati da The Next Web, nella settimana al 22 novembre Muse ha gestito il 51% degli ordini fatti da agenti AI, davanti a Grok (24%) e ChatGPT (22%).",
-        "Morgan Stanley, citata da Fortune, stima che gli acquisti tramite agenti possano valere tra 190 e 385 miliardi di dollari dell'e-commerce USA entro il 2030. Non ci sono indicazioni su un'estensione all'Europa."
+        "Il 25 novembre OpenAI ha inviato agli inserzionisti di ChatGPT Ads un aggiornamento di prodotto, ripreso da Search Engine Roundtable e PPC Land. La novità principale riguarda la misurazione: in Ads Manager, nella vista colonne dedicata a chi vede gli annunci, e nelle API compaiono nove metriche di pubblico. Sono Reach, Frequency, Click Reach, Click Frequency, Total Reach, Total Frequency, Unique CTR, Unique CPC e costo per mille persone raggiunte.",
+        "OpenAI definisce esplicitamente solo le prime due: la copertura stima quante persone uniche hanno visto gli annunci almeno una volta, la frequenza è il rapporto tra impressioni totali e copertura. Le altre sette metriche seguono la stessa logica applicata ai clic e ai costi, ma la documentazione ufficiale citata dalle fonti non ne dà ancora una definizione dettagliata.",
+        "Sul fronte creativo, gli annunci con immagine singola mostrano ora di default un link «Learn more» che porta alla pagina di destinazione già configurata, senza altri passaggi. Per le campagne basate su feed prodotti si può nascondere il prezzo scontato al termine di una promozione, e i messaggi di rifiuto degli annunci spiegano meglio quale regola è stata applicata; OpenAI precisa che le linee guida di approvazione non cambiano.",
+        "I Business Agent, gli assistenti che un'azienda pubblica dentro ChatGPT tramite il Business Hub e che possono essere sponsorizzati in campagna, erano partiti il 10 novembre solo negli Stati Uniti. Ora sono aperti alle aziende idonee di e-commerce e servizi online nei mercati supportati fuori dagli USA, che l'annuncio non elenca: secondo PPC Land una pagina di aiuto aggiornata lo stesso giorno descriveva ancora la disponibilità solo statunitense. Resta da capire quando e in quali mercati europei gli agenti sponsorizzati saranno davvero disponibili."
       ],
       "src": [
         [
-          "Fortune",
-          "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/",
+          "Search Engine Roundtable",
+          "https://www.seroundtable.com/chatgpt-ads-updates-42623.html",
           "EN"
         ],
         [
-          "The Next Web",
-          "https://thenextweb.com/news/amazon-and-meta-talks-muse-blockade-ads-fortune",
+          "PPC Land",
+          "https://ppc.land/chatgpt-ad-reports-add-9-metrics-built-on-how-many-people-see-the-ads/",
           "EN"
         ]
-      ],
-      "seo_title": "Amazon e Meta trattano sull'agente AI Muse e la pubblicità",
-      "seo_desc": "Amazon e Meta trattano per far comprare su Amazon l'agente AI Muse: sul tavolo pubblicità e risultati di ricerca. Cosa cambia per chi investe in ads."
+      ]
     },
     {
       "id": "cina-piano-servizi-export-ia",
