@@ -83,7 +83,7 @@ a{color:#b592ff}main{max-width:760px;margin:0 auto;padding:22px 18px 60px}
 .kick{display:inline-block;background:var(--c);color:#fff;font:700 13px/1 Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:7px}
 .vsb{display:inline-block;margin-left:8px;background:linear-gradient(90deg,#753cef,#e0306a);color:#fff;font:800 13px/1 Inter,sans-serif;padding:6px 10px;border-radius:7px}
 h1{font-size:clamp(28px,6vw,44px);line-height:1.1;letter-spacing:-.02em;color:#fff;margin:16px 0 10px;text-wrap:balance}
-.meta{color:#a29db0;font-size:15px;margin-bottom:22px}.sum{font-size:20px;color:#f2f0f7}
+.meta{color:#c9c4d6;font-size:15px;margin-bottom:22px}.pd{display:inline-block;margin-left:8px;background:#fff;color:#14121c;font:800 13px/1 Inter,sans-serif;padding:6px 10px;border-radius:7px;vertical-align:top}.sum{font-size:20px;color:#f2f0f7}
 h2{font-size:22px;color:#fff;margin:32px 0 10px}ul{padding-left:20px}li{margin:6px 0}
 .sides{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin-top:18px}
 .side{border-radius:14px;padding:16px 18px;background:#1d1a28}.side.a{border-top:4px solid #753cef}.side.b{border-top:4px solid #e0306a}
@@ -107,9 +107,10 @@ def page(s, ed, base, sec_name, img, url, target, noindex):
                         "logo": {"@type": "ImageObject", "url": SITE + "/thumb.png"}},
           "isBasedOn": [x[1] for x in s.get("src", []) if isinstance(x, list) and len(x) > 1]}
     body = []
-    body.append(f'<span class="kick">{e(sec_name)}</span>' + ('<span class="vsb">1vs1</span>' if s.get("vs") else ""))
+    body.append(f'<span class="kick">{e(sec_name)}</span>' + ('<span class="vsb">1vs1</span>' if s.get("vs") else "")
+                + f'<time class="pd" datetime="{date}">{nice}</time>')
     body.append(f"<h1>{e(s.get('title'))}</h1>")
-    body.append(f'<p class="meta">Edizione del {nice} · <a href="{e(target)}">News.Raimondo.it</a></p>')
+    body.append(f'<p class="meta">Pubblicato il <time datetime="{date}">{nice}</time> nell\'edizione di <a href="{e(target)}">News.Raimondo.it</a></p>')
     body.append(f'<p class="sum">{e(s.get("sum"))}</p>')
     if s.get("facts"):
         body.append("<h2>I fatti</h2><ul>" + "".join(f"<li>{e(x)}</li>" for x in s["facts"]) + "</ul>")
