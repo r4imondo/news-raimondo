@@ -79,6 +79,15 @@ Se in futuro verranno riattivate, non dovranno mai finire in questo repository (
 7. **Immagini.** Nessuna foto e nessun grafico: la copertina mostra solo il nome della categoria su un badge
    colorato, generato dalla pagina. Non serve il campo `cover`.
 8. **Video.** Facoltativi, solo da canali di testate o aziende ufficiali.
+14. **Date, ore e luoghi.** Ogni notizia mostra la data di pubblicazione (la data dell'edizione; il campo
+   `pub` serve solo se diversa) e, all'inizio del testo, la riga di apertura con data, ora e luogo
+   dell'evento. Se la notizia riguarda un evento preciso (un voto, un attacco, la chiusura dei
+   mercati, un'audizione, un lancio, una conferenza stampa, un dato pubblicato), compilare SEMPRE
+   `ev`: `{"date": "venerdì 27 novembre", "time": "22:30 ora italiana", "place": "Bruxelles"}`.
+   `date` obbligatoria (giorno della settimana e data), `time` solo se le fonti la riportano
+   (convertita in ora italiana, oppure con il fuso indicato), `place` se l'evento ha un luogo.
+   Mai inventare ora o luogo: se le fonti non li dicono, ometterli. Il campo `date` resta la data
+   dei fatti in forma breve ("27 novembre"). Il `sum` non deve ripetere data e luogo già in `ev`.
 13. **SEO, obbligatoria per ogni notizia.** Oltre a `title` (titolo giornalistico, può essere lungo)
    scrivere due campi:
    - `seo_title`: 45-60 caratteri, parola chiave principale all'inizio (quella che un imprenditore
@@ -122,6 +131,7 @@ Se in futuro verranno riattivate, non dovranno mai finire in questo repository (
       "title": "Titolo informativo, non sensazionalistico",
       "sum": "Riassunto di 2-4 frasi con i fatti verificati.",
       "why": "Perché conta per un imprenditore, 1-2 frasi.",
+      "ev": {"date": "venerdì 27 novembre", "time": "22:30 ora italiana", "place": "Bruxelles"},
       "seo_title": "Parola chiave all'inizio, 45-60 caratteri",
       "seo_desc": "Frase completa di 130-155 caratteri con la parola chiave.",
       "deep": ["Primo paragrafo dell'approfondimento.", "Secondo paragrafo.", "Terzo paragrafo."],

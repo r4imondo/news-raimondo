@@ -323,6 +323,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .vs .art:has(.is-vs) .badge{display:none}.catcov .cvs u{width:clamp(40px,12cqi,56px)!important;font-size:clamp(11px,3.4cqi,15px)!important;letter-spacing:-.04em}
 .catcov.is-vs{background:linear-gradient(180deg,transparent 0 37%,#14121c 37%),linear-gradient(100deg,var(--vio) 0 50%,#e0306a 50%)!important}.catcov .cvs{inset:0 0 63% 0!important}
 .chip.vs-chip{border:1px solid rgba(255,255,255,.22)!important;background:transparent!important;color:#f5f3f7!important;outline:0!important}.chip.vs-chip[aria-pressed=true]{background:#fff!important;color:var(--night,#14121c)!important;border-color:#fff!important}
+.dl{color:var(--strong);font-weight:800}.lead .dl{color:#fff}
 </style>
 </head>
 <body>
@@ -356,6 +357,11 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 </div>
 <script>
 {
+const __MM=["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+const __iso=s=>{const d=(s&&s.pub)||window.__ED||"";return /^\d{4}-\d{2}-\d{2}$/.test(d)?d:""};
+const pubLong=s=>{const d=__iso(s);return d?(+d.slice(8,10))+" "+__MM[+d.slice(5,7)-1]+" "+d.slice(0,4):String(s.date||"")};
+const pubShort=s=>{const d=__iso(s);return d?(+d.slice(8,10))+" "+__MM[+d.slice(5,7)-1].slice(0,3):String(s.date||"")};
+const dl=s=>{const e=s&&s.ev&&typeof s.ev==="object"?s.ev:null;const t=e&&e.date?[e.place,e.date+(e.time?", ore "+e.time:"")].filter(Boolean).join(", "):(s.date||"");return t?`<b class="dl">${esc(t)} —</b> `:""};
 const BASE=location.origin+location.pathname;
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const okUrl=u=>typeof u==="string"&&/^https:\/\//.test(u);
@@ -369,9 +375,9 @@ function cover(s){const n=(SECS.find(x=>x[0]===s.sec)||[0,s.kick])[1];
   const t=String(s.title||""),L=t.length,cls=["catcov",L<=50?"t-s":L<=84?"t-m":"t-l"];let x="";
   if(s.vs&&s.a&&s.b){const A=nm(s.a),B=nm(s.b);if(A&&B&&A.length<=34&&B.length<=34){cls.push("is-vs");x=`<div class="cvs" aria-hidden="true"><em>${esc(A)}</em><u>1vs1</u><em>${esc(B)}</em></div>`}}
   else{const m=t.match(/(?:^|[\s(«“"'])(\d{1,3}(?:[.,]\d{1,2})?%?)(?=$|[\s).,;:»”"'?!])/);if(m&&m[1].length<=5)x=`<i class="cn k${m[1].length}" aria-hidden="true">${esc(m[1])}</i>`}
-  return `<div class="${cls.join(" ")}"${Array.isArray(s.deep)&&s.deep.length?` data-open="${esc(s.id)}" role="button" tabindex="0" aria-label="Leggi l'approfondimento"`:""}><span class="ck">${esc(n)}<time class="cd">${esc(s.date||"")}</time></span>${x}<b>${esc(t)}</b></div>`
+  return `<div class="${cls.join(" ")}"${Array.isArray(s.deep)&&s.deep.length?` data-open="${esc(s.id)}" role="button" tabindex="0" aria-label="Leggi l'approfondimento"`:""}><span class="ck">${esc(n)}<time class="cd">${esc(pubShort(s))}</time></span>${x}<b>${esc(t)}</b></div>`
 }
-const parts=s=>`<span class="date">${esc(s.date)}</span>`;
+const parts=s=>`<span class="date">Pubblicato il ${esc(pubLong(s))}</span>`;
 const srcs=s=>`<div class="src">Fonti: ${(s.src||[]).filter(x=>okUrl(x[1])).map(([n,u,l])=>`<a href="${esc(u)}">${esc(n)}${l==="EN"||l==="ZH"?`<sup class="lg">${l}</sup>`:l==="GOV"?`<sup class="lg">fonte governativa</sup>`:""}</a>`).join("")}</div>${(s.yt||[]).length?`<div class="src vid">Video: ${s.yt.filter(x=>okUrl(x[1])).map(([n,u])=>`<a href="${esc(u)}"><i aria-hidden="true">▶</i>${esc(n)}</a>`).join("")}</div>`:""}`;
 const x2=l=>l==="GOV"?`<sup class="lg">fonte governativa</sup>`:"";
 const shareUrl=id=>/^\d{4}-\d{2}-\d{2}$/.test(window.__ED||"")?"https://news.raimondo.it/n/"+window.__ED+"/"+id+".html":BASE+"#"+id;
@@ -380,8 +386,8 @@ const deep=s=>Array.isArray(s.deep)&&s.deep.length?`<button class="deepb" data-d
 const tail=s=>`${deep(s)}<div class="why"><b>Perché conta</b>${esc(s.why)}</div>${srcs(s)}<div class="acts"><button class="act" data-a="more" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="more"}">Più così</button><button class="act" data-a="less" data-id="${s.id}" aria-pressed="${st.pref[s.id]==="less"}">Meno così</button><button class="act" data-a="read" data-id="${s.id}" aria-pressed="${!!st.read[s.id]}">${st.read[s.id]?"Letto":"Segna come letto"}</button></div>${share(s)}`;
 const side=(c,x)=>`<div class="side ${c}"><h4>${esc(x.h)}</h4><p class="who">${esc(x.who)}</p><ul>${(x.pts||[]).map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>`;
 function renderStory(s){const a=document.createElement("article");a.classList.add("c-"+s.sec);a.dataset.id=s.id;a.dataset.sec=s.sec;a.id=s.id;
-  if(s.vs&&s.a&&s.b){a.classList.add("story","vs");a.innerHTML=`<div class="head"><div>${parts(s)}<h3 class="vh">${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p><ul class="facts">${(s.facts||[]).map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div><div class="art">${cover(s)}<span class="badge">1vs1</span></div></div><div class="sides">${side("a",s.a)}${side("b",s.b)}</div><div class="foot"><p class="note2">Formato 1vs1: le due tesi più nette, attribuite a chi le sostiene. Il giornale non prende posizione.</p>${tail(s)}</div>`}
-  else{a.classList.add("story");a.innerHTML=`<div class="art">${cover(s)}</div><div class="in">${parts(s)}<h3 class="vh">${esc(s.title)}</h3><p class="sum">${esc(s.sum)}</p>${tail(s)}</div>`}
+  if(s.vs&&s.a&&s.b){a.classList.add("story","vs");a.innerHTML=`<div class="head"><div>${parts(s)}<h3 class="vh">${esc(s.title)}</h3><p class="sum">${dl(s)}${esc(s.sum)}</p><ul class="facts">${(s.facts||[]).map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div><div class="art">${cover(s)}<span class="badge">1vs1</span></div></div><div class="sides">${side("a",s.a)}${side("b",s.b)}</div><div class="foot"><p class="note2">Formato 1vs1: le due tesi più nette, attribuite a chi le sostiene. Il giornale non prende posizione.</p>${tail(s)}</div>`}
+  else{a.classList.add("story");a.innerHTML=`<div class="art">${cover(s)}</div><div class="in">${parts(s)}<h3 class="vh">${esc(s.title)}</h3><p class="sum">${dl(s)}${esc(s.sum)}</p>${tail(s)}</div>`}
   document.getElementById(s.vs&&(window.__vsTop=(window.__vsTop||0)+1)<=2?"col-vs":"col-"+s.sec).appendChild(a)}
 function refresh(){
   const r=S.filter(s=>st.read[s.id]).length;
@@ -406,7 +412,7 @@ function boot(ed){window.__ED=ed&&ed.date;const __M=["gennaio","febbraio","marzo
   if(ed.date&&ed.date<today){const p=document.getElementById("past");p.hidden=false;p.textContent="Questa è l'ultima edizione disponibile: quella di oggi non è ancora uscita."}
   document.getElementById("secs").innerHTML=`<div class="sech vsh" data-sec="vs"><h2><span class="vsb">1vs1</span> Il confronto del giorno</h2><p>Le notizie che dividono, con le due tesi più nette messe una di fronte all'altra.</p></div><div class="cards vsc" id="col-vs"></div>`+SECS.map(([k,n])=>`<div class="sech" data-sec="${k}"><h2>${esc(n)}</h2></div><div class="cards" id="col-${k}"></div>`).join("");
   const L=S.find(s=>s.id===ed.lead&&!s.vs);const lead=document.getElementById("lead");
-  if(L){lead.classList.add("c-"+L.sec);lead.dataset.id=L.id;lead.dataset.sec=L.sec;lead.id=L.id;lead.innerHTML=`<div>${parts(L)}<h2 class="vh">${esc(L.title)}</h2><p class="sum">${esc(L.sum)}</p>${tail(L)}</div><div class="art">${cover(L)}</div>`}else lead.remove();
+  if(L){lead.classList.add("c-"+L.sec);lead.dataset.id=L.id;lead.dataset.sec=L.sec;lead.id=L.id;lead.innerHTML=`<div>${parts(L)}<h2 class="vh">${esc(L.title)}</h2><p class="sum">${dl(L)}${esc(L.sum)}</p>${tail(L)}</div><div class="art">${cover(L)}</div>`}else lead.remove();
   for(const s of S)if(s!==L)renderStory(s);{const cv=document.getElementById("col-vs"),ld=document.querySelector(".lead");if(cv&&ld&&cv.querySelector("article")&&!document.querySelector(".leadband")){const b=document.createElement("div");b.className="top leadband";const w=document.createElement("div");w.className="wrap";b.appendChild(w);cv.after(b);w.appendChild(ld)}}
   for(const h of document.querySelectorAll(".sech")){const any=document.querySelector(`#col-${h.dataset.sec} article`);if(!any)h.classList.add("empty")}
   const chips=document.getElementById("chips");
