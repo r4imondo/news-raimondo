@@ -1,0 +1,437 @@
+{
+ "date": "2026-11-28",
+ "label": "Sabato 28 novembre 2026",
+ "lead": "transizione-5-0-esodati-197-milioni",
+ "secs": [
+  [
+   "ind",
+   "Economia e industria"
+  ],
+  [
+   "inc",
+   "Incentivi e formazione"
+  ],
+  [
+   "ads",
+   "Marketing e AI"
+  ],
+  [
+   "ia",
+   "Intelligenza artificiale"
+  ],
+  [
+   "geo",
+   "Geopolitica e mercati"
+  ],
+  [
+   "sci",
+   "Scienza e filosofia"
+  ]
+ ],
+ "stories": [
+  {
+   "id": "chip-usa-distillazione-modelli-cinesi",
+   "sec": "ia",
+   "kick": "Chip e AI cinese",
+   "date": "26 novembre",
+   "title": "Stretta USA su chip e distillazione: Zhipu e Moonshot rinviano i nuovi modelli di punta",
+   "sum": "Secondo fonti citate da Reuters, la regola del Dipartimento del Commercio USA in vigore dal 19 novembre, che impone licenze alle aziende cinesi per usare grandi quantità di calcolo con chip americani in data center esteri, sta rallentando i laboratori cinesi. Z.AI (Zhipu) potrebbe far slittare al 2027 il modello GLM-5.5, da circa 3.000 miliardi di parametri; Moonshot prevede che il ciclo di rilascio passi da 6 a 12 mesi o più, con Kimi K4 verso metà 2027. Sullo sfondo ci sono le accuse dei laboratori USA di distillazione non autorizzata dei loro modelli.",
+   "why": "La corsa all'AI si gioca anche sull'accesso al calcolo: chi usa modelli aperti cinesi, spesso più economici, potrebbe vederne rallentare gli aggiornamenti. Nella scelta di un fornitore AI conta anche il rischio normativo sulla filiera dei chip.",
+   "seo_title": "Chip USA e AI cinese: Zhipu e Moonshot rinviano i modelli",
+   "seo_desc": "Chip USA e distillazione: la stretta di Washington rallenta Zhipu e Moonshot, che rinviano GLM-5.5 e Kimi K4. Le due tesi, Washington e Pechino.",
+   "vs": true,
+   "facts": [
+    "La regola USA si applica oltre una soglia di circa 750 chip equivalenti a Nvidia H100; chi offre già il servizio ha 90 giorni per ottenere la licenza.",
+    "Servono licenze anche per spedire chip avanzati verso Malaysia, Singapore, Indonesia, Thailandia e Brasile.",
+    "Lunedì Z.AI ha rilasciato GLM-5.4, basato su un modello da 750 miliardi di parametri; il GLM-5.5 atteso a novembre non è uscito.",
+    "Secondo The Information, Moonshot ha rinunciato a un accordo da 150 milioni di dollari per usare chip Nvidia Blackwell in un data center indonesiano.",
+    "Z.AI e Nvidia non hanno risposto alle richieste di commento."
+   ],
+   "a": {
+    "h": "Sì: va chiuso l'accesso remoto al calcolo",
+    "who": "La tesi di Washington e dei lab USA",
+    "pts": [
+     "La regola del 19 novembre chiude la via dei data center esteri per le aziende cinesi.",
+     "Anthropic ha dichiarato a settembre di aver rilevato quasi 200 milioni di scambi con Claude legati a sospette campagne di distillazione, attribuite tra gli altri ad Alibaba, Moonshot e Z.AI.",
+     "OpenAI ha mosso accuse simili verso persone legate a Moonshot; entrambe le aziende dicono di aver introdotto misure per scoprire e bloccare la distillazione."
+    ]
+   },
+   "b": {
+    "h": "No: misura sbagliata, progressi originali",
+    "who": "La tesi di Moonshot e Pechino",
+    "pts": [
+     "A luglio Moonshot ha respinto le accuse su Kimi K3, attribuendo i progressi a modifiche originali dell'architettura del modello.",
+     "Il 17 novembre il ministero del Commercio cinese ha espresso forte insoddisfazione e ferma opposizione alla regola, minacciando contromisure.",
+     "Lo stesso giorno il ministero degli Esteri ha chiesto agli Stati Uniti di correggere l'errore."
+    ]
+   },
+   "deep": [
+    "La notizia viene da un'esclusiva Reuters basata su fonti anonime: le aziende coinvolte non hanno confermato i rinvii. Il quadro è quello di una regola USA che non riguarda più solo l'export dei chip, ma anche il noleggio di potenza di calcolo all'estero, finora usato dai laboratori cinesi per aggirare i divieti.",
+    "Per Moonshot il calendario cambierebbe molto: dopo K2 a luglio 2025, K2.5 a gennaio e K3 a luglio, il prossimo modello potrebbe arrivare solo a metà 2027. L'azienda ha aumentato il noleggio di calcolo in Europa e vuole valutare i produttori cinesi di chip; secondo le fonti avrebbe anche iniziato a distillare modelli di Google e Meta.",
+    "Reuters riporta inoltre, citando il Financial Times, che Nvidia avrebbe chiesto ai partner di sospendere le spedizioni di server verso Malaysia, Singapore, Indonesia e Thailandia. Le reazioni di Pechino risalgono al 17 novembre, quando la regola era stata annunciata."
+   ],
+   "src": [
+    [
+     "Reuters (via Daily Maverick)",
+     "https://www.dailymaverick.co.za/article/2026-11-26-us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say/",
+     "EN"
+    ],
+    [
+     "China Times 中時新聞網",
+     "https://www.chinatimes.com/realtimenews/20261127002956-260410",
+     "ZH"
+    ],
+    [
+     "Tencent News 腾讯新闻",
+     "https://news.qq.com/rain/a/20261121A0EQH100",
+     "ZH"
+    ]
+   ]
+  },
+  {
+   "id": "petrolio-hormuz-opec-brent",
+   "sec": "geo",
+   "kick": "Petrolio",
+   "date": "27 novembre",
+   "title": "Attacchi nel Golfo e Hormuz chiuso: il Brent chiude la settimana in rialzo alla vigilia dell'OPEC+",
+   "sum": "Venerdì 27 novembre il Brent ha chiuso a 95,44 dollari al barile, in calo dell'1,2% nella seduta dopo aver toccato il massimo dal 9 novembre; sulla settimana segna il primo rialzo di novembre, circa il 3% secondo Reuters. Pesano l'attacco alla raffineria Aramco di Jazan, gli attacchi rivendicati dagli Houthi a Ras Tanura e la volontà dichiarata da Teheran di tenere chiuso lo Stretto di Hormuz. Domenica 29 si riunisce l'OPEC+, che secondo fonti Reuters dovrebbe confermare gli obiettivi di produzione del primo trimestre 2027.",
+   "why": "Il prezzo del greggio si trasmette a energia, trasporti e materie plastiche: con oscillazioni così ampie è prudente rivedere contratti di fornitura energetica e listini per il 2027.",
+   "seo_title": "Prezzo petrolio, Brent a 95 dollari tra Hormuz e OPEC+",
+   "seo_desc": "Prezzo del petrolio: Brent a 95,44 dollari dopo gli attacchi nel Golfo e con Hormuz chiuso, OPEC+ domenica. Surplus o ritorno a 100 dollari: le due tesi.",
+   "vs": true,
+   "facts": [
+    "Venerdì il WTI ha chiuso a 83,08 dollari; giovedì non c'è stata chiusura per il Thanksgiving.",
+    "Nel mese di novembre il Brent ha perso quasi un quinto del suo valore, secondo Bloomberg.",
+    "Giovedì un proiettile ha colpito la raffineria di Jazan, uccidendo un lavoratore e fermando in parte gli impianti (ministero dell'Energia saudita).",
+    "Le forze USA dicono di aver fermato una nave commerciale che tentava di forzare il blocco dell'Iran.",
+    "Secondo dieci fonti Reuters, Washington ha spinto Venezuela e Iraq a valutare l'uscita dall'OPEC."
+   ],
+   "a": {
+    "h": "Il mercato va verso il surplus",
+    "who": "La tesi dell'IEA",
+    "pts": [
+     "La ripresa dell'export dal Medio Oriente porterà il mercato in eccesso di offerta già in questo trimestre.",
+     "L'aumento del traffico nello Stretto di Hormuz nel corso del mese ha contribuito a contenere i prezzi."
+    ]
+   },
+   "b": {
+    "h": "Il rischio può riportarlo a 100 dollari",
+    "who": "La tesi di ANZ e MST Marquee",
+    "pts": [
+     "Per Brian Martin e Daniel Hynes (ANZ) il Brent può superare i 100 dollari anche senza una nuova grande escalation, se emergono segnali di un'offerta consegnabile più scarsa.",
+     "Per Saul Kavonic (MST Marquee) i mercati cominciano a prezzare l'instabilità dello status quo: nuovi attacchi che riducano i volumi riporterebbero il prezzo verso quota 100.",
+     "Mark Schaefer (Liquidity Energy) osserva che gli attacchi hanno rimesso al centro il rischio di interruzioni delle forniture."
+    ]
+   },
+   "src": [
+    [
+     "Reuters (via Investing.com)",
+     "https://www.investing.com/news/commodities-news/brent-trades-near-months-high-as-mideast-conflict-threatens-supply-5052810",
+     "EN"
+    ],
+    [
+     "Bloomberg (via Energy Connects)",
+     "https://www.energyconnects.com/news/oil/2026/november/oil-set-for-weekly-gain-as-mideast-attacks-keep-market-on-edge/",
+     "EN"
+    ],
+    [
+     "Reuters (via Business Standard)",
+     "https://www.business-standard.com/world-news/opec-may-roll-over-current-oil-output-targets-at-its-sunday-meeting-126112601024_1.html",
+     "EN"
+    ]
+   ]
+  },
+  {
+   "id": "openai-gpt-6-2-errore-fatturazione",
+   "sec": "ia",
+   "kick": "OpenAI",
+   "date": "26 novembre",
+   "title": "OpenAI corregge un errore di fatturazione: con GPT-6.2 Astra i limiti d'uso arrivano il 40% prima",
+   "sum": "OpenAI ha ammesso che, al lancio di GPT-6.2, un errore di fatturazione scontava per sbaglio l'uso dei modelli Astra e Sol per la maggior parte degli utenti. Con la correzione, rispetto alla settimana precedente, chi usa Astra raggiunge i limiti del piano il 40% più in fretta e chi usa Sol il 25% più in fretta, mentre i prezzi degli abbonamenti restano invariati. Non ci saranno addebiti retroattivi e i piani Go, Plus, Pro e Business ricevono un azzeramento dei limiti da usare quando si vuole.",
+   "why": "Per le imprese che usano ChatGPT o Codex in abbonamento, a parità di spesa si ottiene meno lavoro: conviene misurare i consumi reali e tenere un margine nel budget dedicato all'AI.",
+   "seo_title": "GPT-6.2, OpenAI corregge la fatturazione: limiti più stretti",
+   "seo_desc": "GPT-6.2 Astra e Sol: OpenAI corregge un errore di fatturazione e i limiti d'uso arrivano fino al 40% prima. Le due tesi a confronto, OpenAI e analisti.",
+   "vs": true,
+   "facts": [
+    "L'annuncio è arrivato su X da Thibault Sottiaux, che in OpenAI lavora su ChatGPT e Codex.",
+    "Gli altri modelli non sono interessati dalla correzione.",
+    "Nei workspace a crediti l'uso oltre soglia di GPT-6.2 costa 3 volte la tariffa standard fino al 28 febbraio 2027 e 6 volte dal 1° marzo (InfoWorld).",
+    "Secondo OfficeChai, il lavoro su Astra veniva conteggiato a circa il 70% del costo previsto e quello su Sol a circa l'80%.",
+    "OpenAI non ha spiegato la causa né quanti utenti siano stati coinvolti."
+   ],
+   "a": {
+    "h": "Errore ammesso e corretto apertamente",
+    "who": "La tesi di OpenAI",
+    "pts": [
+     "L'azienda ha dichiarato pubblicamente lo sbaglio e lo ha corretto.",
+     "Nessun costo retroattivo per gli utenti.",
+     "Un azzeramento compensativo dei limiti per i piani a pagamento coinvolti."
+    ]
+   },
+   "b": {
+    "h": "Stesso prezzo, meno lavoro: serve trasparenza",
+    "who": "La tesi di Counterpoint e Greyhound",
+    "pts": [
+     "Per Neil Shah (Counterpoint Research) il nodo è la scarsa trasparenza: consiglia una riserva del 30-40% nel budget e di portare i carichi di produzione sulla misurazione diretta via API.",
+     "Shah suggerisce anche di confrontare i costi unitari con quelli di Claude e Gemini.",
+     "Sanchit Vir Gogia (Greyhound Research) riconosce a OpenAI di aver dichiarato l'errore, ma nota che il prezzo resta uguale mentre cambia quanto lavoro si ottiene.",
+     "Gogia consiglia di chiedere per iscritto come verranno comunicate le future correzioni."
+    ]
+   },
+   "src": [
+    [
+     "InfoWorld",
+     "https://www.infoworld.com/article/4253883/openais-gpt%E2%80%916-2-correction-means-you-get-less-ai-for-the-same-fee.html",
+     "EN"
+    ],
+    [
+     "OfficeChai",
+     "https://officechai.com/ai/openai-says-a-billing-mistake-incorrectly-discounted-gpt-6-2-astra-gpt-6-2-sol-usage-users-will-now-reach-limits-40-faster-on-astra/",
+     "EN"
+    ]
+   ]
+  },
+  {
+   "id": "stellantis-francia-fermi-dicembre",
+   "sec": "ind",
+   "kick": "Automotive",
+   "date": "27 novembre",
+   "title": "Stellantis ferma di nuovo Sochaux, Mulhouse e Rennes a dicembre: l'azienda cita la concorrenza, i sindacati protestano",
+   "sum": "Stellantis fermerà a dicembre tre stabilimenti francesi. Sochaux (Peugeot 3008 e 5008) si ferma il 3, 4, 7 e 8 dicembre e poi dal 19 dicembre all'11 gennaio; Rennes (Citroën C5 Aircross) dal 18 dicembre al 5 gennaio; Mulhouse (Peugeot 308 e 408) per alcuni giorni a inizio dicembre e dal 23 dicembre all'11 gennaio. In autunno i tre impianti si erano già fermati per periodi da 5 a 15 giorni, in due casi per mancanza di batterie.",
+   "why": "I fermi in Francia si riflettono sui fornitori italiani che riforniscono quelle linee: chi lavora per Stellantis deve attendersi ordini più bassi tra dicembre e gennaio e verificare i programmi per il 2027.",
+   "seo_title": "Stellantis, fermi a Sochaux, Mulhouse e Rennes a dicembre",
+   "seo_desc": "Stellantis ferma tre fabbriche francesi a dicembre, con effetti sui fornitori italiani: date, volumi e posti a rischio. Le due tesi, azienda e sindacati.",
+   "vs": true,
+   "facts": [
+    "A Sochaux la fine del turno di notte da gennaio taglia circa 500 posti interinali; a Rennes sono a rischio circa 300 interinali.",
+    "Rennes produrrà circa 73.000 auto nel 2026, contro un obiettivo vicino a 100.000.",
+    "Dati ACEA: a ottobre le immatricolazioni Stellantis in Europa sono scese dell'8% a 144.786, con una quota del 12,8%.",
+    "Il piano FaSTLAne 2030, presentato a maggio, riduce di oltre 800.000 unità la capacità europea.",
+    "In Italia Mirafiori ha avuto due settimane di cassa integrazione a ottobre."
+   ],
+   "a": {
+    "h": "Si adegua la produzione al mercato",
+    "who": "La tesi di Stellantis",
+    "pts": [
+     "Il mercato europeo è difficile, con una concorrenza nuova e aggressiva e un quadro geopolitico complesso.",
+     "Il piano FaSTLAne punta a portare l'utilizzo degli impianti europei dal 60% all'80%.",
+     "Per l'amministratore delegato Antonio Filosa nessuno stabilimento chiuderà: la capacità in eccesso sarà condivisa con i partner."
+    ]
+   },
+   "b": {
+    "h": "Ai lavoratori si offre solo cassa integrazione",
+    "who": "La tesi dei sindacati francesi",
+    "pts": [
+     "Per Laurent Valy (CFDT Métallurgie Cœur Bretagne) la notizia è negativa ma prevedibile.",
+     "Valy accusa la direzione di offrire ai dipendenti, come unica prospettiva, la riduzione dell'orario con integrazione salariale.",
+     "Un rappresentante sindacale di Sochaux ha definito «catastrofico» il calendario dei fermi.",
+     "La CGT aveva stimato nel 2025 una perdita di circa il 16% della paga per ogni giorno non lavorato."
+    ]
+   },
+   "src": [
+    [
+     "electrive",
+     "https://electrive.com/2026/11/27/more-stellantis-plants-face-production-halt-in-france",
+     "EN"
+    ],
+    [
+     "Scenari Economici",
+     "https://scenarieconomici.it/stellantis-francia-fermi-sochaux-mulhouse-rennes/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": "aaronson-ai-crittografia-rsa",
+   "sec": "sci",
+   "kick": "AI e matematica",
+   "date": "26 novembre",
+   "title": "Svolte segrete in crittografia nei laboratori AI? Scott Aaronson ci crede, chi lavora sulla sicurezza chiede prove",
+   "sum": "L'informatico teorico Scott Aaronson (University of Texas at Austin, in passato ricercatore di OpenAI) ha scritto sul suo blog di essere quasi certo che i grandi laboratori AI abbiano ottenuto risultati clamorosi in crittografia, citando più fonti che ritiene affidabili. Ha però precisato di essere molto meno sicuro dei dettagli e che ciò di cui è certo resta ben lontano da una svolta sulla fattorizzazione dei grandi numeri, quella che metterebbe a rischio la cifratura RSA. Le voci non sono state commentate da Anthropic né da OpenAI.",
+   "why": "La cifratura RSA protegge firme digitali, VPN e scambi di dati tra aziende. Per ora non c'è alcuna prova che sia compromessa: è un dibattito da seguire, non un allarme.",
+   "seo_title": "Crittografia RSA e AI, Aaronson e le voci sui laboratori",
+   "seo_desc": "Crittografia RSA a rischio per le scoperte dell'AI? Scott Aaronson parla di svolte nei laboratori, un esperto chiede prove: le due tesi a confronto.",
+   "vs": true,
+   "facts": [
+    "In un commento precedente Aaronson aveva riferito molte voci su un metodo veloce di fattorizzazione in uno o entrambi i laboratori, ricordando poi che una voce resta una voce.",
+    "Secondo The Next Web, nella stessa settimana Anthropic e OpenAI hanno pubblicato dimostrazioni della congettura VP ≠ VNP, un problema di teoria della complessità.",
+    "Mercoledì Google ha pubblicato un nuovo algoritmo di fattorizzazione: per Aaronson ha valore teorico ma nessuna applicazione pratica contro la cifratura.",
+    "The Next Web precisa di non aver potuto verificare le voci."
+   ],
+   "a": {
+    "h": "I laboratori hanno risultati clamorosi",
+    "who": "La tesi di Scott Aaronson",
+    "pts": [
+     "Si dice quasi certo che uno o più laboratori abbiano risultati importanti in crittografia.",
+     "Riferisce voci di una fattorizzazione in tempo polinomiale, senza poterle confermare.",
+     "Sente vicina una dimostrazione di P ≠ NP e paragona la fase attuale all'inizio di una singolarità dell'AI."
+    ]
+   },
+   "b": {
+    "h": "Nessuna prova che la crittografia sia rotta",
+    "who": "La tesi di Christopher Smith",
+    "pts": [
+     "Per il fondatore e CEO di Quantus i laboratori di frontiera hanno risultati notevoli, ma non c'è alcuna prova che fattorizzazione o logaritmo discreto si possano risolvere in modo efficiente.",
+     "Se la sicurezza basata sulle curve ellittiche si indebolisse, le conseguenze per le blockchain sarebbero catastrofiche."
+    ]
+   },
+   "src": [
+    [
+     "The Next Web",
+     "https://thenextweb.com/news/scott-aaronson-ai-labs-cryptography-rsa-rumours",
+     "EN"
+    ],
+    [
+     "Cointelegraph",
+     "https://cointelegraph.com/news/ai-labs-likely-sitting-on-cryptography-bombshells-computer-scientist-says",
+     "EN"
+    ]
+   ]
+  },
+  {
+   "id": "transizione-5-0-esodati-197-milioni",
+   "sec": "inc",
+   "kick": "Transizione 5.0",
+   "date": "27 novembre",
+   "title": "Transizione 5.0, decreto Mimit per le imprese rimaste senza credito: 197,7 milioni a fondo perduto",
+   "sum": "Il Mimit ha pubblicato il decreto che assegna 197,7 milioni di euro ai progetti Transizione 5.0 che avevano ottenuto dal GSE la comunicazione di regolarità tecnica ma erano rimasti senza credito d'imposta per l'esaurimento delle risorse. Non si tratta di un credito ma di un contributo diretto sul conto corrente, versato in rate annuali: 57,7 milioni nel 2026, 80 nel 2027 e 60 nel 2028. Copre gli impianti di autoproduzione da rinnovabili per l'autoconsumo, accumuli compresi, e i costi di certificazione.",
+   "why": "Chi aveva investito contando sul credito 5.0 ed è rimasto fuori può recuperare almeno in parte l'incentivo: conviene seguire la lista dei beneficiari che il Mimit pubblicherà e preparare la documentazione per la domanda di pagamento.",
+   "seo_title": "Transizione 5.0 esodati, decreto Mimit da 197,7 milioni",
+   "seo_desc": "Transizione 5.0, decreto Mimit per gli esodati: 197,7 milioni a fondo perduto in tre rate per fotovoltaico, accumuli e certificazioni. Chi ne ha diritto.",
+   "deep": [
+    "Il piano Transizione 5.0 ha esaurito le risorse prima che tutte le imprese con la regolarità tecnica del GSE potessero usare il credito d'imposta: sono le cosiddette imprese «esodate». Il fondo a loro destinato era già stato anticipato a inizio novembre; la novità del 27 novembre è la pubblicazione del decreto che lo rende operativo.",
+    "Sono ammessi gli impianti che producono energia elettrica da fonti rinnovabili destinata all'autoconsumo, compresi i sistemi di accumulo, e le spese di certificazione: quella contabile, quella del risparmio energetico e quella sul rispetto dei requisiti ambientali (DNSH).",
+    "Il contributo è proporzionale alle spese ammissibili e non può superare l'incentivo già riconosciuto dal GSE per le stesse voci. Se le risorse non bastano, vengono ripartite in proporzione tra i beneficiari. Il decreto non riapre il piano a nuove domande.",
+    "I prossimi passi: il Mimit pubblicherà un elenco di beneficiari e importi sulla base dei dati del GSE, poi un decreto direttoriale fisserà le modalità per chiedere il pagamento, senza una data indicata. Le fonti non riportano il numero del decreto né quante imprese siano coinvolte."
+   ],
+   "src": [
+    [
+     "Arena Digitale",
+     "https://arenadigitale.it/2026/11/27/transizione-5-0-il-mimit-sblocca-1977-milioni-per-le-imprese-rimaste-fuori-dal-credito-dimposta/",
+     ""
+    ],
+    [
+     "Geagency",
+     "https://geagency.it/breaking-news/transizione-5-0-mimit-pubblicato-decreto-per-esodati-1977-mln-alle-imprese/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": "tesla-emag-macchine-utensili-optimus",
+   "sec": "ind",
+   "kick": "Robotica",
+   "date": "27 novembre",
+   "title": "Tesla chiede all'Antitrust tedesco il via libera per rilevare EMAG, macchine utensili per gli ingranaggi dei robot",
+   "sum": "Tesla ha notificato al Bundeskartellamt, l'autorità tedesca della concorrenza, l'acquisizione del costruttore di macchine utensili EMAG: la pratica è comparsa venerdì nell'elenco dei procedimenti in corso. Tesla ha costituito la società Tesla Machining Technologies Management SE, con sede presso il quartier generale di EMAG a Salach, e circa 220 dipendenti passerebbero a Tesla. EMAG produce macchine per lavorare in grande serie i componenti di precisione dei riduttori usati negli attuatori dei robot umanoidi come Optimus. Né Tesla né EMAG hanno commentato.",
+   "why": "Chi costruisce robot punta a controllare in casa la meccanica di precisione: per i produttori italiani di macchine utensili e riduttori è un segnale di dove si sposta la domanda, e di una concorrenza che passa anche dalle acquisizioni.",
+   "seo_title": "Tesla EMAG, acquisizione per i riduttori dei robot Optimus",
+   "seo_desc": "Tesla chiede all'Antitrust tedesco di rilevare EMAG, macchine utensili per i riduttori dei robot Optimus: conti, dipendenti e cosa cambia per la meccanica.",
+   "deep": [
+    "EMAG ha chiuso il 2024 con 496 milioni di euro di ricavi e una perdita di 42 milioni. Nel novembre 2025 aveva annunciato 455 tagli in Germania, circa 300 a Salach, per la debolezza della domanda di macchine utensili. La nuova società di Tesla ha un capitale di 120.000 euro ed è guidata da Maximilian Stromberger, responsabile vendite e consegne di Tesla in Germania.",
+    "Le macchine EMAG lavorano flexspline e generatori d'onda dei riduttori armonici e gli ingranaggi planetari, componenti chiave delle articolazioni dei robot. Secondo l'agenzia cinese Cailian raggiungono la classe 4 della norma ISO 1328 con eccentricità sotto i 5 micron, mantenendo la precisione anche in grandi volumi.",
+    "Sempre secondo Cailian, nella conference call del terzo trimestre Tesla aveva segnalato rischi di affidabilità sugli ingranaggi su misura e indicato la mano del robot come un grosso problema hardware. Oggi dipende in larga parte da fornitori giapponesi e taiwanesi di riduttori come Harmonic Drive Systems e Nabtesco. A luglio aveva avviato assunzioni a Reutlingen per sensori, riduttori e attuatori di Optimus, e in precedenza aveva rilevato beni e personale dell'azienda di automazione Manz AG, in insolvenza.",
+    "Le testate riportano obiettivi produttivi di Optimus molto ambiziosi, da 20.000 robot a settimana a Fremont fino a un milione l'anno, che però Tesla non ha confermato. L'operazione attende ora la decisione dell'autorità tedesca."
+   ],
+   "src": [
+    [
+     "Drive Tesla",
+     "https://driveteslacanada.ca/news/tesla-emag-acquisition-regulatory-approval-germany/",
+     "EN"
+    ],
+    [
+     "Cailian Press 财联社 (via Sina Finance)",
+     "https://finance.sina.cn/2026-11-27/detail-inkaeneh5497333.d.html",
+     "ZH"
+    ]
+   ]
+  },
+  {
+   "id": "mini-contratti-sviluppo-automotive",
+   "sec": "inc",
+   "kick": "Bandi",
+   "date": "27 novembre",
+   "title": "Componentistica auto, lunedì 30 novembre apre lo sportello dei Mini contratti di sviluppo da 300 milioni",
+   "sum": "Dalle 12 di lunedì 30 novembre si possono presentare le domande per i Mini contratti di sviluppo dedicati all'automotive, sulla piattaforma minicdsautomotive.dgiai.gov.it gestita da Unioncamere. Le risorse sono 300 milioni di euro per programmi da 5 a meno di 20 milioni, anche in forma congiunta fino a cinque imprese di qualunque dimensione. Le agevolazioni, tra contributo a fondo perduto e finanziamento agevolato, arrivano al 75% delle spese ammissibili e le domande sono esaminate in ordine cronologico fino a esaurimento dei fondi.",
+   "why": "Lo sportello in ordine cronologico premia chi è pronto: le PMI della componentistica con un progetto di investimento già definito e la perizia tecnica giurata pronta partono avvantaggiate.",
+   "seo_title": "Mini contratti di sviluppo automotive, domande dal 30/11",
+   "seo_desc": "Mini contratti di sviluppo automotive: dal 30 novembre domande per 300 milioni, agevolazioni fino al 75% per la componentistica. Requisiti e riserve.",
+   "deep": [
+    "La misura si basa sul DPCM del 10 giugno 2026, sul decreto ministeriale dell'11 agosto 2026 e sul decreto direttoriale del Mimit dell'11 novembre 2026, che ha fissato l'apertura dello sportello. Unioncamere gestisce la piattaforma, la modulistica e l'istruttoria.",
+    "Per i primi sei mesi sono previste riserve: il 60% delle risorse alle PMI (un quarto di questa quota a micro e piccole imprese), il 40% ai progetti in Abruzzo, Molise, Campania, Basilicata, Calabria, Puglia, Sicilia e Sardegna, un 10% alle imprese con rating di legalità e un altro 10% a quelle con certificazione della parità di genere.",
+    "La valutazione considera indicatori di solidità finanziaria: tre bilanci approvati, fatturato annuo sopra i 3 milioni e rapporto tra debito netto ed EBITDA sotto 6,5, anche se mancarne uno non comporta l'esclusione automatica. La formazione non può superare il 10% dell'investimento.",
+    "Ogni impresa può presentare una sola domanda, accompagnata da una perizia tecnica giurata. Le fatture sotto i 1.000 euro sono in genere escluse e sono previsti fino a cinque stati di avanzamento più il saldo. Per il ministro Adolfo Urso è «uno strumento su misura per le Pmi della componentistica»."
+   ],
+   "src": [
+    [
+     "Edotto",
+     "https://www.edotto.com/articolo/mini-contratti-di-sviluppo-automotive-domande-dal-30-novembre-2026",
+     ""
+    ],
+    [
+     "Teleborsa (via Borsa Italiana)",
+     "https://www.borsaitaliana.it/borsa/notizie/teleborsa/economia/automotive-300-milioni-per-i-mini-contratti-di-sviluppo-domande-dal-30-novembre-33_2026-11-13_TLB.html",
+     ""
+    ],
+    [
+     "Innovation Post",
+     "https://www.innovationpost.it/attualita/incentivi/i-mini-contratti-di-sviluppo-per-lautomotive-sono-operativi-domande-dal-30-novembre/",
+     ""
+    ]
+   ]
+  },
+  {
+   "id": "ai-overviews-francia-ctr-ahrefs",
+   "sec": "ads",
+   "kick": "AI Overviews",
+   "date": "26 novembre",
+   "title": "AI Overviews in Francia: per Ahrefs i clic sulle ricerche coinvolte calano del 24%",
+   "sum": "Uno studio di Ahrefs su 31.612 parole chiave francesi, 7.726 delle quali con un AI Overview, stima che le risposte generate da Google abbiano ridotto i clic organici del 24,4% rispetto all'andamento atteso tra giugno e ottobre 2026. Il CTR delle ricerche con AI Overview è sceso dal 2,53% all'1,96%, mentre quello delle ricerche senza è salito del 2,6%. Google ha attivato la funzione in Francia il 22 luglio; al 25 novembre l'AI Overview compariva sull'88,5% delle parole chiave del campione su desktop.",
+   "why": "Il caso francese è un riferimento utile per gli altri mercati europei: chi vive di traffico organico su contenuti informativi dovrebbe misurare quante delle proprie ricerche mostrano un AI Overview e rafforzare i canali diretti.",
+   "seo_title": "AI Overviews, in Francia clic organici in calo del 24%",
+   "seo_desc": "AI Overviews di Google in Francia: secondo uno studio Ahrefs su 31.612 keyword i clic organici calano del 24,4%. Dati, metodo e come stimare l'impatto.",
+   "deep": [
+    "Il metodo confronta l'andamento delle parole chiave che hanno ricevuto un AI Overview con quello delle parole chiave che non lo hanno, assumendo che senza la novità i due gruppi si sarebbero mossi allo stesso modo. Il CTR atteso per il primo gruppo era del 2,596%: il dato reale si è fermato all'1,964%.",
+    "L'effetto è visibile anche sul primo risultato organico: il suo CTR è sceso dall'11,06% all'8,69%, un calo del 26,2% al netto del trend, mentre sulle ricerche senza AI Overview la prima posizione è salita all'11,78%.",
+    "La diffusione è stata rapida: su desktop l'AI Overview compariva sul 10,6% delle parole chiave a luglio, sul 45,9% ad agosto, sul 58% a settembre, sul 70,8% a ottobre e sull'88,5% al 25 novembre. Uno studio precedente di Ahrefs, di agosto, aveva misurato un calo del 23,1% in nove giorni per i siti più esposti.",
+    "Ahrefs propone una regola pratica: circa un quarto dei clic in meno sulle ricerche con AI Overview. Se il 40% del traffico organico di un sito arriva da quelle ricerche, la perdita stimata è intorno al 10%, una stima che la stessa Ahrefs definisce grossolana. Ahrefs vende strumenti SEO; Google non ha commentato lo studio."
+   ],
+   "src": [
+    [
+     "Ahrefs",
+     "https://ahrefs.com/blog/ai-overviews-ctr-france/",
+     "EN"
+    ]
+   ]
+  },
+  {
+   "id": "fiumi-laghi-calo-record-2023-2024",
+   "sec": "sci",
+   "kick": "Clima e acqua",
+   "date": "26 novembre",
+   "title": "Il caldo record del 2023-2024 ha svuotato fiumi e laghi: il calo più forte almeno dal 1991",
+   "sum": "Uno studio pubblicato su Science da ricercatori dell'Accademia cinese delle scienze e dell'Università di Stoccolma stima che nel 2023-2024 la portata dei fiumi del pianeta sia scesa di circa il 5,7% e i volumi di laghi e bacini del 9,5% rispetto alla media 1991-2020. È il calo più forte della serie, che parte dal 1991 e copre 150 grandi bacini fluviali e oltre 1,2 milioni di laghi e invasi osservati dai satelliti. Il Sud America è l'area più colpita, con portate in calo del 17,8%.",
+   "why": "Acqua per l'industria, irrigazione e idroelettrico dipendono dagli stessi bacini: lo studio ricorda che un clima più caldo non porta più acqua disponibile sulla terraferma, un rischio da considerare nella pianificazione di impianti e consumi.",
+   "seo_title": "Siccità globale, fiumi e laghi al minimo dal 1991",
+   "seo_desc": "Siccità globale 2023-2024: uno studio su Science misura portate dei fiumi in calo del 5,7% e laghi del 9,5%, il peggior dato dal 1991. Cause e aree.",
+   "deep": [
+    "La ricerca è guidata da Yongqiang Zhang, dell'Istituto di scienze geografiche e risorse naturali dell'Accademia cinese delle scienze, insieme all'Università di Stoccolma. I dati satellitari coprono il periodo dal 1991 al 2025.",
+    "Il Sud America concentra circa il 70% del calo mondiale delle portate, con gli invasi in calo del 16,5%; secondo la televisione di Stato cinese CCTV l'Amazzonia ha toccato la portata più bassa in quasi quarant'anni.",
+    "Gli autori collegano l'evento alla combinazione di El Niño e di un Atlantico tropicale settentrionale insolitamente caldo, che ha sottratto umidità al nord del Sud America. Precisano però che si tratta di un'associazione e di un singolo evento estremo di due anni, non della prova di una causa unica. Nel 2025 le portate hanno cominciato a riprendersi.",
+    "Per la coautrice Sulagna Mishra un'atmosfera più calda non significa affatto più acqua disponibile sulla terraferma. Esperti esterni allo studio, come Richard Allan dell'Università di Reading, hanno commentato in modo concorde."
+   ],
+   "src": [
+    [
+     "CCTV (via 浙江在线)",
+     "https://china.zjol.com.cn/gjxw/202611/t20261128_32055367.shtml",
+     "ZH"
+    ],
+    [
+     "Nature World News",
+     "https://www.natureworldnews.com/articles/74107/20261127/record-heat-drained-worlds-rivers-lakes-2023-2024-new-science-study-finds.htm",
+     "EN"
+    ]
+   ]
+  }
+ ]
+}
