@@ -156,12 +156,10 @@ JSON valido (verificarlo con `python3 -m json.tool edition.json` prima del commi
    `stories`). La pagina su claude.ai lo legge per mostrare l'edizione del giorno; se manca, mostra la demo.
    Prima leggerlo con `db_get` per avere la versione (`ifVersion`), poi `db_write` con op `set`.
 
-## Pubblicazione su raimondo.it/news
+## Pubblicazione su raimondo.it/news (dismessa)
 
-La cartella `per-raimondo-it/` contiene la versione della pagina caricata a mano nella cartella `/news`
-del sito WordPress raimondo.it. Legge `edition.json` direttamente da GitHub
-(raw.githubusercontent.com), quindi si aggiorna da sola ogni mattina senza ricaricare nulla.
-Se cambia la grafica (`index.html`), va rigenerata e ricaricata a mano da Federico.
+Dal 28/11/2026 il giornale si pubblica solo su news.raimondo.it. La cartella `per-raimondo-it/` resta
+come archivio della vecchia copia per WordPress e non viene più aggiornata.
 L'edizione automatica NON tocca questa cartella.
 
 ## Cartella ufo/
