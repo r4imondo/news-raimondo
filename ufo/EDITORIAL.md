@@ -16,8 +16,14 @@ extraterrestre, tecnosegnature e SETI, smentite e spiegazioni).
 
 ## Quantità e consumo
 
-Al massimo 6 notizie. Al massimo 3 fonti aperte per notizia. Se non ci sono notizie valide nelle
-ultime 48 ore, meglio un'edizione corta (anche 2-3 notizie) che notizie vecchie o deboli.
+Al massimo 6 notizie. Al massimo 3 fonti aperte per notizia (più una per la controparte del 1vs1).
+Per questo giornale la finestra di freschezza è di 72 ore (non 48): le notizie sul tema sono poche.
+Meglio un'edizione corta (anche 1-3 notizie) che notizie vecchie o deboli.
+
+Registro obbligatorio: a OGNI esecuzione aggiungere in fondo a `ufo/LOG.md` una riga
+`AAAA-MM-GG HH:MM · notizie pubblicate N (1vs1 M) · ricerche X · pagine aperte Y · note`
+e fare commit anche quando non si pubblica una nuova edizione (in quel caso spiegare il motivo
+nella riga: per esempio "nessuna notizia valida nelle ultime 72 ore", "push fallito", ecc.).
 
 ## Fonti: gerarchia specifica
 

@@ -321,6 +321,7 @@ mark{background:color-mix(in srgb,var(--lil) 35%,transparent);color:inherit;bord
 .date::before{content:"";display:inline-block;width:7px;height:7px;border-radius:2px;background:var(--c,#753cef);margin-right:7px;vertical-align:1px}
 .vs .art:has(.is-vs) .badge{display:none}.catcov .cvs u{width:clamp(40px,12cqi,56px)!important;font-size:clamp(11px,3.4cqi,15px)!important;letter-spacing:-.04em}
 .catcov.is-vs{background:linear-gradient(180deg,transparent 0 37%,#14121c 37%),linear-gradient(100deg,var(--vio) 0 50%,#e0306a 50%)!important}.catcov .cvs{inset:0 0 63% 0!important}
+.chip.vs-chip{border:1px solid rgba(255,255,255,.22)!important;background:transparent!important;color:#f5f3f7!important;outline:0!important}.chip.vs-chip[aria-pressed=true]{background:#fff!important;color:var(--night,#14121c)!important;border-color:#fff!important}
 </style>
 </head>
 <body>
@@ -393,7 +394,7 @@ function refresh(){
   document.getElementById("learn").innerHTML=li.map(x=>`<li>${esc(x)}</li>`).join("");
   st.pref=st.pref||{};store.set("nr-state",st);
 }
-function boot(ed){window.__ED=ed&&ed.date;
+function boot(ed){window.__ED=ed&&ed.date;const __M=["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];const __dk=(s,ref)=>{const m=String(s&&s.date||"").toLowerCase().match(/(\d{1,2})\s+([a-zà]+)/);if(!m)return -1;let mi=__M.indexOf(m[2]);if(mi<0)return -1;const rm=ref?+String(ref).slice(5,7)-1:mi;if(mi>rm+1)mi-=12;return mi*40+ +m[1]};const __vsSort=(arr,ref)=>{const v=arr.filter(s=>s&&s.vs).map((s,i)=>[s,i]).sort((a,b)=>(__dk(b[0],ref)-__dk(a[0],ref))||(a[1]-b[1])).map(x=>x[0]);return v.concat(arr.filter(s=>!(s&&s.vs)))};if(ed&&Array.isArray(ed.stories))ed.stories=__vsSort(ed.stories,ed.date);
   st=store.get("nr-state",{read:{},pref:{}});if(st.date!==ed.date){st.read={};st.date=ed.date}
   SECS=(ed.secs||[]).filter(x=>Array.isArray(x)&&okId(x[0]));
   S=(ed.stories||[]).filter(s=>s&&okId(s.id)&&SECS.some(x=>x[0]===s.sec));N=S.length;
